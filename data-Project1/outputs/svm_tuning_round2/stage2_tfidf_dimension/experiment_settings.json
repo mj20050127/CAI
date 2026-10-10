@@ -1,0 +1,34 @@
+{
+  "stage": "round2_stage2_tfidf_dimension",
+  "controlled_variable": "tfidf_max_features",
+  "fixed_C": 500.0,
+  "max_feature_values": [
+    5000,
+    10000,
+    20000
+  ],
+  "kernel": "linear",
+  "tol": 0.001,
+  "shrinking": true,
+  "class_weight": null,
+  "probability": false,
+  "cache_size_mb": 512,
+  "max_iter": -1,
+  "decision_function_shape": "ovr",
+  "validation_size": 0.2,
+  "split_random_state": 42,
+  "model_random_state": 42,
+  "primary_selection_metric": "val_macro_f1",
+  "practical_tie_tolerance": 0.001,
+  "practical_tie_breaker": "smaller_max_features",
+  "raw_text_headers_preserved": true,
+  "official_test_set_used": false,
+  "tfidf_fixed_settings": {
+    "lowercase": true,
+    "ngram_range": [
+      1,
+      1
+    ],
+    "fit_on_training_subset_only": true
+  }
+}

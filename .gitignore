@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.joblib
+*.pkl
+*.pickle
+.venv/
+venv/
+.env
+.env.*
+.DS_Store
+Thumbs.db
+~$*
+*.docx
+_qa*/
+data-Project1/train_data.csv
+data-Project1/test_data_unlabeled.csv

@@ -1,0 +1,9 @@
+{
+  "strict_best_alpha": 0.01,
+  "strict_best_val_macro_f1": 0.921802811225539,
+  "strict_best_val_accuracy": 0.921302578018996,
+  "recommended_alpha_under_0p001_tolerance": 0.01,
+  "recommended_val_macro_f1": 0.921802811225539,
+  "recommended_val_accuracy": 0.921302578018996,
+  "recommended_val_loss": 0.29336533639633794
+}

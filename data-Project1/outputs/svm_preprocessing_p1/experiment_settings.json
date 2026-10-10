@@ -1,0 +1,28 @@
+{
+  "experiment": "P0_vs_P1_preprocessing",
+  "configurations": [
+    {
+      "name": "P0_raw",
+      "description": "Raw email text",
+      "preprocessing": "raw"
+    },
+    {
+      "name": "P1_subject_body",
+      "description": "Keep Subject and body; remove other headers",
+      "preprocessing": "subject_body"
+    }
+  ],
+  "fixed_C": 500.0,
+  "max_features": 20000,
+  "ngram_range": [
+    1,
+    1
+  ],
+  "validation_size": 0.2,
+  "split_random_state": 42,
+  "model_random_state": 42,
+  "primary_selection_metric": "val_macro_f1",
+  "practical_tie_tolerance": 0.001,
+  "official_test_set_used": false,
+  "tfidf_fit_on_training_subset_only": true
+}

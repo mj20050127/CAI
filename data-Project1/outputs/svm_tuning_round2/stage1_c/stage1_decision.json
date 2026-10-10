@@ -1,0 +1,12 @@
+{
+  "strict_best_C": 500.0,
+  "strict_best_val_macro_f1": 0.9125258042359394,
+  "strict_best_val_accuracy": 0.9118046132971506,
+  "strict_best_val_hinge_loss": 0.2668118764518513,
+  "practical_tie_tolerance": 0.001,
+  "recommended_C": 500.0,
+  "recommended_val_macro_f1": 0.9125258042359394,
+  "recommended_val_accuracy": 0.9118046132971506,
+  "recommended_val_hinge_loss": 0.2668118764518513,
+  "recommendation_rule": "Choose the smallest C within 0.001 Macro-F1 of the strict best."
+}

@@ -1,0 +1,12 @@
+{
+  "strict_best_config": "P1_subject_body",
+  "strict_best_val_macro_f1": 0.9399919853315076,
+  "strict_best_val_accuracy": 0.9396200814111262,
+  "strict_best_val_loss": 0.26607639577213077,
+  "practical_tie_tolerance": 0.001,
+  "recommended_config": "P1_subject_body",
+  "recommended_val_macro_f1": 0.9399919853315076,
+  "recommended_val_accuracy": 0.9396200814111262,
+  "recommended_val_loss": 0.26607639577213077,
+  "recommendation_rule": "Choose the simplest earlier configuration within 0.001 Macro-F1 of the strict best."
+}

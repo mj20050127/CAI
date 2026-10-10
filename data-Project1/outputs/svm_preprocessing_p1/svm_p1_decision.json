@@ -1,0 +1,12 @@
+{
+  "strict_best_config": "P1_subject_body",
+  "strict_best_val_macro_f1": 0.9319899506817648,
+  "strict_best_val_accuracy": 0.9314789687924017,
+  "strict_best_val_hinge_loss": 0.2078249040367501,
+  "practical_tie_tolerance": 0.001,
+  "recommended_config": "P1_subject_body",
+  "recommended_val_macro_f1": 0.9319899506817648,
+  "recommended_val_accuracy": 0.9314789687924017,
+  "recommended_val_hinge_loss": 0.2078249040367501,
+  "recommendation_rule": "Choose raw text when it is within 0.001 Macro-F1 of P1; otherwise choose the strict best."
+}

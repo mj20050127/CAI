@@ -1,0 +1,9 @@
+{
+  "strict_best_learning_rate": 0.0005,
+  "strict_best_val_macro_f1": 0.9232601709431101,
+  "strict_best_val_accuracy": 0.9226594301221167,
+  "recommended_learning_rate_under_0p001_tolerance": 0.0005,
+  "recommended_val_macro_f1": 0.9232601709431101,
+  "recommended_val_accuracy": 0.9226594301221167,
+  "recommended_val_loss": 0.2979992268912845
+}

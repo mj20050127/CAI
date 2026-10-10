@@ -1,0 +1,15 @@
+{
+  "dimensions_compared": [
+    5000,
+    10000,
+    15000,
+    20000,
+    25000
+  ],
+  "strict_best_max_features": 20000,
+  "strict_best_val_macro_f1": 0.9380933861966188,
+  "practical_tie_tolerance": 0.001,
+  "recommended_max_features": 20000,
+  "recommended_val_macro_f1": 0.9380933861966188,
+  "recommendation_rule": "Choose the smallest max_features within 0.001 Macro-F1 of the strict best."
+}

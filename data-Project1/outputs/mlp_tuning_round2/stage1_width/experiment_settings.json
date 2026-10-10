@@ -1,0 +1,31 @@
+{
+  "stage": "round2_stage1_width",
+  "controlled_variable": "hidden_width",
+  "hidden_widths": [
+    50,
+    75,
+    100,
+    150,
+    200
+  ],
+  "alpha": 0.0001,
+  "learning_rate_init": 0.001,
+  "mini_batch_size": 128,
+  "max_epochs": 60,
+  "validation_size": 0.2,
+  "split_random_state": 42,
+  "model_random_state": 42,
+  "batch_random_state": 42,
+  "selection_metric": "val_macro_f1",
+  "raw_text_headers_preserved": true,
+  "official_test_set_used": false,
+  "tfidf": {
+    "max_features": 5000,
+    "lowercase": true,
+    "ngram_range": [
+      1,
+      1
+    ],
+    "fit_on_training_subset_only": true
+  }
+}

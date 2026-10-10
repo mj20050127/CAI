@@ -1,0 +1,56 @@
+{
+  "experiment": "text_preprocessing_comparison",
+  "configurations": [
+    {
+      "name": "P0_raw",
+      "description": "Raw email text",
+      "text_mode": "raw",
+      "remove_quotes_and_signature": false,
+      "stop_words": null
+    },
+    {
+      "name": "P1_subject_body",
+      "description": "Keep Subject and body; remove other headers",
+      "text_mode": "subject_body",
+      "remove_quotes_and_signature": false,
+      "stop_words": null
+    },
+    {
+      "name": "P2_subject_body_clean_reply",
+      "description": "P1 plus quoted-line and signature removal",
+      "text_mode": "subject_body",
+      "remove_quotes_and_signature": true,
+      "stop_words": null
+    },
+    {
+      "name": "P3_clean_reply_stopwords",
+      "description": "P2 plus English stop-word removal",
+      "text_mode": "subject_body",
+      "remove_quotes_and_signature": true,
+      "stop_words": "english"
+    }
+  ],
+  "validation_size": 0.2,
+  "split_random_state": 42,
+  "model_random_state": 42,
+  "batch_random_state": 42,
+  "hidden_layer_sizes": [
+    100
+  ],
+  "alpha": 0.01,
+  "learning_rate_init": 0.0005,
+  "mini_batch_size": 128,
+  "max_epochs": 80,
+  "primary_selection_metric": "val_macro_f1",
+  "practical_tie_tolerance": 0.001,
+  "official_test_set_used": false,
+  "tfidf": {
+    "max_features": 20000,
+    "lowercase": true,
+    "ngram_range": [
+      1,
+      1
+    ],
+    "fit_on_training_subset_only": true
+  }
+}

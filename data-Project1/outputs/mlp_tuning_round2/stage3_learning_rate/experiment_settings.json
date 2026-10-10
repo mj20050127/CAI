@@ -1,0 +1,38 @@
+{
+  "stage": "round2_stage3_learning_rate",
+  "controlled_variable": "learning_rate_init",
+  "hidden_layer_sizes": [
+    100
+  ],
+  "alpha": 0.01,
+  "learning_rate_values": [
+    0.0003,
+    0.0005,
+    0.001,
+    0.002
+  ],
+  "mini_batch_size": 128,
+  "max_epochs": 80,
+  "validation_size": 0.2,
+  "split_random_state": 42,
+  "model_random_state": 42,
+  "batch_random_state": 42,
+  "primary_selection_metric": "val_macro_f1",
+  "practical_tie_tolerance": 0.001,
+  "practical_tie_breakers": [
+    "val_accuracy",
+    "val_loss",
+    "smaller_learning_rate"
+  ],
+  "raw_text_headers_preserved": true,
+  "official_test_set_used": false,
+  "tfidf": {
+    "max_features": 5000,
+    "lowercase": true,
+    "ngram_range": [
+      1,
+      1
+    ],
+    "fit_on_training_subset_only": true
+  }
+}
