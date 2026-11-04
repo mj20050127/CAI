@@ -1,0 +1,647 @@
+{
+  "minimax": {
+    "value": 5,
+    "stats": {
+      "node_visits": 15,
+      "leaf_evals": 8,
+      "cutoff_events": 0,
+      "pruned_branches": 0,
+      "elapsed_ms": 0.01780001912266016
+    },
+    "trace": [
+      {
+        "event": "enter",
+        "path": [],
+        "player": "MAX",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          0
+        ],
+        "player": "MIN",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          0,
+          0
+        ],
+        "player": "MAX",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          0,
+          0,
+          0
+        ],
+        "player": "MIN",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "leaf",
+        "path": [
+          0,
+          0,
+          0
+        ],
+        "value": 3,
+        "bound": "EXACT"
+      },
+      {
+        "event": "enter",
+        "path": [
+          0,
+          0,
+          1
+        ],
+        "player": "MIN",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "leaf",
+        "path": [
+          0,
+          0,
+          1
+        ],
+        "value": 5,
+        "bound": "EXACT"
+      },
+      {
+        "event": "return",
+        "path": [
+          0,
+          0
+        ],
+        "player": "MAX",
+        "value": 5,
+        "bound": "EXACT",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          0,
+          1
+        ],
+        "player": "MAX",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          0,
+          1,
+          0
+        ],
+        "player": "MIN",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "leaf",
+        "path": [
+          0,
+          1,
+          0
+        ],
+        "value": 6,
+        "bound": "EXACT"
+      },
+      {
+        "event": "enter",
+        "path": [
+          0,
+          1,
+          1
+        ],
+        "player": "MIN",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "leaf",
+        "path": [
+          0,
+          1,
+          1
+        ],
+        "value": 9,
+        "bound": "EXACT"
+      },
+      {
+        "event": "return",
+        "path": [
+          0,
+          1
+        ],
+        "player": "MAX",
+        "value": 9,
+        "bound": "EXACT",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "return",
+        "path": [
+          0
+        ],
+        "player": "MIN",
+        "value": 5,
+        "bound": "EXACT",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          1
+        ],
+        "player": "MIN",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          1,
+          0
+        ],
+        "player": "MAX",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          1,
+          0,
+          0
+        ],
+        "player": "MIN",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "leaf",
+        "path": [
+          1,
+          0,
+          0
+        ],
+        "value": 6,
+        "bound": "EXACT"
+      },
+      {
+        "event": "enter",
+        "path": [
+          1,
+          0,
+          1
+        ],
+        "player": "MIN",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "leaf",
+        "path": [
+          1,
+          0,
+          1
+        ],
+        "value": 9,
+        "bound": "EXACT"
+      },
+      {
+        "event": "return",
+        "path": [
+          1,
+          0
+        ],
+        "player": "MAX",
+        "value": 9,
+        "bound": "EXACT",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          1,
+          1
+        ],
+        "player": "MAX",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          1,
+          1,
+          0
+        ],
+        "player": "MIN",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "leaf",
+        "path": [
+          1,
+          1,
+          0
+        ],
+        "value": 1,
+        "bound": "EXACT"
+      },
+      {
+        "event": "enter",
+        "path": [
+          1,
+          1,
+          1
+        ],
+        "player": "MIN",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "leaf",
+        "path": [
+          1,
+          1,
+          1
+        ],
+        "value": 2,
+        "bound": "EXACT"
+      },
+      {
+        "event": "return",
+        "path": [
+          1,
+          1
+        ],
+        "player": "MAX",
+        "value": 2,
+        "bound": "EXACT",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "return",
+        "path": [
+          1
+        ],
+        "player": "MIN",
+        "value": 2,
+        "bound": "EXACT",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "return",
+        "path": [],
+        "player": "MAX",
+        "value": 5,
+        "bound": "EXACT",
+        "alpha": "-inf",
+        "beta": "+inf"
+      }
+    ]
+  },
+  "alpha_beta": {
+    "value": 5,
+    "stats": {
+      "node_visits": 14,
+      "leaf_evals": 7,
+      "cutoff_events": 1,
+      "pruned_branches": 1,
+      "elapsed_ms": 0.01999997766688466
+    },
+    "trace": [
+      {
+        "event": "enter",
+        "path": [],
+        "player": "MAX",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          0
+        ],
+        "player": "MIN",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          0,
+          0
+        ],
+        "player": "MAX",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          0,
+          0,
+          0
+        ],
+        "player": "MIN",
+        "alpha": "-inf",
+        "beta": "+inf"
+      },
+      {
+        "event": "leaf",
+        "path": [
+          0,
+          0,
+          0
+        ],
+        "value": 3,
+        "bound": "EXACT"
+      },
+      {
+        "event": "enter",
+        "path": [
+          0,
+          0,
+          1
+        ],
+        "player": "MIN",
+        "alpha": 3,
+        "beta": "+inf"
+      },
+      {
+        "event": "leaf",
+        "path": [
+          0,
+          0,
+          1
+        ],
+        "value": 5,
+        "bound": "EXACT"
+      },
+      {
+        "event": "return",
+        "path": [
+          0,
+          0
+        ],
+        "player": "MAX",
+        "value": 5,
+        "bound": "EXACT",
+        "alpha": 5,
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          0,
+          1
+        ],
+        "player": "MAX",
+        "alpha": "-inf",
+        "beta": 5
+      },
+      {
+        "event": "enter",
+        "path": [
+          0,
+          1,
+          0
+        ],
+        "player": "MIN",
+        "alpha": "-inf",
+        "beta": 5
+      },
+      {
+        "event": "leaf",
+        "path": [
+          0,
+          1,
+          0
+        ],
+        "value": 6,
+        "bound": "EXACT"
+      },
+      {
+        "event": "cutoff",
+        "path": [
+          0,
+          1
+        ],
+        "player": "MAX",
+        "value": 6,
+        "alpha": 6,
+        "beta": 5,
+        "skipped_paths": [
+          [
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "event": "return",
+        "path": [
+          0,
+          1
+        ],
+        "player": "MAX",
+        "value": 6,
+        "bound": "LOWER",
+        "alpha": 6,
+        "beta": 5
+      },
+      {
+        "event": "return",
+        "path": [
+          0
+        ],
+        "player": "MIN",
+        "value": 5,
+        "bound": "EXACT",
+        "alpha": "-inf",
+        "beta": 5
+      },
+      {
+        "event": "enter",
+        "path": [
+          1
+        ],
+        "player": "MIN",
+        "alpha": 5,
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          1,
+          0
+        ],
+        "player": "MAX",
+        "alpha": 5,
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          1,
+          0,
+          0
+        ],
+        "player": "MIN",
+        "alpha": 5,
+        "beta": "+inf"
+      },
+      {
+        "event": "leaf",
+        "path": [
+          1,
+          0,
+          0
+        ],
+        "value": 6,
+        "bound": "EXACT"
+      },
+      {
+        "event": "enter",
+        "path": [
+          1,
+          0,
+          1
+        ],
+        "player": "MIN",
+        "alpha": 6,
+        "beta": "+inf"
+      },
+      {
+        "event": "leaf",
+        "path": [
+          1,
+          0,
+          1
+        ],
+        "value": 9,
+        "bound": "EXACT"
+      },
+      {
+        "event": "return",
+        "path": [
+          1,
+          0
+        ],
+        "player": "MAX",
+        "value": 9,
+        "bound": "EXACT",
+        "alpha": 9,
+        "beta": "+inf"
+      },
+      {
+        "event": "enter",
+        "path": [
+          1,
+          1
+        ],
+        "player": "MAX",
+        "alpha": 5,
+        "beta": 9
+      },
+      {
+        "event": "enter",
+        "path": [
+          1,
+          1,
+          0
+        ],
+        "player": "MIN",
+        "alpha": 5,
+        "beta": 9
+      },
+      {
+        "event": "leaf",
+        "path": [
+          1,
+          1,
+          0
+        ],
+        "value": 1,
+        "bound": "EXACT"
+      },
+      {
+        "event": "enter",
+        "path": [
+          1,
+          1,
+          1
+        ],
+        "player": "MIN",
+        "alpha": 5,
+        "beta": 9
+      },
+      {
+        "event": "leaf",
+        "path": [
+          1,
+          1,
+          1
+        ],
+        "value": 2,
+        "bound": "EXACT"
+      },
+      {
+        "event": "return",
+        "path": [
+          1,
+          1
+        ],
+        "player": "MAX",
+        "value": 2,
+        "bound": "UPPER",
+        "alpha": 5,
+        "beta": 9
+      },
+      {
+        "event": "return",
+        "path": [
+          1
+        ],
+        "player": "MIN",
+        "value": 2,
+        "bound": "UPPER",
+        "alpha": 5,
+        "beta": 2
+      },
+      {
+        "event": "return",
+        "path": [],
+        "player": "MAX",
+        "value": 5,
+        "bound": "EXACT",
+        "alpha": 5,
+        "beta": "+inf"
+      }
+    ]
+  }
+}

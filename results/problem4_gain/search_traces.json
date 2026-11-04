@@ -1,0 +1,5668 @@
+{
+  "original": {
+    "best_target": "T3",
+    "best_value": 3,
+    "stats": {
+      "node_visits": 47,
+      "leaf_evals": 16,
+      "cutoff_events": 5,
+      "pruned_branches": 6,
+      "elapsed_ms": 0.4292
+    },
+    "trace": [
+      {
+        "event": "visit",
+        "path": [],
+        "state": {
+          "pos_a": "A",
+          "pos_b": "B",
+          "remaining": [
+            "T1",
+            "T2",
+            "T3",
+            "T4"
+          ],
+          "score_a": 0,
+          "score_b": 0,
+          "turn": "A"
+        },
+        "remaining_depth": 4,
+        "alpha": null,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [],
+        "player": "A",
+        "source": "A",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": -1
+          },
+          {
+            "target": "T2",
+            "gain": 2
+          },
+          {
+            "target": "T3",
+            "gain": -1
+          },
+          {
+            "target": "T4",
+            "gain": -1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [],
+        "player": "A",
+        "source": "A",
+        "target": "T1",
+        "distance": 10,
+        "treasure_value": 9,
+        "gain": -1,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "B",
+          "remaining": [
+            "T2",
+            "T3",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 0,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "B",
+          "remaining": [
+            "T2",
+            "T3",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 0,
+          "turn": "B"
+        },
+        "remaining_depth": 3,
+        "alpha": null,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T1"
+        ],
+        "player": "B",
+        "source": "B",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": -2
+          },
+          {
+            "target": "T3",
+            "gain": 3
+          },
+          {
+            "target": "T4",
+            "gain": -3
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T2",
+        "distance": 8,
+        "treasure_value": 6,
+        "gain": -2,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T2",
+          "remaining": [
+            "T3",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": -2,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T2",
+          "remaining": [
+            "T3",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": -2,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": null,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T1",
+          "T2"
+        ],
+        "player": "A",
+        "source": "T1",
+        "candidates": [
+          {
+            "target": "T3",
+            "gain": 1
+          },
+          {
+            "target": "T4",
+            "gain": -5
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1",
+          "T2"
+        ],
+        "player": "A",
+        "source": "T1",
+        "target": "T3",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "T2",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": 0,
+          "score_b": -2,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "T2",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": 0,
+          "score_b": -2,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": null,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "player": "B",
+        "source": "T2",
+        "candidates": [
+          {
+            "target": "T4",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "player": "B",
+        "source": "T2",
+        "target": "T4",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": 0,
+          "score_b": -1,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T2",
+          "T3",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": 0,
+          "score_b": -1,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": null,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T1",
+          "T2",
+          "T3",
+          "T4"
+        ],
+        "value": 1,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "value": 1,
+        "value_kind": "exact",
+        "best_target": "T4"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1",
+          "T2"
+        ],
+        "player": "A",
+        "source": "T1",
+        "target": "T4",
+        "distance": 12,
+        "treasure_value": 7,
+        "gain": -5,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T2",
+          "remaining": [
+            "T3"
+          ],
+          "score_a": -6,
+          "score_b": -2,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T2",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T2",
+          "remaining": [
+            "T3"
+          ],
+          "score_a": -6,
+          "score_b": -2,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T1",
+          "T2",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T2",
+        "candidates": [
+          {
+            "target": "T3",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1",
+          "T2",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T2",
+        "target": "T3",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T3",
+          "remaining": [],
+          "score_a": -6,
+          "score_b": -1,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T2",
+          "T4",
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T3",
+          "remaining": [],
+          "score_a": -6,
+          "score_b": -1,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T1",
+          "T2",
+          "T4",
+          "T3"
+        ],
+        "value": -5,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T1",
+          "T2",
+          "T4"
+        ],
+        "value": -5,
+        "value_kind": "upper_bound",
+        "best_target": "T3"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T1",
+          "T2"
+        ],
+        "value": 1,
+        "value_kind": "exact",
+        "best_target": "T3"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T3",
+        "distance": 4,
+        "treasure_value": 7,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T3",
+          "remaining": [
+            "T2",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 3,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T3",
+          "remaining": [
+            "T2",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 3,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": null,
+        "beta": 1
+      },
+      {
+        "event": "order",
+        "path": [
+          "T1",
+          "T3"
+        ],
+        "player": "A",
+        "source": "T1",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": 0
+          },
+          {
+            "target": "T4",
+            "gain": -5
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1",
+          "T3"
+        ],
+        "player": "A",
+        "source": "T1",
+        "target": "T2",
+        "distance": 6,
+        "treasure_value": 6,
+        "gain": 0,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T3",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 3,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T3",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T3",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 3,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": null,
+        "beta": 1
+      },
+      {
+        "event": "order",
+        "path": [
+          "T1",
+          "T3",
+          "T2"
+        ],
+        "player": "B",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T4",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1",
+          "T3",
+          "T2"
+        ],
+        "player": "B",
+        "source": "T3",
+        "target": "T4",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": -1,
+          "score_b": 4,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T3",
+          "T2",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": -1,
+          "score_b": 4,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": null,
+        "beta": 1
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T1",
+          "T3",
+          "T2",
+          "T4"
+        ],
+        "value": -5,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T1",
+          "T3",
+          "T2"
+        ],
+        "value": -5,
+        "value_kind": "exact",
+        "best_target": "T4"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1",
+          "T3"
+        ],
+        "player": "A",
+        "source": "T1",
+        "target": "T4",
+        "distance": 12,
+        "treasure_value": 7,
+        "gain": -5,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T3",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": -6,
+          "score_b": 3,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T3",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T3",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": -6,
+          "score_b": 3,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": -5,
+        "beta": 1
+      },
+      {
+        "event": "order",
+        "path": [
+          "T1",
+          "T3",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": 0
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1",
+          "T3",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T3",
+        "target": "T2",
+        "distance": 6,
+        "treasure_value": 6,
+        "gain": 0,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": -6,
+          "score_b": 3,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T3",
+          "T4",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": -6,
+          "score_b": 3,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": -5,
+        "beta": 1
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T1",
+          "T3",
+          "T4",
+          "T2"
+        ],
+        "value": -9,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T1",
+          "T3",
+          "T4"
+        ],
+        "value": -9,
+        "value_kind": "upper_bound",
+        "best_target": "T2"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T1",
+          "T3"
+        ],
+        "value": -5,
+        "value_kind": "exact",
+        "best_target": "T2"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T4",
+        "distance": 10,
+        "treasure_value": 7,
+        "gain": -3,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [
+            "T2",
+            "T3"
+          ],
+          "score_a": -1,
+          "score_b": -3,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [
+            "T2",
+            "T3"
+          ],
+          "score_a": -1,
+          "score_b": -3,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": null,
+        "beta": -5
+      },
+      {
+        "event": "order",
+        "path": [
+          "T1",
+          "T4"
+        ],
+        "player": "A",
+        "source": "T1",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": 0
+          },
+          {
+            "target": "T3",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1",
+          "T4"
+        ],
+        "player": "A",
+        "source": "T1",
+        "target": "T2",
+        "distance": 6,
+        "treasure_value": 6,
+        "gain": 0,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T4",
+          "remaining": [
+            "T3"
+          ],
+          "score_a": -1,
+          "score_b": -3,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T4",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T4",
+          "remaining": [
+            "T3"
+          ],
+          "score_a": -1,
+          "score_b": -3,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": null,
+        "beta": -5
+      },
+      {
+        "event": "order",
+        "path": [
+          "T1",
+          "T4",
+          "T2"
+        ],
+        "player": "B",
+        "source": "T4",
+        "candidates": [
+          {
+            "target": "T3",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1",
+          "T4",
+          "T2"
+        ],
+        "player": "B",
+        "source": "T4",
+        "target": "T3",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T3",
+          "remaining": [],
+          "score_a": -1,
+          "score_b": -2,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T4",
+          "T2",
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T3",
+          "remaining": [],
+          "score_a": -1,
+          "score_b": -2,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": null,
+        "beta": -5
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T1",
+          "T4",
+          "T2",
+          "T3"
+        ],
+        "value": 1,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T1",
+          "T4",
+          "T2"
+        ],
+        "value": 1,
+        "value_kind": "lower_bound",
+        "best_target": "T3"
+      },
+      {
+        "event": "cutoff",
+        "path": [
+          "T1",
+          "T4"
+        ],
+        "alpha": 1,
+        "beta": -5,
+        "skipped_targets": [
+          "T3"
+        ]
+      },
+      {
+        "event": "return",
+        "path": [
+          "T1",
+          "T4"
+        ],
+        "value": 1,
+        "value_kind": "lower_bound",
+        "best_target": "T2"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T1"
+        ],
+        "value": -5,
+        "value_kind": "exact",
+        "best_target": "T3"
+      },
+      {
+        "event": "action",
+        "path": [],
+        "player": "A",
+        "source": "A",
+        "target": "T2",
+        "distance": 4,
+        "treasure_value": 6,
+        "gain": 2,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "B",
+          "remaining": [
+            "T1",
+            "T3",
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": 0,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "B",
+          "remaining": [
+            "T1",
+            "T3",
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": 0,
+          "turn": "B"
+        },
+        "remaining_depth": 3,
+        "alpha": -5,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2"
+        ],
+        "player": "B",
+        "source": "B",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": 1
+          },
+          {
+            "target": "T3",
+            "gain": 3
+          },
+          {
+            "target": "T4",
+            "gain": -3
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T1",
+        "distance": 8,
+        "treasure_value": 9,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T1",
+          "remaining": [
+            "T3",
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": 1,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T1",
+          "remaining": [
+            "T3",
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": 1,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": -5,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2",
+          "T1"
+        ],
+        "player": "A",
+        "source": "T2",
+        "candidates": [
+          {
+            "target": "T3",
+            "gain": 1
+          },
+          {
+            "target": "T4",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T1"
+        ],
+        "player": "A",
+        "source": "T2",
+        "target": "T3",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "T1",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": 3,
+          "score_b": 1,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T1",
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "T1",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": 3,
+          "score_b": 1,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": -5,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2",
+          "T1",
+          "T3"
+        ],
+        "player": "B",
+        "source": "T1",
+        "candidates": [
+          {
+            "target": "T4",
+            "gain": -5
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T1",
+          "T3"
+        ],
+        "player": "B",
+        "source": "T1",
+        "target": "T4",
+        "distance": 12,
+        "treasure_value": 7,
+        "gain": -5,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": 3,
+          "score_b": -4,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T1",
+          "T3",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": 3,
+          "score_b": -4,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": -5,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T2",
+          "T1",
+          "T3",
+          "T4"
+        ],
+        "value": 7,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2",
+          "T1",
+          "T3"
+        ],
+        "value": 7,
+        "value_kind": "exact",
+        "best_target": "T4"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T1"
+        ],
+        "player": "A",
+        "source": "T2",
+        "target": "T4",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T1",
+          "remaining": [
+            "T3"
+          ],
+          "score_a": 3,
+          "score_b": 1,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T1",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T1",
+          "remaining": [
+            "T3"
+          ],
+          "score_a": 3,
+          "score_b": 1,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 7,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2",
+          "T1",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T1",
+        "candidates": [
+          {
+            "target": "T3",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T1",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T1",
+        "target": "T3",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T3",
+          "remaining": [],
+          "score_a": 3,
+          "score_b": 2,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T1",
+          "T4",
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T3",
+          "remaining": [],
+          "score_a": 3,
+          "score_b": 2,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 7,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T2",
+          "T1",
+          "T4",
+          "T3"
+        ],
+        "value": 1,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2",
+          "T1",
+          "T4"
+        ],
+        "value": 1,
+        "value_kind": "upper_bound",
+        "best_target": "T3"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2",
+          "T1"
+        ],
+        "value": 7,
+        "value_kind": "exact",
+        "best_target": "T3"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T3",
+        "distance": 4,
+        "treasure_value": 7,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T3",
+          "remaining": [
+            "T1",
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": 3,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T3",
+          "remaining": [
+            "T1",
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": 3,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": -5,
+        "beta": 7
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2",
+          "T3"
+        ],
+        "player": "A",
+        "source": "T2",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": 3
+          },
+          {
+            "target": "T4",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T3"
+        ],
+        "player": "A",
+        "source": "T2",
+        "target": "T1",
+        "distance": 6,
+        "treasure_value": 9,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T3",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": 5,
+          "score_b": 3,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T3",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T3",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": 5,
+          "score_b": 3,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": -5,
+        "beta": 7
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2",
+          "T3",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T4",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T3",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T3",
+        "target": "T4",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": 5,
+          "score_b": 4,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": 5,
+          "score_b": 4,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": -5,
+        "beta": 7
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T2",
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "value": 1,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2",
+          "T3",
+          "T1"
+        ],
+        "value": 1,
+        "value_kind": "exact",
+        "best_target": "T4"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T3"
+        ],
+        "player": "A",
+        "source": "T2",
+        "target": "T4",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T3",
+          "remaining": [
+            "T1"
+          ],
+          "score_a": 3,
+          "score_b": 3,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T3",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T3",
+          "remaining": [
+            "T1"
+          ],
+          "score_a": 3,
+          "score_b": 3,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 1,
+        "beta": 7
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2",
+          "T3",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": 3
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T3",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T3",
+        "target": "T1",
+        "distance": 6,
+        "treasure_value": 9,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T1",
+          "remaining": [],
+          "score_a": 3,
+          "score_b": 6,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T3",
+          "T4",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T1",
+          "remaining": [],
+          "score_a": 3,
+          "score_b": 6,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 1,
+        "beta": 7
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T2",
+          "T3",
+          "T4",
+          "T1"
+        ],
+        "value": -3,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2",
+          "T3",
+          "T4"
+        ],
+        "value": -3,
+        "value_kind": "upper_bound",
+        "best_target": "T1"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2",
+          "T3"
+        ],
+        "value": 1,
+        "value_kind": "exact",
+        "best_target": "T1"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T4",
+        "distance": 10,
+        "treasure_value": 7,
+        "gain": -3,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T4",
+          "remaining": [
+            "T1",
+            "T3"
+          ],
+          "score_a": 2,
+          "score_b": -3,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T4",
+          "remaining": [
+            "T1",
+            "T3"
+          ],
+          "score_a": 2,
+          "score_b": -3,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": -5,
+        "beta": 1
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2",
+          "T4"
+        ],
+        "player": "A",
+        "source": "T2",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": 3
+          },
+          {
+            "target": "T3",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T4"
+        ],
+        "player": "A",
+        "source": "T2",
+        "target": "T1",
+        "distance": 6,
+        "treasure_value": 9,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [
+            "T3"
+          ],
+          "score_a": 5,
+          "score_b": -3,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T4",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [
+            "T3"
+          ],
+          "score_a": 5,
+          "score_b": -3,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": -5,
+        "beta": 1
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2",
+          "T4",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T4",
+        "candidates": [
+          {
+            "target": "T3",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T4",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T4",
+        "target": "T3",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T3",
+          "remaining": [],
+          "score_a": 5,
+          "score_b": -2,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T4",
+          "T1",
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T3",
+          "remaining": [],
+          "score_a": 5,
+          "score_b": -2,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": -5,
+        "beta": 1
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T2",
+          "T4",
+          "T1",
+          "T3"
+        ],
+        "value": 7,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2",
+          "T4",
+          "T1"
+        ],
+        "value": 7,
+        "value_kind": "lower_bound",
+        "best_target": "T3"
+      },
+      {
+        "event": "cutoff",
+        "path": [
+          "T2",
+          "T4"
+        ],
+        "alpha": 7,
+        "beta": 1,
+        "skipped_targets": [
+          "T3"
+        ]
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2",
+          "T4"
+        ],
+        "value": 7,
+        "value_kind": "lower_bound",
+        "best_target": "T1"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2"
+        ],
+        "value": 1,
+        "value_kind": "exact",
+        "best_target": "T3"
+      },
+      {
+        "event": "action",
+        "path": [],
+        "player": "A",
+        "source": "A",
+        "target": "T3",
+        "distance": 8,
+        "treasure_value": 7,
+        "gain": -1,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "B",
+          "remaining": [
+            "T1",
+            "T2",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 0,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "B",
+          "remaining": [
+            "T1",
+            "T2",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 0,
+          "turn": "B"
+        },
+        "remaining_depth": 3,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3"
+        ],
+        "player": "B",
+        "source": "B",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": 1
+          },
+          {
+            "target": "T2",
+            "gain": -2
+          },
+          {
+            "target": "T4",
+            "gain": -3
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T1",
+        "distance": 8,
+        "treasure_value": 9,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "T1",
+          "remaining": [
+            "T2",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 1,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "T1",
+          "remaining": [
+            "T2",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 1,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3",
+          "T1"
+        ],
+        "player": "A",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": 0
+          },
+          {
+            "target": "T4",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T1"
+        ],
+        "player": "A",
+        "source": "T3",
+        "target": "T2",
+        "distance": 6,
+        "treasure_value": 6,
+        "gain": 0,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T1",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 1,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T1",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T1",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 1,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3",
+          "T1",
+          "T2"
+        ],
+        "player": "B",
+        "source": "T1",
+        "candidates": [
+          {
+            "target": "T4",
+            "gain": -5
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T1",
+          "T2"
+        ],
+        "player": "B",
+        "source": "T1",
+        "target": "T4",
+        "distance": 12,
+        "treasure_value": 7,
+        "gain": -5,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": -1,
+          "score_b": -4,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T1",
+          "T2",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": -1,
+          "score_b": -4,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T3",
+          "T1",
+          "T2",
+          "T4"
+        ],
+        "value": 3,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3",
+          "T1",
+          "T2"
+        ],
+        "value": 3,
+        "value_kind": "exact",
+        "best_target": "T4"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T1"
+        ],
+        "player": "A",
+        "source": "T3",
+        "target": "T4",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T1",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": 0,
+          "score_b": 1,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T1",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": 0,
+          "score_b": 1,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 3,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T1",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": 0
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T1",
+        "target": "T2",
+        "distance": 6,
+        "treasure_value": 6,
+        "gain": 0,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": 0,
+          "score_b": 1,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T1",
+          "T4",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": 0,
+          "score_b": 1,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 3,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T3",
+          "T1",
+          "T4",
+          "T2"
+        ],
+        "value": -1,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "value": -1,
+        "value_kind": "upper_bound",
+        "best_target": "T2"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3",
+          "T1"
+        ],
+        "value": 3,
+        "value_kind": "exact",
+        "best_target": "T2"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T2",
+        "distance": 8,
+        "treasure_value": 6,
+        "gain": -2,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "T2",
+          "remaining": [
+            "T1",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": -2,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "T2",
+          "remaining": [
+            "T1",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": -2,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": 1,
+        "beta": 3
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3",
+          "T2"
+        ],
+        "player": "A",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": 3
+          },
+          {
+            "target": "T4",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T2"
+        ],
+        "player": "A",
+        "source": "T3",
+        "target": "T1",
+        "distance": 6,
+        "treasure_value": 9,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T2",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": -2,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T2",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T2",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": -2,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 1,
+        "beta": 3
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3",
+          "T2",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T2",
+        "candidates": [
+          {
+            "target": "T4",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T2",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T2",
+        "target": "T4",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": 2,
+          "score_b": -1,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T2",
+          "T1",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": 2,
+          "score_b": -1,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 1,
+        "beta": 3
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T3",
+          "T2",
+          "T1",
+          "T4"
+        ],
+        "value": 3,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3",
+          "T2",
+          "T1"
+        ],
+        "value": 3,
+        "value_kind": "lower_bound",
+        "best_target": "T4"
+      },
+      {
+        "event": "cutoff",
+        "path": [
+          "T3",
+          "T2"
+        ],
+        "alpha": 3,
+        "beta": 3,
+        "skipped_targets": [
+          "T4"
+        ]
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3",
+          "T2"
+        ],
+        "value": 3,
+        "value_kind": "lower_bound",
+        "best_target": "T1"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T4",
+        "distance": 10,
+        "treasure_value": 7,
+        "gain": -3,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "T4",
+          "remaining": [
+            "T1",
+            "T2"
+          ],
+          "score_a": -1,
+          "score_b": -3,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "T4",
+          "remaining": [
+            "T1",
+            "T2"
+          ],
+          "score_a": -1,
+          "score_b": -3,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": 1,
+        "beta": 3
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3",
+          "T4"
+        ],
+        "player": "A",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": 3
+          },
+          {
+            "target": "T2",
+            "gain": 0
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T4"
+        ],
+        "player": "A",
+        "source": "T3",
+        "target": "T1",
+        "distance": 6,
+        "treasure_value": 9,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": 2,
+          "score_b": -3,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T4",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": 2,
+          "score_b": -3,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 1,
+        "beta": 3
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3",
+          "T4",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T4",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": 0
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T4",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T4",
+        "target": "T2",
+        "distance": 6,
+        "treasure_value": 6,
+        "gain": 0,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": 2,
+          "score_b": -3,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T4",
+          "T1",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": 2,
+          "score_b": -3,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 1,
+        "beta": 3
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T3",
+          "T4",
+          "T1",
+          "T2"
+        ],
+        "value": 5,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3",
+          "T4",
+          "T1"
+        ],
+        "value": 5,
+        "value_kind": "lower_bound",
+        "best_target": "T2"
+      },
+      {
+        "event": "cutoff",
+        "path": [
+          "T3",
+          "T4"
+        ],
+        "alpha": 5,
+        "beta": 3,
+        "skipped_targets": [
+          "T2"
+        ]
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3",
+          "T4"
+        ],
+        "value": 5,
+        "value_kind": "lower_bound",
+        "best_target": "T1"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3"
+        ],
+        "value": 3,
+        "value_kind": "exact",
+        "best_target": "T1"
+      },
+      {
+        "event": "action",
+        "path": [],
+        "player": "A",
+        "source": "A",
+        "target": "T4",
+        "distance": 8,
+        "treasure_value": 7,
+        "gain": -1,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "B",
+          "remaining": [
+            "T1",
+            "T2",
+            "T3"
+          ],
+          "score_a": -1,
+          "score_b": 0,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "B",
+          "remaining": [
+            "T1",
+            "T2",
+            "T3"
+          ],
+          "score_a": -1,
+          "score_b": 0,
+          "turn": "B"
+        },
+        "remaining_depth": 3,
+        "alpha": 3,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T4"
+        ],
+        "player": "B",
+        "source": "B",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": 1
+          },
+          {
+            "target": "T2",
+            "gain": -2
+          },
+          {
+            "target": "T3",
+            "gain": 3
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T4"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T1",
+        "distance": 8,
+        "treasure_value": 9,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T1",
+          "remaining": [
+            "T2",
+            "T3"
+          ],
+          "score_a": -1,
+          "score_b": 1,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T4",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T1",
+          "remaining": [
+            "T2",
+            "T3"
+          ],
+          "score_a": -1,
+          "score_b": 1,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": 3,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T4",
+          "T1"
+        ],
+        "player": "A",
+        "source": "T4",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": 0
+          },
+          {
+            "target": "T3",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T4",
+          "T1"
+        ],
+        "player": "A",
+        "source": "T4",
+        "target": "T2",
+        "distance": 6,
+        "treasure_value": 6,
+        "gain": 0,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T1",
+          "remaining": [
+            "T3"
+          ],
+          "score_a": -1,
+          "score_b": 1,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T4",
+          "T1",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T1",
+          "remaining": [
+            "T3"
+          ],
+          "score_a": -1,
+          "score_b": 1,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 3,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T4",
+          "T1",
+          "T2"
+        ],
+        "player": "B",
+        "source": "T1",
+        "candidates": [
+          {
+            "target": "T3",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T4",
+          "T1",
+          "T2"
+        ],
+        "player": "B",
+        "source": "T1",
+        "target": "T3",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T3",
+          "remaining": [],
+          "score_a": -1,
+          "score_b": 2,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T4",
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T3",
+          "remaining": [],
+          "score_a": -1,
+          "score_b": 2,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 3,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T4",
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "value": -3,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T4",
+          "T1",
+          "T2"
+        ],
+        "value": -3,
+        "value_kind": "upper_bound",
+        "best_target": "T3"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T4",
+          "T1"
+        ],
+        "player": "A",
+        "source": "T4",
+        "target": "T3",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "T1",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": 0,
+          "score_b": 1,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T4",
+          "T1",
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "T1",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": 0,
+          "score_b": 1,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 3,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T4",
+          "T1",
+          "T3"
+        ],
+        "player": "B",
+        "source": "T1",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": 0
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T4",
+          "T1",
+          "T3"
+        ],
+        "player": "B",
+        "source": "T1",
+        "target": "T2",
+        "distance": 6,
+        "treasure_value": 6,
+        "gain": 0,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": 0,
+          "score_b": 1,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T4",
+          "T1",
+          "T3",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": 0,
+          "score_b": 1,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 3,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T4",
+          "T1",
+          "T3",
+          "T2"
+        ],
+        "value": -1,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T4",
+          "T1",
+          "T3"
+        ],
+        "value": -1,
+        "value_kind": "upper_bound",
+        "best_target": "T2"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T4",
+          "T1"
+        ],
+        "value": -1,
+        "value_kind": "upper_bound",
+        "best_target": "T3"
+      },
+      {
+        "event": "cutoff",
+        "path": [
+          "T4"
+        ],
+        "alpha": 3,
+        "beta": -1,
+        "skipped_targets": [
+          "T2",
+          "T3"
+        ]
+      },
+      {
+        "event": "return",
+        "path": [
+          "T4"
+        ],
+        "value": -1,
+        "value_kind": "upper_bound",
+        "best_target": "T1"
+      },
+      {
+        "event": "return",
+        "path": [],
+        "value": 3,
+        "value_kind": "exact",
+        "best_target": "T3"
+      }
+    ]
+  },
+  "gain": {
+    "best_target": "T3",
+    "best_value": 3,
+    "stats": {
+      "node_visits": 37,
+      "leaf_evals": 12,
+      "cutoff_events": 6,
+      "pruned_branches": 8,
+      "elapsed_ms": 0.1903
+    },
+    "trace": [
+      {
+        "event": "visit",
+        "path": [],
+        "state": {
+          "pos_a": "A",
+          "pos_b": "B",
+          "remaining": [
+            "T1",
+            "T2",
+            "T3",
+            "T4"
+          ],
+          "score_a": 0,
+          "score_b": 0,
+          "turn": "A"
+        },
+        "remaining_depth": 4,
+        "alpha": null,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [],
+        "player": "A",
+        "source": "A",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": 2
+          },
+          {
+            "target": "T1",
+            "gain": -1
+          },
+          {
+            "target": "T3",
+            "gain": -1
+          },
+          {
+            "target": "T4",
+            "gain": -1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [],
+        "player": "A",
+        "source": "A",
+        "target": "T2",
+        "distance": 4,
+        "treasure_value": 6,
+        "gain": 2,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "B",
+          "remaining": [
+            "T1",
+            "T3",
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": 0,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "B",
+          "remaining": [
+            "T1",
+            "T3",
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": 0,
+          "turn": "B"
+        },
+        "remaining_depth": 3,
+        "alpha": null,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2"
+        ],
+        "player": "B",
+        "source": "B",
+        "candidates": [
+          {
+            "target": "T3",
+            "gain": 3
+          },
+          {
+            "target": "T1",
+            "gain": 1
+          },
+          {
+            "target": "T4",
+            "gain": -3
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T3",
+        "distance": 4,
+        "treasure_value": 7,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T3",
+          "remaining": [
+            "T1",
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": 3,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T3",
+          "remaining": [
+            "T1",
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": 3,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": null,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2",
+          "T3"
+        ],
+        "player": "A",
+        "source": "T2",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": 3
+          },
+          {
+            "target": "T4",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T3"
+        ],
+        "player": "A",
+        "source": "T2",
+        "target": "T1",
+        "distance": 6,
+        "treasure_value": 9,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T3",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": 5,
+          "score_b": 3,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T3",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T3",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": 5,
+          "score_b": 3,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": null,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2",
+          "T3",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T4",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T3",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T3",
+        "target": "T4",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": 5,
+          "score_b": 4,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": 5,
+          "score_b": 4,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": null,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T2",
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "value": 1,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2",
+          "T3",
+          "T1"
+        ],
+        "value": 1,
+        "value_kind": "exact",
+        "best_target": "T4"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T3"
+        ],
+        "player": "A",
+        "source": "T2",
+        "target": "T4",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T3",
+          "remaining": [
+            "T1"
+          ],
+          "score_a": 3,
+          "score_b": 3,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T3",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T3",
+          "remaining": [
+            "T1"
+          ],
+          "score_a": 3,
+          "score_b": 3,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2",
+          "T3",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": 3
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T3",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T3",
+        "target": "T1",
+        "distance": 6,
+        "treasure_value": 9,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T1",
+          "remaining": [],
+          "score_a": 3,
+          "score_b": 6,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T3",
+          "T4",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T1",
+          "remaining": [],
+          "score_a": 3,
+          "score_b": 6,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T2",
+          "T3",
+          "T4",
+          "T1"
+        ],
+        "value": -3,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2",
+          "T3",
+          "T4"
+        ],
+        "value": -3,
+        "value_kind": "upper_bound",
+        "best_target": "T1"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2",
+          "T3"
+        ],
+        "value": 1,
+        "value_kind": "exact",
+        "best_target": "T1"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T1",
+        "distance": 8,
+        "treasure_value": 9,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T1",
+          "remaining": [
+            "T3",
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": 1,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T1",
+          "remaining": [
+            "T3",
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": 1,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": null,
+        "beta": 1
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2",
+          "T1"
+        ],
+        "player": "A",
+        "source": "T2",
+        "candidates": [
+          {
+            "target": "T3",
+            "gain": 1
+          },
+          {
+            "target": "T4",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T1"
+        ],
+        "player": "A",
+        "source": "T2",
+        "target": "T3",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "T1",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": 3,
+          "score_b": 1,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T1",
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "T1",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": 3,
+          "score_b": 1,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": null,
+        "beta": 1
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2",
+          "T1",
+          "T3"
+        ],
+        "player": "B",
+        "source": "T1",
+        "candidates": [
+          {
+            "target": "T4",
+            "gain": -5
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T1",
+          "T3"
+        ],
+        "player": "B",
+        "source": "T1",
+        "target": "T4",
+        "distance": 12,
+        "treasure_value": 7,
+        "gain": -5,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": 3,
+          "score_b": -4,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T1",
+          "T3",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": 3,
+          "score_b": -4,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": null,
+        "beta": 1
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T2",
+          "T1",
+          "T3",
+          "T4"
+        ],
+        "value": 7,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2",
+          "T1",
+          "T3"
+        ],
+        "value": 7,
+        "value_kind": "lower_bound",
+        "best_target": "T4"
+      },
+      {
+        "event": "cutoff",
+        "path": [
+          "T2",
+          "T1"
+        ],
+        "alpha": 7,
+        "beta": 1,
+        "skipped_targets": [
+          "T4"
+        ]
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2",
+          "T1"
+        ],
+        "value": 7,
+        "value_kind": "lower_bound",
+        "best_target": "T3"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T4",
+        "distance": 10,
+        "treasure_value": 7,
+        "gain": -3,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T4",
+          "remaining": [
+            "T1",
+            "T3"
+          ],
+          "score_a": 2,
+          "score_b": -3,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T4",
+          "remaining": [
+            "T1",
+            "T3"
+          ],
+          "score_a": 2,
+          "score_b": -3,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": null,
+        "beta": 1
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2",
+          "T4"
+        ],
+        "player": "A",
+        "source": "T2",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": 3
+          },
+          {
+            "target": "T3",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T4"
+        ],
+        "player": "A",
+        "source": "T2",
+        "target": "T1",
+        "distance": 6,
+        "treasure_value": 9,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [
+            "T3"
+          ],
+          "score_a": 5,
+          "score_b": -3,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T4",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [
+            "T3"
+          ],
+          "score_a": 5,
+          "score_b": -3,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": null,
+        "beta": 1
+      },
+      {
+        "event": "order",
+        "path": [
+          "T2",
+          "T4",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T4",
+        "candidates": [
+          {
+            "target": "T3",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T2",
+          "T4",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T4",
+        "target": "T3",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T3",
+          "remaining": [],
+          "score_a": 5,
+          "score_b": -2,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T2",
+          "T4",
+          "T1",
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T3",
+          "remaining": [],
+          "score_a": 5,
+          "score_b": -2,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": null,
+        "beta": 1
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T2",
+          "T4",
+          "T1",
+          "T3"
+        ],
+        "value": 7,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2",
+          "T4",
+          "T1"
+        ],
+        "value": 7,
+        "value_kind": "lower_bound",
+        "best_target": "T3"
+      },
+      {
+        "event": "cutoff",
+        "path": [
+          "T2",
+          "T4"
+        ],
+        "alpha": 7,
+        "beta": 1,
+        "skipped_targets": [
+          "T3"
+        ]
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2",
+          "T4"
+        ],
+        "value": 7,
+        "value_kind": "lower_bound",
+        "best_target": "T1"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T2"
+        ],
+        "value": 1,
+        "value_kind": "exact",
+        "best_target": "T3"
+      },
+      {
+        "event": "action",
+        "path": [],
+        "player": "A",
+        "source": "A",
+        "target": "T1",
+        "distance": 10,
+        "treasure_value": 9,
+        "gain": -1,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "B",
+          "remaining": [
+            "T2",
+            "T3",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 0,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "B",
+          "remaining": [
+            "T2",
+            "T3",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 0,
+          "turn": "B"
+        },
+        "remaining_depth": 3,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T1"
+        ],
+        "player": "B",
+        "source": "B",
+        "candidates": [
+          {
+            "target": "T3",
+            "gain": 3
+          },
+          {
+            "target": "T2",
+            "gain": -2
+          },
+          {
+            "target": "T4",
+            "gain": -3
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T3",
+        "distance": 4,
+        "treasure_value": 7,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T3",
+          "remaining": [
+            "T2",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 3,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T3",
+          "remaining": [
+            "T2",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 3,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T1",
+          "T3"
+        ],
+        "player": "A",
+        "source": "T1",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": 0
+          },
+          {
+            "target": "T4",
+            "gain": -5
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1",
+          "T3"
+        ],
+        "player": "A",
+        "source": "T1",
+        "target": "T2",
+        "distance": 6,
+        "treasure_value": 6,
+        "gain": 0,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T3",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 3,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T3",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T3",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 3,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T1",
+          "T3",
+          "T2"
+        ],
+        "player": "B",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T4",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1",
+          "T3",
+          "T2"
+        ],
+        "player": "B",
+        "source": "T3",
+        "target": "T4",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": -1,
+          "score_b": 4,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T3",
+          "T2",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": -1,
+          "score_b": 4,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T1",
+          "T3",
+          "T2",
+          "T4"
+        ],
+        "value": -5,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T1",
+          "T3",
+          "T2"
+        ],
+        "value": -5,
+        "value_kind": "upper_bound",
+        "best_target": "T4"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1",
+          "T3"
+        ],
+        "player": "A",
+        "source": "T1",
+        "target": "T4",
+        "distance": 12,
+        "treasure_value": 7,
+        "gain": -5,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T3",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": -6,
+          "score_b": 3,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T3",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T3",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": -6,
+          "score_b": 3,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T1",
+          "T3",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": 0
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T1",
+          "T3",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T3",
+        "target": "T2",
+        "distance": 6,
+        "treasure_value": 6,
+        "gain": 0,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": -6,
+          "score_b": 3,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T1",
+          "T3",
+          "T4",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": -6,
+          "score_b": 3,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T1",
+          "T3",
+          "T4",
+          "T2"
+        ],
+        "value": -9,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T1",
+          "T3",
+          "T4"
+        ],
+        "value": -9,
+        "value_kind": "upper_bound",
+        "best_target": "T2"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T1",
+          "T3"
+        ],
+        "value": -5,
+        "value_kind": "upper_bound",
+        "best_target": "T2"
+      },
+      {
+        "event": "cutoff",
+        "path": [
+          "T1"
+        ],
+        "alpha": 1,
+        "beta": -5,
+        "skipped_targets": [
+          "T2",
+          "T4"
+        ]
+      },
+      {
+        "event": "return",
+        "path": [
+          "T1"
+        ],
+        "value": -5,
+        "value_kind": "upper_bound",
+        "best_target": "T3"
+      },
+      {
+        "event": "action",
+        "path": [],
+        "player": "A",
+        "source": "A",
+        "target": "T3",
+        "distance": 8,
+        "treasure_value": 7,
+        "gain": -1,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "B",
+          "remaining": [
+            "T1",
+            "T2",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 0,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "B",
+          "remaining": [
+            "T1",
+            "T2",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 0,
+          "turn": "B"
+        },
+        "remaining_depth": 3,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3"
+        ],
+        "player": "B",
+        "source": "B",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": 1
+          },
+          {
+            "target": "T2",
+            "gain": -2
+          },
+          {
+            "target": "T4",
+            "gain": -3
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T1",
+        "distance": 8,
+        "treasure_value": 9,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "T1",
+          "remaining": [
+            "T2",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 1,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "T1",
+          "remaining": [
+            "T2",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 1,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3",
+          "T1"
+        ],
+        "player": "A",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T4",
+            "gain": 1
+          },
+          {
+            "target": "T2",
+            "gain": 0
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T1"
+        ],
+        "player": "A",
+        "source": "T3",
+        "target": "T4",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T1",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": 0,
+          "score_b": 1,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T1",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": 0,
+          "score_b": 1,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T1",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": 0
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "player": "B",
+        "source": "T1",
+        "target": "T2",
+        "distance": 6,
+        "treasure_value": 6,
+        "gain": 0,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": 0,
+          "score_b": 1,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T1",
+          "T4",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": 0,
+          "score_b": 1,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T3",
+          "T1",
+          "T4",
+          "T2"
+        ],
+        "value": -1,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "value": -1,
+        "value_kind": "upper_bound",
+        "best_target": "T2"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T1"
+        ],
+        "player": "A",
+        "source": "T3",
+        "target": "T2",
+        "distance": 6,
+        "treasure_value": 6,
+        "gain": 0,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T1",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 1,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T1",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T1",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": 1,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3",
+          "T1",
+          "T2"
+        ],
+        "player": "B",
+        "source": "T1",
+        "candidates": [
+          {
+            "target": "T4",
+            "gain": -5
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T1",
+          "T2"
+        ],
+        "player": "B",
+        "source": "T1",
+        "target": "T4",
+        "distance": 12,
+        "treasure_value": 7,
+        "gain": -5,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": -1,
+          "score_b": -4,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T1",
+          "T2",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": -1,
+          "score_b": -4,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 1,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T3",
+          "T1",
+          "T2",
+          "T4"
+        ],
+        "value": 3,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3",
+          "T1",
+          "T2"
+        ],
+        "value": 3,
+        "value_kind": "exact",
+        "best_target": "T4"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3",
+          "T1"
+        ],
+        "value": 3,
+        "value_kind": "exact",
+        "best_target": "T2"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T2",
+        "distance": 8,
+        "treasure_value": 6,
+        "gain": -2,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "T2",
+          "remaining": [
+            "T1",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": -2,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "T2",
+          "remaining": [
+            "T1",
+            "T4"
+          ],
+          "score_a": -1,
+          "score_b": -2,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": 1,
+        "beta": 3
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3",
+          "T2"
+        ],
+        "player": "A",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": 3
+          },
+          {
+            "target": "T4",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T2"
+        ],
+        "player": "A",
+        "source": "T3",
+        "target": "T1",
+        "distance": 6,
+        "treasure_value": 9,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T2",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": -2,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T2",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T2",
+          "remaining": [
+            "T4"
+          ],
+          "score_a": 2,
+          "score_b": -2,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 1,
+        "beta": 3
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3",
+          "T2",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T2",
+        "candidates": [
+          {
+            "target": "T4",
+            "gain": 1
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T2",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T2",
+        "target": "T4",
+        "distance": 6,
+        "treasure_value": 7,
+        "gain": 1,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": 2,
+          "score_b": -1,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T2",
+          "T1",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [],
+          "score_a": 2,
+          "score_b": -1,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 1,
+        "beta": 3
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T3",
+          "T2",
+          "T1",
+          "T4"
+        ],
+        "value": 3,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3",
+          "T2",
+          "T1"
+        ],
+        "value": 3,
+        "value_kind": "lower_bound",
+        "best_target": "T4"
+      },
+      {
+        "event": "cutoff",
+        "path": [
+          "T3",
+          "T2"
+        ],
+        "alpha": 3,
+        "beta": 3,
+        "skipped_targets": [
+          "T4"
+        ]
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3",
+          "T2"
+        ],
+        "value": 3,
+        "value_kind": "lower_bound",
+        "best_target": "T1"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T4",
+        "distance": 10,
+        "treasure_value": 7,
+        "gain": -3,
+        "next_state": {
+          "pos_a": "T3",
+          "pos_b": "T4",
+          "remaining": [
+            "T1",
+            "T2"
+          ],
+          "score_a": -1,
+          "score_b": -3,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T3",
+          "pos_b": "T4",
+          "remaining": [
+            "T1",
+            "T2"
+          ],
+          "score_a": -1,
+          "score_b": -3,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": 1,
+        "beta": 3
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3",
+          "T4"
+        ],
+        "player": "A",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": 3
+          },
+          {
+            "target": "T2",
+            "gain": 0
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T4"
+        ],
+        "player": "A",
+        "source": "T3",
+        "target": "T1",
+        "distance": 6,
+        "treasure_value": 9,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": 2,
+          "score_b": -3,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T4",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T4",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": 2,
+          "score_b": -3,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 1,
+        "beta": 3
+      },
+      {
+        "event": "order",
+        "path": [
+          "T3",
+          "T4",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T4",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": 0
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T3",
+          "T4",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T4",
+        "target": "T2",
+        "distance": 6,
+        "treasure_value": 6,
+        "gain": 0,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": 2,
+          "score_b": -3,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T3",
+          "T4",
+          "T1",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": 2,
+          "score_b": -3,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 1,
+        "beta": 3
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T3",
+          "T4",
+          "T1",
+          "T2"
+        ],
+        "value": 5,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3",
+          "T4",
+          "T1"
+        ],
+        "value": 5,
+        "value_kind": "lower_bound",
+        "best_target": "T2"
+      },
+      {
+        "event": "cutoff",
+        "path": [
+          "T3",
+          "T4"
+        ],
+        "alpha": 5,
+        "beta": 3,
+        "skipped_targets": [
+          "T2"
+        ]
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3",
+          "T4"
+        ],
+        "value": 5,
+        "value_kind": "lower_bound",
+        "best_target": "T1"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T3"
+        ],
+        "value": 3,
+        "value_kind": "exact",
+        "best_target": "T1"
+      },
+      {
+        "event": "action",
+        "path": [],
+        "player": "A",
+        "source": "A",
+        "target": "T4",
+        "distance": 8,
+        "treasure_value": 7,
+        "gain": -1,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "B",
+          "remaining": [
+            "T1",
+            "T2",
+            "T3"
+          ],
+          "score_a": -1,
+          "score_b": 0,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T4"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "B",
+          "remaining": [
+            "T1",
+            "T2",
+            "T3"
+          ],
+          "score_a": -1,
+          "score_b": 0,
+          "turn": "B"
+        },
+        "remaining_depth": 3,
+        "alpha": 3,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T4"
+        ],
+        "player": "B",
+        "source": "B",
+        "candidates": [
+          {
+            "target": "T3",
+            "gain": 3
+          },
+          {
+            "target": "T1",
+            "gain": 1
+          },
+          {
+            "target": "T2",
+            "gain": -2
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T4"
+        ],
+        "player": "B",
+        "source": "B",
+        "target": "T3",
+        "distance": 4,
+        "treasure_value": 7,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T4",
+          "pos_b": "T3",
+          "remaining": [
+            "T1",
+            "T2"
+          ],
+          "score_a": -1,
+          "score_b": 3,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T4",
+          "T3"
+        ],
+        "state": {
+          "pos_a": "T4",
+          "pos_b": "T3",
+          "remaining": [
+            "T1",
+            "T2"
+          ],
+          "score_a": -1,
+          "score_b": 3,
+          "turn": "A"
+        },
+        "remaining_depth": 2,
+        "alpha": 3,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T4",
+          "T3"
+        ],
+        "player": "A",
+        "source": "T4",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": 0
+          },
+          {
+            "target": "T1",
+            "gain": -3
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T4",
+          "T3"
+        ],
+        "player": "A",
+        "source": "T4",
+        "target": "T2",
+        "distance": 6,
+        "treasure_value": 6,
+        "gain": 0,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T3",
+          "remaining": [
+            "T1"
+          ],
+          "score_a": -1,
+          "score_b": 3,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T4",
+          "T3",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T3",
+          "remaining": [
+            "T1"
+          ],
+          "score_a": -1,
+          "score_b": 3,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 3,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T4",
+          "T3",
+          "T2"
+        ],
+        "player": "B",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T1",
+            "gain": 3
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T4",
+          "T3",
+          "T2"
+        ],
+        "player": "B",
+        "source": "T3",
+        "target": "T1",
+        "distance": 6,
+        "treasure_value": 9,
+        "gain": 3,
+        "next_state": {
+          "pos_a": "T2",
+          "pos_b": "T1",
+          "remaining": [],
+          "score_a": -1,
+          "score_b": 6,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T4",
+          "T3",
+          "T2",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T2",
+          "pos_b": "T1",
+          "remaining": [],
+          "score_a": -1,
+          "score_b": 6,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 3,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T4",
+          "T3",
+          "T2",
+          "T1"
+        ],
+        "value": -7,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T4",
+          "T3",
+          "T2"
+        ],
+        "value": -7,
+        "value_kind": "upper_bound",
+        "best_target": "T1"
+      },
+      {
+        "event": "action",
+        "path": [
+          "T4",
+          "T3"
+        ],
+        "player": "A",
+        "source": "T4",
+        "target": "T1",
+        "distance": 12,
+        "treasure_value": 9,
+        "gain": -3,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T3",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": -4,
+          "score_b": 3,
+          "turn": "B"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T4",
+          "T3",
+          "T1"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T3",
+          "remaining": [
+            "T2"
+          ],
+          "score_a": -4,
+          "score_b": 3,
+          "turn": "B"
+        },
+        "remaining_depth": 1,
+        "alpha": 3,
+        "beta": null
+      },
+      {
+        "event": "order",
+        "path": [
+          "T4",
+          "T3",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T3",
+        "candidates": [
+          {
+            "target": "T2",
+            "gain": 0
+          }
+        ]
+      },
+      {
+        "event": "action",
+        "path": [
+          "T4",
+          "T3",
+          "T1"
+        ],
+        "player": "B",
+        "source": "T3",
+        "target": "T2",
+        "distance": 6,
+        "treasure_value": 6,
+        "gain": 0,
+        "next_state": {
+          "pos_a": "T1",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": -4,
+          "score_b": 3,
+          "turn": "A"
+        }
+      },
+      {
+        "event": "visit",
+        "path": [
+          "T4",
+          "T3",
+          "T1",
+          "T2"
+        ],
+        "state": {
+          "pos_a": "T1",
+          "pos_b": "T2",
+          "remaining": [],
+          "score_a": -4,
+          "score_b": 3,
+          "turn": "A"
+        },
+        "remaining_depth": 0,
+        "alpha": 3,
+        "beta": null
+      },
+      {
+        "event": "evaluate",
+        "path": [
+          "T4",
+          "T3",
+          "T1",
+          "T2"
+        ],
+        "value": -7,
+        "value_kind": "exact",
+        "reason": "depth"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T4",
+          "T3",
+          "T1"
+        ],
+        "value": -7,
+        "value_kind": "upper_bound",
+        "best_target": "T2"
+      },
+      {
+        "event": "return",
+        "path": [
+          "T4",
+          "T3"
+        ],
+        "value": -7,
+        "value_kind": "upper_bound",
+        "best_target": "T2"
+      },
+      {
+        "event": "cutoff",
+        "path": [
+          "T4"
+        ],
+        "alpha": 3,
+        "beta": -7,
+        "skipped_targets": [
+          "T1",
+          "T2"
+        ]
+      },
+      {
+        "event": "return",
+        "path": [
+          "T4"
+        ],
+        "value": -7,
+        "value_kind": "upper_bound",
+        "best_target": "T3"
+      },
+      {
+        "event": "return",
+        "path": [],
+        "value": 3,
+        "value_kind": "exact",
+        "best_target": "T3"
+      }
+    ]
+  }
+}

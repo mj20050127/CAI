@@ -1,0 +1,467 @@
+[
+  {
+    "instance_id": "weighted_031_001",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_002",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_003",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_004",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_005",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_006",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_007",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_008",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_009",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_010",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_011",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_012",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_013",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_014",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_015",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_016",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_017",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_018",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_019",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_020",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_021",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_022",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_023",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_024",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_025",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_026",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_027",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_028",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_029",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "weighted_031_030",
+    "heuristic": "manhattan",
+    "position": [
+      29,
+      30
+    ],
+    "goal": [
+      30,
+      30
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  },
+  {
+    "instance_id": "official_5x5",
+    "heuristic": "manhattan",
+    "position": [
+      3,
+      4
+    ],
+    "goal": [
+      4,
+      4
+    ],
+    "heuristic_value": 1,
+    "exact_remaining_cost": 0,
+    "overestimate": 1
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "start": [
+    0,
+    0
+  ],
+  "end": [
+    3,
+    4
+  ],
+  "grid": [
+    [
+      "S",
+      ".",
+      ".",
+      "X",
+      "."
+    ],
+    [
+      ".",
+      "X",
+      ".",
+      ".",
+      "."
+    ],
+    [
+      ".",
+      "X",
+      ".",
+      "X",
+      "."
+    ],
+    [
+      ".",
+      ".",
+      ".",
+      "X",
+      "E"
+    ],
+    [
+      "X",
+      "X",
+      ".",
+      ".",
+      "."
+    ]
+  ],
+  "instance_id": "official_5x5",
+  "size": 5,
+  "seed": "official",
+  "source": "official",
+  "density": "",
+  "map_file": "official_map.json",
+  "accepted": true,
+  "bfs_cost": 7,
+  "sha256": "1ee238a0eba330473818e696780deb93b5a86920b16109f3a5083152bfc894e3"
+}

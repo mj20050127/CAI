@@ -1,0 +1,54 @@
+{
+  "start": [
+    0,
+    0
+  ],
+  "end": [
+    4,
+    4
+  ],
+  "grid": [
+    [
+      "S",
+      1,
+      1,
+      8,
+      1
+    ],
+    [
+      1,
+      8,
+      3,
+      1,
+      1
+    ],
+    [
+      1,
+      8,
+      1,
+      8,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      8,
+      1
+    ],
+    [
+      8,
+      8,
+      1,
+      1,
+      "E"
+    ]
+  ],
+  "instance_id": "official_5x5",
+  "source": "official",
+  "size": 5,
+  "seed": "official",
+  "map_file": "official_map.json",
+  "best_cost": 7,
+  "sha256": "54c1f2548dfb7b55d65c623adab626ebb99b352bb17bbebadbecede7445de816"
+}

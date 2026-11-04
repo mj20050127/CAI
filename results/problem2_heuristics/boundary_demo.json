@@ -1,0 +1,142 @@
+{
+  "scope": "separate example outside the positive-weight domain; excluded from performance rows and main all_results_correct",
+  "changed_assumption": "ordinary terrain may have cost 0 instead of at least 1",
+  "case": {
+    "instance_id": "outside_domain_zero_cost",
+    "source": "boundary",
+    "size": 2,
+    "start": [
+      0,
+      0
+    ],
+    "end": [
+      0,
+      2
+    ],
+    "grid": [
+      [
+        "S",
+        1,
+        "E"
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "outcomes": {
+    "zero": {
+      "cost": 0,
+      "reference_cost": 0,
+      "optimal_gap": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "manhattan": {
+      "cost": 1,
+      "reference_cost": 0,
+      "optimal_gap": 1,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "corrected_manhattan": {
+      "cost": 0,
+      "reference_cost": 0,
+      "optimal_gap": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    }
+  },
+  "heuristic_audit": [
+    {
+      "instance_id": "outside_domain_zero_cost",
+      "source": "boundary",
+      "size": 2,
+      "heuristic": "zero",
+      "n_reachable_states": 6,
+      "n_directed_edges": 14,
+      "admissibility_violations": 0,
+      "consistency_violations": 0,
+      "max_overestimate": 0,
+      "goal_h": 0
+    },
+    {
+      "instance_id": "outside_domain_zero_cost",
+      "source": "boundary",
+      "size": 2,
+      "heuristic": "manhattan",
+      "n_reachable_states": 6,
+      "n_directed_edges": 14,
+      "admissibility_violations": 5,
+      "consistency_violations": 4,
+      "max_overestimate": 3,
+      "goal_h": 0
+    },
+    {
+      "instance_id": "outside_domain_zero_cost",
+      "source": "boundary",
+      "size": 2,
+      "heuristic": "corrected_manhattan",
+      "n_reachable_states": 6,
+      "n_directed_edges": 14,
+      "admissibility_violations": 0,
+      "consistency_violations": 0,
+      "max_overestimate": 0,
+      "goal_h": 0
+    }
+  ]
+}

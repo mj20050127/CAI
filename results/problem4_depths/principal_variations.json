@@ -1,0 +1,156 @@
+{
+  "1": {
+    "value": 2,
+    "best_targets": [
+      "T2"
+    ],
+    "action_values": {
+      "T1": -1,
+      "T2": 2,
+      "T3": -1,
+      "T4": -1
+    },
+    "principal_variation": [
+      "T2"
+    ],
+    "action_variations": {
+      "T1": [
+        "T1"
+      ],
+      "T2": [
+        "T2"
+      ],
+      "T3": [
+        "T3"
+      ],
+      "T4": [
+        "T4"
+      ]
+    },
+    "node_count": 5,
+    "leaf_count": 4
+  },
+  "2": {
+    "value": -1,
+    "best_targets": [
+      "T2"
+    ],
+    "action_values": {
+      "T1": -4,
+      "T2": -1,
+      "T3": -2,
+      "T4": -4
+    },
+    "principal_variation": [
+      "T2",
+      "T3"
+    ],
+    "action_variations": {
+      "T1": [
+        "T1",
+        "T3"
+      ],
+      "T2": [
+        "T2",
+        "T3"
+      ],
+      "T3": [
+        "T3",
+        "T1"
+      ],
+      "T4": [
+        "T4",
+        "T3"
+      ]
+    },
+    "node_count": 17,
+    "leaf_count": 12
+  },
+  "3": {
+    "value": 2,
+    "best_targets": [
+      "T2"
+    ],
+    "action_values": {
+      "T1": -4,
+      "T2": 2,
+      "T3": -1,
+      "T4": -4
+    },
+    "principal_variation": [
+      "T2",
+      "T1",
+      "T3"
+    ],
+    "action_variations": {
+      "T1": [
+        "T1",
+        "T3",
+        "T2"
+      ],
+      "T2": [
+        "T2",
+        "T1",
+        "T3"
+      ],
+      "T3": [
+        "T3",
+        "T1",
+        "T4"
+      ],
+      "T4": [
+        "T4",
+        "T3",
+        "T2"
+      ]
+    },
+    "node_count": 41,
+    "leaf_count": 24
+  },
+  "4": {
+    "value": 3,
+    "best_targets": [
+      "T3"
+    ],
+    "action_values": {
+      "T1": -5,
+      "T2": 1,
+      "T3": 3,
+      "T4": -7
+    },
+    "principal_variation": [
+      "T3",
+      "T1",
+      "T2",
+      "T4"
+    ],
+    "action_variations": {
+      "T1": [
+        "T1",
+        "T3",
+        "T2",
+        "T4"
+      ],
+      "T2": [
+        "T2",
+        "T3",
+        "T1",
+        "T4"
+      ],
+      "T3": [
+        "T3",
+        "T1",
+        "T2",
+        "T4"
+      ],
+      "T4": [
+        "T4",
+        "T3",
+        "T1",
+        "T2"
+      ]
+    },
+    "node_count": 65,
+    "leaf_count": 24
+  }
+}

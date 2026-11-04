@@ -1,0 +1,4 @@
+﻿variant,depth,best_target,best_value,reference_value,correct,node_visits,leaf_evals,cutoff_events,pruned_branches
+original,4,T3,3,3,True,47,16,5,6
+gain,4,T3,3,3,True,37,12,6,8
+production,4,T3,3,3,True,47,16,5,6

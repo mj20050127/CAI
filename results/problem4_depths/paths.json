@@ -1,0 +1,1514 @@
+[
+  {
+    "source": "A",
+    "target": "B",
+    "cost": 12,
+    "path": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        6
+      ]
+    ],
+    "stats": {
+      "valid_pops": 16,
+      "expansions": 15,
+      "stale_pops": 0,
+      "generated_successors": 36,
+      "pushes": 22,
+      "heap_peak": 7,
+      "elapsed_ms": 0.0465
+    }
+  },
+  {
+    "source": "A",
+    "target": "T1",
+    "cost": 10,
+    "path": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "stats": {
+      "valid_pops": 14,
+      "expansions": 13,
+      "stale_pops": 0,
+      "generated_successors": 31,
+      "pushes": 19,
+      "heap_peak": 6,
+      "elapsed_ms": 0.0406
+    }
+  },
+  {
+    "source": "A",
+    "target": "T2",
+    "cost": 4,
+    "path": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "stats": {
+      "valid_pops": 7,
+      "expansions": 6,
+      "stale_pops": 0,
+      "generated_successors": 13,
+      "pushes": 9,
+      "heap_peak": 3,
+      "elapsed_ms": 0.0189
+    }
+  },
+  {
+    "source": "A",
+    "target": "T3",
+    "cost": 8,
+    "path": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "stats": {
+      "valid_pops": 14,
+      "expansions": 13,
+      "stale_pops": 0,
+      "generated_successors": 33,
+      "pushes": 20,
+      "heap_peak": 7,
+      "elapsed_ms": 0.041
+    }
+  },
+  {
+    "source": "A",
+    "target": "T4",
+    "cost": 8,
+    "path": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ],
+    "stats": {
+      "valid_pops": 9,
+      "expansions": 8,
+      "stale_pops": 0,
+      "generated_successors": 18,
+      "pushes": 12,
+      "heap_peak": 4,
+      "elapsed_ms": 0.0275
+    }
+  },
+  {
+    "source": "B",
+    "target": "A",
+    "cost": 12,
+    "path": [
+      [
+        6,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "stats": {
+      "valid_pops": 14,
+      "expansions": 13,
+      "stale_pops": 0,
+      "generated_successors": 32,
+      "pushes": 21,
+      "heap_peak": 8,
+      "elapsed_ms": 0.0456
+    }
+  },
+  {
+    "source": "B",
+    "target": "T1",
+    "cost": 8,
+    "path": [
+      [
+        6,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "stats": {
+      "valid_pops": 9,
+      "expansions": 8,
+      "stale_pops": 0,
+      "generated_successors": 18,
+      "pushes": 12,
+      "heap_peak": 4,
+      "elapsed_ms": 0.025
+    }
+  },
+  {
+    "source": "B",
+    "target": "T2",
+    "cost": 8,
+    "path": [
+      [
+        6,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "stats": {
+      "valid_pops": 9,
+      "expansions": 8,
+      "stale_pops": 0,
+      "generated_successors": 20,
+      "pushes": 14,
+      "heap_peak": 6,
+      "elapsed_ms": 0.0286
+    }
+  },
+  {
+    "source": "B",
+    "target": "T3",
+    "cost": 4,
+    "path": [
+      [
+        6,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "stats": {
+      "valid_pops": 5,
+      "expansions": 4,
+      "stale_pops": 0,
+      "generated_successors": 9,
+      "pushes": 7,
+      "heap_peak": 3,
+      "elapsed_ms": 0.0154
+    }
+  },
+  {
+    "source": "B",
+    "target": "T4",
+    "cost": 10,
+    "path": [
+      [
+        6,
+        6
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ],
+    "stats": {
+      "valid_pops": 12,
+      "expansions": 11,
+      "stale_pops": 0,
+      "generated_successors": 26,
+      "pushes": 17,
+      "heap_peak": 6,
+      "elapsed_ms": 0.034
+    }
+  },
+  {
+    "source": "T1",
+    "target": "A",
+    "cost": 10,
+    "path": [
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "stats": {
+      "valid_pops": 14,
+      "expansions": 13,
+      "stale_pops": 0,
+      "generated_successors": 31,
+      "pushes": 19,
+      "heap_peak": 6,
+      "elapsed_ms": 0.0414
+    }
+  },
+  {
+    "source": "T1",
+    "target": "B",
+    "cost": 8,
+    "path": [
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        6
+      ]
+    ],
+    "stats": {
+      "valid_pops": 9,
+      "expansions": 8,
+      "stale_pops": 0,
+      "generated_successors": 18,
+      "pushes": 12,
+      "heap_peak": 4,
+      "elapsed_ms": 0.0246
+    }
+  },
+  {
+    "source": "T1",
+    "target": "T2",
+    "cost": 6,
+    "path": [
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "stats": {
+      "valid_pops": 7,
+      "expansions": 6,
+      "stale_pops": 0,
+      "generated_successors": 15,
+      "pushes": 11,
+      "heap_peak": 5,
+      "elapsed_ms": 0.021
+    }
+  },
+  {
+    "source": "T1",
+    "target": "T3",
+    "cost": 6,
+    "path": [
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "stats": {
+      "valid_pops": 7,
+      "expansions": 6,
+      "stale_pops": 0,
+      "generated_successors": 14,
+      "pushes": 10,
+      "heap_peak": 4,
+      "elapsed_ms": 0.0213
+    }
+  },
+  {
+    "source": "T1",
+    "target": "T4",
+    "cost": 12,
+    "path": [
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ],
+    "stats": {
+      "valid_pops": 15,
+      "expansions": 14,
+      "stale_pops": 0,
+      "generated_successors": 34,
+      "pushes": 22,
+      "heap_peak": 8,
+      "elapsed_ms": 0.0454
+    }
+  },
+  {
+    "source": "T2",
+    "target": "A",
+    "cost": 4,
+    "path": [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "stats": {
+      "valid_pops": 5,
+      "expansions": 4,
+      "stale_pops": 0,
+      "generated_successors": 10,
+      "pushes": 8,
+      "heap_peak": 4,
+      "elapsed_ms": 0.0175
+    }
+  },
+  {
+    "source": "T2",
+    "target": "B",
+    "cost": 8,
+    "path": [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        6
+      ]
+    ],
+    "stats": {
+      "valid_pops": 10,
+      "expansions": 9,
+      "stale_pops": 0,
+      "generated_successors": 23,
+      "pushes": 16,
+      "heap_peak": 7,
+      "elapsed_ms": 0.0338
+    }
+  },
+  {
+    "source": "T2",
+    "target": "T1",
+    "cost": 6,
+    "path": [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "stats": {
+      "valid_pops": 8,
+      "expansions": 7,
+      "stale_pops": 0,
+      "generated_successors": 18,
+      "pushes": 13,
+      "heap_peak": 6,
+      "elapsed_ms": 0.0286
+    }
+  },
+  {
+    "source": "T2",
+    "target": "T3",
+    "cost": 6,
+    "path": [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "stats": {
+      "valid_pops": 8,
+      "expansions": 7,
+      "stale_pops": 0,
+      "generated_successors": 19,
+      "pushes": 14,
+      "heap_peak": 7,
+      "elapsed_ms": 0.0297
+    }
+  },
+  {
+    "source": "T2",
+    "target": "T4",
+    "cost": 6,
+    "path": [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ],
+    "stats": {
+      "valid_pops": 7,
+      "expansions": 6,
+      "stale_pops": 0,
+      "generated_successors": 15,
+      "pushes": 11,
+      "heap_peak": 5,
+      "elapsed_ms": 0.0266
+    }
+  },
+  {
+    "source": "T3",
+    "target": "A",
+    "cost": 8,
+    "path": [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "stats": {
+      "valid_pops": 9,
+      "expansions": 8,
+      "stale_pops": 0,
+      "generated_successors": 21,
+      "pushes": 15,
+      "heap_peak": 7,
+      "elapsed_ms": 0.0332
+    }
+  },
+  {
+    "source": "T3",
+    "target": "B",
+    "cost": 4,
+    "path": [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        6
+      ]
+    ],
+    "stats": {
+      "valid_pops": 5,
+      "expansions": 4,
+      "stale_pops": 0,
+      "generated_successors": 10,
+      "pushes": 8,
+      "heap_peak": 4,
+      "elapsed_ms": 0.0208
+    }
+  },
+  {
+    "source": "T3",
+    "target": "T1",
+    "cost": 6,
+    "path": [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "stats": {
+      "valid_pops": 7,
+      "expansions": 6,
+      "stale_pops": 0,
+      "generated_successors": 15,
+      "pushes": 11,
+      "heap_peak": 5,
+      "elapsed_ms": 0.0324
+    }
+  },
+  {
+    "source": "T3",
+    "target": "T2",
+    "cost": 6,
+    "path": [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "stats": {
+      "valid_pops": 7,
+      "expansions": 6,
+      "stale_pops": 0,
+      "generated_successors": 17,
+      "pushes": 13,
+      "heap_peak": 7,
+      "elapsed_ms": 0.0352
+    }
+  },
+  {
+    "source": "T3",
+    "target": "T4",
+    "cost": 6,
+    "path": [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ],
+    "stats": {
+      "valid_pops": 9,
+      "expansions": 8,
+      "stale_pops": 0,
+      "generated_successors": 20,
+      "pushes": 14,
+      "heap_peak": 6,
+      "elapsed_ms": 0.0349
+    }
+  },
+  {
+    "source": "T4",
+    "target": "A",
+    "cost": 8,
+    "path": [
+      [
+        6,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "stats": {
+      "valid_pops": 9,
+      "expansions": 8,
+      "stale_pops": 0,
+      "generated_successors": 18,
+      "pushes": 12,
+      "heap_peak": 4,
+      "elapsed_ms": 0.0285
+    }
+  },
+  {
+    "source": "T4",
+    "target": "B",
+    "cost": 10,
+    "path": [
+      [
+        6,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        6
+      ]
+    ],
+    "stats": {
+      "valid_pops": 13,
+      "expansions": 12,
+      "stale_pops": 0,
+      "generated_successors": 29,
+      "pushes": 18,
+      "heap_peak": 6,
+      "elapsed_ms": 0.0368
+    }
+  },
+  {
+    "source": "T4",
+    "target": "T1",
+    "cost": 12,
+    "path": [
+      [
+        6,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "stats": {
+      "valid_pops": 14,
+      "expansions": 13,
+      "stale_pops": 0,
+      "generated_successors": 32,
+      "pushes": 21,
+      "heap_peak": 8,
+      "elapsed_ms": 0.0429
+    }
+  },
+  {
+    "source": "T4",
+    "target": "T2",
+    "cost": 6,
+    "path": [
+      [
+        6,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "stats": {
+      "valid_pops": 7,
+      "expansions": 6,
+      "stale_pops": 0,
+      "generated_successors": 14,
+      "pushes": 10,
+      "heap_peak": 4,
+      "elapsed_ms": 0.0202
+    }
+  },
+  {
+    "source": "T4",
+    "target": "T3",
+    "cost": 6,
+    "path": [
+      [
+        6,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "stats": {
+      "valid_pops": 7,
+      "expansions": 6,
+      "stale_pops": 0,
+      "generated_successors": 15,
+      "pushes": 11,
+      "heap_peak": 5,
+      "elapsed_ms": 0.0237
+    }
+  }
+]

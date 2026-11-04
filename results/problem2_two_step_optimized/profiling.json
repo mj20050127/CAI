@@ -1,0 +1,839 @@
+{
+  "purpose": "Diagnostic cProfile only; instrumented time excluded from formal statistics.",
+  "corpus": "30 saved random maps sorted by filename, one fresh full query per strategy per map.",
+  "profiles": {
+    "corrected_manhattan": {
+      "maps": 30,
+      "total_calls": 742203,
+      "instrumented_seconds": 0.15881979999999998,
+      "top_by_cumulative": [
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_two_step.py",
+          "line": 43,
+          "function": "search_variant",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0003241,
+          "cumulative_seconds": 0.15883070000000002
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\astar.py",
+          "line": 32,
+          "function": "a_star",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0306727,
+          "cumulative_seconds": 0.11473680000000001
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.isinstance>",
+          "primitive_calls": 143576,
+          "calls": 143576,
+          "self_seconds": 0.022241300000000002,
+          "cumulative_seconds": 0.0678609
+        },
+        {
+          "file": "<frozen abc>",
+          "line": 117,
+          "function": "__instancecheck__",
+          "primitive_calls": 71278,
+          "calls": 71278,
+          "self_seconds": 0.0088468,
+          "cumulative_seconds": 0.0456196
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 78,
+          "function": "prepare_terrain",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0000853,
+          "cumulative_seconds": 0.043722300000000006
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\grid.py",
+          "line": 37,
+          "function": "_normalize_grid",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0044818,
+          "cumulative_seconds": 0.038541000000000006
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method _abc._abc_instancecheck>",
+          "primitive_calls": 71278,
+          "calls": 71278,
+          "self_seconds": 0.0170439,
+          "cumulative_seconds": 0.0367728
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\grid.py",
+          "line": 17,
+          "function": "_cell_cost",
+          "primitive_calls": 28830,
+          "calls": 28830,
+          "self_seconds": 0.007748400000000001,
+          "cumulative_seconds": 0.033799
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\astar.py",
+          "line": 50,
+          "function": "estimate",
+          "primitive_calls": 13558,
+          "calls": 13558,
+          "self_seconds": 0.0060457,
+          "cumulative_seconds": 0.0329192
+        },
+        {
+          "file": "<frozen abc>",
+          "line": 121,
+          "function": "__subclasscheck__",
+          "primitive_calls": 71219,
+          "calls": 71219,
+          "self_seconds": 0.008866200000000001,
+          "cumulative_seconds": 0.0197289
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 24,
+          "function": "neighbors",
+          "primitive_calls": 36135,
+          "calls": 36135,
+          "self_seconds": 0.0115286,
+          "cumulative_seconds": 0.015025700000000001
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 49,
+          "function": "base",
+          "primitive_calls": 13558,
+          "calls": 13558,
+          "self_seconds": 0.0025388000000000003,
+          "cumulative_seconds": 0.013602800000000002
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\heuristics.py",
+          "line": 18,
+          "function": "corrected_manhattan",
+          "primitive_calls": 13558,
+          "calls": 13558,
+          "self_seconds": 0.0039941,
+          "cumulative_seconds": 0.011064000000000001
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method _abc._abc_subclasscheck>",
+          "primitive_calls": 71219,
+          "calls": 71219,
+          "self_seconds": 0.010862700000000001,
+          "cumulative_seconds": 0.010862700000000001
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\heuristics.py",
+          "line": 8,
+          "function": "manhattan",
+          "primitive_calls": 13558,
+          "calls": 13558,
+          "self_seconds": 0.0039421000000000005,
+          "cumulative_seconds": 0.0059621000000000006
+        }
+      ],
+      "heuristic_related": [
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 39,
+          "function": "heuristic",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0000324,
+          "cumulative_seconds": 0.0000324
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 24,
+          "function": "neighbors",
+          "primitive_calls": 36135,
+          "calls": 36135,
+          "self_seconds": 0.0115286,
+          "cumulative_seconds": 0.015025700000000001
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_two_step.py",
+          "line": 43,
+          "function": "search_variant",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0003241,
+          "cumulative_seconds": 0.15883070000000002
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 49,
+          "function": "base",
+          "primitive_calls": 13558,
+          "calls": 13558,
+          "self_seconds": 0.0025388000000000003,
+          "cumulative_seconds": 0.013602800000000002
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 84,
+          "function": "<genexpr>",
+          "primitive_calls": 28830,
+          "calls": 28830,
+          "self_seconds": 0.002594,
+          "cumulative_seconds": 0.002594
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 78,
+          "function": "prepare_terrain",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0000853,
+          "cumulative_seconds": 0.043722300000000006
+        }
+      ]
+    },
+    "lookahead_1_optimized": {
+      "maps": 30,
+      "total_calls": 666941,
+      "instrumented_seconds": 0.1556779,
+      "top_by_cumulative": [
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_two_step.py",
+          "line": 43,
+          "function": "search_variant",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.00026000000000000003,
+          "cumulative_seconds": 0.15568800000000002
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\astar.py",
+          "line": 32,
+          "function": "a_star",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0306394,
+          "cumulative_seconds": 0.10888990000000001
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.isinstance>",
+          "primitive_calls": 138006,
+          "calls": 138006,
+          "self_seconds": 0.0219658,
+          "cumulative_seconds": 0.0684063
+        },
+        {
+          "file": "<frozen abc>",
+          "line": 117,
+          "function": "__instancecheck__",
+          "primitive_calls": 68478,
+          "calls": 68478,
+          "self_seconds": 0.0091312,
+          "cumulative_seconds": 0.0464405
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 78,
+          "function": "prepare_terrain",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0000772,
+          "cumulative_seconds": 0.0462202
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\grid.py",
+          "line": 37,
+          "function": "_normalize_grid",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0047085,
+          "cumulative_seconds": 0.0407095
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method _abc._abc_instancecheck>",
+          "primitive_calls": 68478,
+          "calls": 68478,
+          "self_seconds": 0.0168815,
+          "cumulative_seconds": 0.037309300000000004
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\grid.py",
+          "line": 17,
+          "function": "_cell_cost",
+          "primitive_calls": 28830,
+          "calls": 28830,
+          "self_seconds": 0.0083955,
+          "cumulative_seconds": 0.0357204
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\astar.py",
+          "line": 50,
+          "function": "estimate",
+          "primitive_calls": 12845,
+          "calls": 12845,
+          "self_seconds": 0.0078549,
+          "cumulative_seconds": 0.0276816
+        },
+        {
+          "file": "<frozen abc>",
+          "line": 121,
+          "function": "__subclasscheck__",
+          "primitive_calls": 68418,
+          "calls": 68418,
+          "self_seconds": 0.009210600000000001,
+          "cumulative_seconds": 0.020427800000000003
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 24,
+          "function": "neighbors",
+          "primitive_calls": 33502,
+          "calls": 33502,
+          "self_seconds": 0.011599700000000001,
+          "cumulative_seconds": 0.015075000000000002
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method _abc._abc_subclasscheck>",
+          "primitive_calls": 68418,
+          "calls": 68418,
+          "self_seconds": 0.0112172,
+          "cumulative_seconds": 0.0112172
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_lookahead.py",
+          "line": 30,
+          "function": "estimate",
+          "primitive_calls": 11098,
+          "calls": 11098,
+          "self_seconds": 0.004750600000000001,
+          "cumulative_seconds": 0.006544100000000001
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.min>",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0023940000000000003,
+          "cumulative_seconds": 0.0051116
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.len>",
+          "primitive_calls": 68035,
+          "calls": 68035,
+          "self_seconds": 0.0046284,
+          "cumulative_seconds": 0.0046284
+        }
+      ],
+      "heuristic_related": [
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_lookahead.py",
+          "line": 30,
+          "function": "estimate",
+          "primitive_calls": 11098,
+          "calls": 11098,
+          "self_seconds": 0.004750600000000001,
+          "cumulative_seconds": 0.006544100000000001
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_lookahead.py",
+          "line": 17,
+          "function": "make_optimized_h1",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0000352,
+          "cumulative_seconds": 0.0003035
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 24,
+          "function": "neighbors",
+          "primitive_calls": 33502,
+          "calls": 33502,
+          "self_seconds": 0.011599700000000001,
+          "cumulative_seconds": 0.015075000000000002
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_two_step.py",
+          "line": 43,
+          "function": "search_variant",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.00026000000000000003,
+          "cumulative_seconds": 0.15568800000000002
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 84,
+          "function": "<genexpr>",
+          "primitive_calls": 28830,
+          "calls": 28830,
+          "self_seconds": 0.0027176,
+          "cumulative_seconds": 0.0027176
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 78,
+          "function": "prepare_terrain",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0000772,
+          "cumulative_seconds": 0.0462202
+        }
+      ]
+    },
+    "lookahead_2": {
+      "maps": 30,
+      "total_calls": 1260437,
+      "instrumented_seconds": 0.28401990000000005,
+      "top_by_cumulative": [
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_two_step.py",
+          "line": 43,
+          "function": "search_variant",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.00025590000000000004,
+          "cumulative_seconds": 0.2840302
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\astar.py",
+          "line": 32,
+          "function": "a_star",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.031134500000000002,
+          "cumulative_seconds": 0.23711140000000003
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\astar.py",
+          "line": 50,
+          "function": "estimate",
+          "primitive_calls": 12350,
+          "calls": 12350,
+          "self_seconds": 0.0082445,
+          "cumulative_seconds": 0.1560821
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 53,
+          "function": "estimate",
+          "primitive_calls": 10699,
+          "calls": 24024,
+          "self_seconds": 0.034205900000000004,
+          "cumulative_seconds": 0.1333938
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.isinstance>",
+          "primitive_calls": 134562,
+          "calls": 134562,
+          "self_seconds": 0.023258900000000002,
+          "cumulative_seconds": 0.0705337
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 24,
+          "function": "neighbors",
+          "primitive_calls": 149700,
+          "calls": 149700,
+          "self_seconds": 0.0481831,
+          "cumulative_seconds": 0.0627182
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 49,
+          "function": "base",
+          "primitive_calls": 52007,
+          "calls": 52007,
+          "self_seconds": 0.009810000000000001,
+          "cumulative_seconds": 0.0502458
+        },
+        {
+          "file": "<frozen abc>",
+          "line": 117,
+          "function": "__instancecheck__",
+          "primitive_calls": 66741,
+          "calls": 66741,
+          "self_seconds": 0.0093206,
+          "cumulative_seconds": 0.047274800000000006
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 78,
+          "function": "prepare_terrain",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0000842,
+          "cumulative_seconds": 0.0461183
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\grid.py",
+          "line": 37,
+          "function": "_normalize_grid",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0045396,
+          "cumulative_seconds": 0.040652
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\heuristics.py",
+          "line": 18,
+          "function": "corrected_manhattan",
+          "primitive_calls": 52007,
+          "calls": 52007,
+          "self_seconds": 0.014937400000000002,
+          "cumulative_seconds": 0.0404358
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method _abc._abc_instancecheck>",
+          "primitive_calls": 66741,
+          "calls": 66741,
+          "self_seconds": 0.0175026,
+          "cumulative_seconds": 0.0379542
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\grid.py",
+          "line": 17,
+          "function": "_cell_cost",
+          "primitive_calls": 28830,
+          "calls": 28830,
+          "self_seconds": 0.008278200000000001,
+          "cumulative_seconds": 0.0358343
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\heuristics.py",
+          "line": 8,
+          "function": "manhattan",
+          "primitive_calls": 52007,
+          "calls": 52007,
+          "self_seconds": 0.014588,
+          "cumulative_seconds": 0.0215534
+        },
+        {
+          "file": "<frozen abc>",
+          "line": 121,
+          "function": "__subclasscheck__",
+          "primitive_calls": 66681,
+          "calls": 66681,
+          "self_seconds": 0.009236900000000001,
+          "cumulative_seconds": 0.0204516
+        }
+      ],
+      "heuristic_related": [
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 39,
+          "function": "heuristic",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.000058,
+          "cumulative_seconds": 0.0005304
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 53,
+          "function": "estimate",
+          "primitive_calls": 10699,
+          "calls": 24024,
+          "self_seconds": 0.034205900000000004,
+          "cumulative_seconds": 0.1333938
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 24,
+          "function": "neighbors",
+          "primitive_calls": 149700,
+          "calls": 149700,
+          "self_seconds": 0.0481831,
+          "cumulative_seconds": 0.0627182
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_two_step.py",
+          "line": 43,
+          "function": "search_variant",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.00025590000000000004,
+          "cumulative_seconds": 0.2840302
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 49,
+          "function": "base",
+          "primitive_calls": 52007,
+          "calls": 52007,
+          "self_seconds": 0.009810000000000001,
+          "cumulative_seconds": 0.0502458
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 52,
+          "function": "next_layer",
+          "primitive_calls": 60,
+          "calls": 60,
+          "self_seconds": 0.000025300000000000002,
+          "cumulative_seconds": 0.00047240000000000004
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 84,
+          "function": "<genexpr>",
+          "primitive_calls": 28830,
+          "calls": 28830,
+          "self_seconds": 0.0027182,
+          "cumulative_seconds": 0.0027182
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 78,
+          "function": "prepare_terrain",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0000842,
+          "cumulative_seconds": 0.0461183
+        }
+      ]
+    },
+    "lookahead_2_optimized": {
+      "maps": 30,
+      "total_calls": 804567,
+      "instrumented_seconds": 0.1859925,
+      "top_by_cumulative": [
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_two_step.py",
+          "line": 43,
+          "function": "search_variant",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.00022950000000000002,
+          "cumulative_seconds": 0.1860004
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\astar.py",
+          "line": 32,
+          "function": "a_star",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0285754,
+          "cumulative_seconds": 0.1399003
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.isinstance>",
+          "primitive_calls": 134562,
+          "calls": 134562,
+          "self_seconds": 0.022304300000000003,
+          "cumulative_seconds": 0.0668582
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\astar.py",
+          "line": 50,
+          "function": "estimate",
+          "primitive_calls": 12350,
+          "calls": 12350,
+          "self_seconds": 0.0078219,
+          "cumulative_seconds": 0.064694
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 78,
+          "function": "prepare_terrain",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.000067,
+          "cumulative_seconds": 0.045410700000000005
+        },
+        {
+          "file": "<frozen abc>",
+          "line": 117,
+          "function": "__instancecheck__",
+          "primitive_calls": 66741,
+          "calls": 66741,
+          "self_seconds": 0.008732,
+          "cumulative_seconds": 0.0445539
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_two_step.py",
+          "line": 29,
+          "function": "estimate",
+          "primitive_calls": 10699,
+          "calls": 10699,
+          "self_seconds": 0.0154584,
+          "cumulative_seconds": 0.0437854
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\grid.py",
+          "line": 37,
+          "function": "_normalize_grid",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.004502,
+          "cumulative_seconds": 0.040144
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method _abc._abc_instancecheck>",
+          "primitive_calls": 66741,
+          "calls": 66741,
+          "self_seconds": 0.016575,
+          "cumulative_seconds": 0.035821900000000004
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\src\\grid.py",
+          "line": 17,
+          "function": "_cell_cost",
+          "primitive_calls": 28830,
+          "calls": 28830,
+          "self_seconds": 0.0080484,
+          "cumulative_seconds": 0.0353737
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 24,
+          "function": "neighbors",
+          "primitive_calls": 84398,
+          "calls": 84398,
+          "self_seconds": 0.026255300000000002,
+          "cumulative_seconds": 0.034015000000000004
+        },
+        {
+          "file": "<frozen abc>",
+          "line": 121,
+          "function": "__subclasscheck__",
+          "primitive_calls": 66681,
+          "calls": 66681,
+          "self_seconds": 0.0087087,
+          "cumulative_seconds": 0.0192469
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method _abc._abc_subclasscheck>",
+          "primitive_calls": 66681,
+          "calls": 66681,
+          "self_seconds": 0.010538200000000001,
+          "cumulative_seconds": 0.010538200000000001
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.len>",
+          "primitive_calls": 149475,
+          "calls": 149475,
+          "self_seconds": 0.0087963,
+          "cumulative_seconds": 0.0087963
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_lookahead.py",
+          "line": 30,
+          "function": "estimate",
+          "primitive_calls": 13325,
+          "calls": 13325,
+          "self_seconds": 0.005381100000000001,
+          "cumulative_seconds": 0.007399500000000001
+        }
+      ],
+      "heuristic_related": [
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_lookahead.py",
+          "line": 30,
+          "function": "estimate",
+          "primitive_calls": 13325,
+          "calls": 13325,
+          "self_seconds": 0.005381100000000001,
+          "cumulative_seconds": 0.007399500000000001
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_lookahead.py",
+          "line": 17,
+          "function": "make_optimized_h1",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0000307,
+          "cumulative_seconds": 0.00025590000000000004
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_two_step.py",
+          "line": 20,
+          "function": "make_optimized_h2",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.0000265,
+          "cumulative_seconds": 0.0004461
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_two_step.py",
+          "line": 29,
+          "function": "estimate",
+          "primitive_calls": 10699,
+          "calls": 10699,
+          "self_seconds": 0.0154584,
+          "cumulative_seconds": 0.0437854
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 24,
+          "function": "neighbors",
+          "primitive_calls": 84398,
+          "calls": 84398,
+          "self_seconds": 0.026255300000000002,
+          "cumulative_seconds": 0.034015000000000004
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\optimized_two_step.py",
+          "line": 43,
+          "function": "search_variant",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.00022950000000000002,
+          "cumulative_seconds": 0.1860004
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 84,
+          "function": "<genexpr>",
+          "primitive_calls": 28830,
+          "calls": 28830,
+          "self_seconds": 0.0026030000000000003,
+          "cumulative_seconds": 0.0026030000000000003
+        },
+        {
+          "file": "C:\\Users\\20921\\Desktop\\当代人工智能\\实验二\\experiments\\lookahead_heuristics.py",
+          "line": 78,
+          "function": "prepare_terrain",
+          "primitive_calls": 30,
+          "calls": 30,
+          "self_seconds": 0.000067,
+          "cumulative_seconds": 0.045410700000000005
+        }
+      ]
+    }
+  },
+  "notes": [
+    "Outer H2 recurrence and neighbor order are unchanged.",
+    "Profiler call counts are not A* expansions or generated-successor counters.",
+    "Nested cumulative times must not be added."
+  ]
+}

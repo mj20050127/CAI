@@ -1,0 +1,9 @@
+﻿depth,scope,batch_loops,minimax_total_ms,alpha_beta_total_ms
+2,precomputed,128,0.0492,0.0455
+2,end_to_end,17,1.5101499999999999,1.53625
+3,precomputed,128,0.07635,0.0632
+3,end_to_end,10,3.23375,2.71605
+4,precomputed,128,0.08745,0.07644999999999999
+4,end_to_end,16,1.6352,1.7973
+1,precomputed,128,0.040999999999999995,0.042300000000000004
+1,end_to_end,11,2.37005,2.283

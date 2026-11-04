@@ -1,0 +1,9 @@
+﻿depth,algorithm,best_target,best_value,reference_value,correct,node_visits,leaf_evals,cutoff_events,pruned_branches
+1,minimax,T2,2,2,True,5,4,0,0
+1,alpha_beta,T2,2,2,True,5,4,0,0
+2,minimax,T2,-1,-1,True,17,12,0,0
+2,alpha_beta,T2,-1,-1,True,13,8,2,4
+3,minimax,T2,2,2,True,41,24,0,0
+3,alpha_beta,T2,2,2,True,26,13,5,7
+4,minimax,T3,3,3,True,65,24,0,0
+4,alpha_beta,T3,3,3,True,47,16,5,6

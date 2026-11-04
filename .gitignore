@@ -1,16 +1,28 @@
+# Python caches and local environments
 __pycache__/
 *.py[cod]
-*.joblib
-*.pkl
-*.pickle
+.pytest_cache/
 .venv/
 venv/
+
+# Local tools, credentials and editor state
+.claude/
+.codex/
+.agents/
+.vscode/
+.idea/
 .env
 .env.*
+!.env.example
 .DS_Store
 Thumbs.db
+
+# Temporary runs and document lock files
+runs/
+tmp/
 ~$*
-*.docx
-_qa*/
-data-Project1/train_data.csv
-data-Project1/test_data_unlabeled.csv
+~WRL*.tmp
+results/*_pilot/
+results/*_smoke/
+results/*_new/
+results/*_repeat/

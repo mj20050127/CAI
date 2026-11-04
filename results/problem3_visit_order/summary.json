@@ -1,0 +1,2636 @@
+{
+  "aggregation": {
+    "batch": "For each tree and variant: median of per-call batch means; deterministic counters counted once.",
+    "random_family": "For each tree: median across random orders; then aggregate independent trees within source and depth.",
+    "paired": "Calculate each random-order/original ratio per tree first, median these ratios within the tree, then aggregate trees. Not ratios of family or group medians.",
+    "sample_size": "Random permutations are nested repeats; 30 trees x 10 orders remains 30 independent input trees per depth.",
+    "time_scope": "search excludes full validation; query includes validation; total includes fresh copying, full exact-value preprocessing if ideal, ordering, query and loop/result handling.",
+    "uncertainty": "Q1-Q3 are linearly interpolated across-tree dispersion, not confidence intervals.",
+    "oracle": "Exact-value order is an oracle reference; full true-value preparation is charged on every timed call."
+  },
+  "overall": {
+    "n_unique_trees": 91,
+    "n_random_trees": 90,
+    "n_official_trees": 1,
+    "n_raw_batches": 5460,
+    "n_variant_results": 1092,
+    "n_random_order_comparisons": 900,
+    "total_timed_calls": 296400,
+    "all_correct": true
+  },
+  "groups": [
+    {
+      "source": "official",
+      "depth": 3,
+      "n_trees": 1,
+      "original": {
+        "n_trees": 1,
+        "n_orders_per_tree": 1,
+        "node_visits": {
+          "median": 14,
+          "q1": 14.0,
+          "q3": 14.0,
+          "mean": 14,
+          "std": 0.0,
+          "min": 14,
+          "max": 14
+        },
+        "leaf_evals": {
+          "median": 7,
+          "q1": 7.0,
+          "q3": 7.0,
+          "mean": 7,
+          "std": 0.0,
+          "min": 7,
+          "max": 7
+        },
+        "cutoff_events": {
+          "median": 1,
+          "q1": 1.0,
+          "q3": 1.0,
+          "mean": 1,
+          "std": 0.0,
+          "min": 1,
+          "max": 1
+        },
+        "pruned_branches": {
+          "median": 1,
+          "q1": 1.0,
+          "q3": 1.0,
+          "mean": 1,
+          "std": 0.0,
+          "min": 1,
+          "max": 1
+        },
+        "oracle_node_evals": {
+          "median": 0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0,
+          "std": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "copy_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "oracle_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "order_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "prepare_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "search_ms": {
+          "median": 0.006118749524830491,
+          "q1": 0.006118749524830491,
+          "q3": 0.006118749524830491,
+          "mean": 0.006118749524830491,
+          "std": 0.0,
+          "min": 0.006118749524830491,
+          "max": 0.006118749524830491
+        },
+        "query_ms": {
+          "median": 0.011784375,
+          "q1": 0.011784375,
+          "q3": 0.011784375,
+          "mean": 0.011784375,
+          "std": 0.0,
+          "min": 0.011784375,
+          "max": 0.011784375
+        },
+        "total_ms": {
+          "median": 0.01272578125,
+          "q1": 0.01272578125,
+          "q3": 0.01272578125,
+          "mean": 0.01272578125,
+          "std": 0.0,
+          "min": 0.01272578125,
+          "max": 0.01272578125
+        },
+        "node_visits_min": {
+          "median": 14,
+          "q1": 14.0,
+          "q3": 14.0,
+          "mean": 14,
+          "std": 0.0,
+          "min": 14,
+          "max": 14
+        },
+        "node_visits_max": {
+          "median": 14,
+          "q1": 14.0,
+          "q3": 14.0,
+          "mean": 14,
+          "std": 0.0,
+          "min": 14,
+          "max": 14
+        },
+        "node_reduction_min": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "node_reduction_max": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "random": {
+        "n_trees": 1,
+        "n_orders_per_tree": 10,
+        "node_visits": {
+          "median": 13.5,
+          "q1": 13.5,
+          "q3": 13.5,
+          "mean": 13.5,
+          "std": 0.0,
+          "min": 13.5,
+          "max": 13.5
+        },
+        "leaf_evals": {
+          "median": 6.5,
+          "q1": 6.5,
+          "q3": 6.5,
+          "mean": 6.5,
+          "std": 0.0,
+          "min": 6.5,
+          "max": 6.5
+        },
+        "cutoff_events": {
+          "median": 1.0,
+          "q1": 1.0,
+          "q3": 1.0,
+          "mean": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "pruned_branches": {
+          "median": 1.0,
+          "q1": 1.0,
+          "q3": 1.0,
+          "mean": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "oracle_node_evals": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "copy_ms": {
+          "median": 0.016019921875,
+          "q1": 0.016019921875,
+          "q3": 0.016019921875,
+          "mean": 0.016019921875,
+          "std": 0.0,
+          "min": 0.016019921875,
+          "max": 0.016019921875
+        },
+        "oracle_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "order_ms": {
+          "median": 0.012530468749999999,
+          "q1": 0.012530468749999999,
+          "q3": 0.012530468749999999,
+          "mean": 0.012530468749999999,
+          "std": 0.0,
+          "min": 0.012530468749999999,
+          "max": 0.012530468749999999
+        },
+        "prepare_ms": {
+          "median": 0.0320015625,
+          "q1": 0.0320015625,
+          "q3": 0.0320015625,
+          "mean": 0.0320015625,
+          "std": 0.0,
+          "min": 0.0320015625,
+          "max": 0.0320015625
+        },
+        "search_ms": {
+          "median": 0.0070445316850964446,
+          "q1": 0.0070445316850964446,
+          "q3": 0.0070445316850964446,
+          "mean": 0.0070445316850964446,
+          "std": 0.0,
+          "min": 0.0070445316850964446,
+          "max": 0.0070445316850964446
+        },
+        "query_ms": {
+          "median": 0.013764453125,
+          "q1": 0.013764453125,
+          "q3": 0.013764453125,
+          "mean": 0.013764453125,
+          "std": 0.0,
+          "min": 0.013764453125,
+          "max": 0.013764453125
+        },
+        "total_ms": {
+          "median": 0.04735078125,
+          "q1": 0.04735078125,
+          "q3": 0.04735078125,
+          "mean": 0.04735078125,
+          "std": 0.0,
+          "min": 0.04735078125,
+          "max": 0.04735078125
+        },
+        "node_visits_min": {
+          "median": 11,
+          "q1": 11.0,
+          "q3": 11.0,
+          "mean": 11,
+          "std": 0.0,
+          "min": 11,
+          "max": 11
+        },
+        "node_visits_max": {
+          "median": 15,
+          "q1": 15.0,
+          "q3": 15.0,
+          "mean": 15,
+          "std": 0.0,
+          "min": 15,
+          "max": 15
+        },
+        "node_reduction_min": {
+          "median": -0.0714285714285714,
+          "q1": -0.0714285714285714,
+          "q3": -0.0714285714285714,
+          "mean": -0.0714285714285714,
+          "std": 0.0,
+          "min": -0.0714285714285714,
+          "max": -0.0714285714285714
+        },
+        "node_reduction_max": {
+          "median": 0.2142857142857143,
+          "q1": 0.2142857142857143,
+          "q3": 0.2142857142857143,
+          "mean": 0.2142857142857143,
+          "std": 0.0,
+          "min": 0.2142857142857143,
+          "max": 0.2142857142857143
+        },
+        "paired": {
+          "node_reduction": {
+            "median": 0.0357142857142857,
+            "q1": 0.0357142857142857,
+            "q3": 0.0357142857142857,
+            "mean": 0.0357142857142857,
+            "std": 0.0,
+            "min": 0.0357142857142857,
+            "max": 0.0357142857142857
+          },
+          "leaf_reduction": {
+            "median": 0.07142857142857145,
+            "q1": 0.07142857142857145,
+            "q3": 0.07142857142857145,
+            "mean": 0.07142857142857145,
+            "std": 0.0,
+            "min": 0.07142857142857145,
+            "max": 0.07142857142857145
+          },
+          "search_speedup": {
+            "median": 0.8687790795841259,
+            "q1": 0.8687790795841259,
+            "q3": 0.8687790795841259,
+            "mean": 0.8687790795841259,
+            "std": 0.0,
+            "min": 0.8687790795841259,
+            "max": 0.8687790795841259
+          },
+          "query_speedup": {
+            "median": 0.8561486241344605,
+            "q1": 0.8561486241344605,
+            "q3": 0.8561486241344605,
+            "mean": 0.8561486241344605,
+            "std": 0.0,
+            "min": 0.8561486241344605,
+            "max": 0.8561486241344605
+          },
+          "total_speedup": {
+            "median": 0.2687579154903723,
+            "q1": 0.2687579154903723,
+            "q3": 0.2687579154903723,
+            "mean": 0.2687579154903723,
+            "std": 0.0,
+            "min": 0.2687579154903723,
+            "max": 0.2687579154903723
+          },
+          "search_time_reduction": {
+            "median": -0.15130250985255034,
+            "q1": -0.15130250985255034,
+            "q3": -0.15130250985255034,
+            "mean": -0.15130250985255034,
+            "std": 0.0,
+            "min": -0.15130250985255034,
+            "max": -0.15130250985255034
+          },
+          "query_time_reduction": {
+            "median": -0.16802572261999482,
+            "q1": -0.16802572261999482,
+            "q3": -0.16802572261999482,
+            "mean": -0.16802572261999482,
+            "std": 0.0,
+            "min": -0.16802572261999482,
+            "max": -0.16802572261999482
+          },
+          "total_time_reduction": {
+            "median": -2.7208545644299833,
+            "q1": -2.7208545644299833,
+            "q3": -2.7208545644299833,
+            "mean": -2.7208545644299833,
+            "std": 0.0,
+            "min": -2.7208545644299833,
+            "max": -2.7208545644299833
+          },
+          "faster_search_trees": 0,
+          "same_search_trees": 0,
+          "slower_search_trees": 1,
+          "faster_query_trees": 0,
+          "same_query_trees": 0,
+          "slower_query_trees": 1,
+          "faster_total_trees": 0,
+          "same_total_trees": 0,
+          "slower_total_trees": 1,
+          "fewer_node_trees": 1,
+          "same_node_trees": 0,
+          "more_node_trees": 0,
+          "n_order_comparisons": 10,
+          "order_comparisons_note": "Nested orders on the same trees; these are not independent tree samples.",
+          "better_node_reduction_orders": 5,
+          "same_node_reduction_orders": 4,
+          "worse_node_reduction_orders": 1,
+          "better_search_speedup_orders": 0,
+          "same_search_speedup_orders": 0,
+          "worse_search_speedup_orders": 10,
+          "better_query_speedup_orders": 0,
+          "same_query_speedup_orders": 0,
+          "worse_query_speedup_orders": 10,
+          "better_total_speedup_orders": 0,
+          "same_total_speedup_orders": 0,
+          "worse_total_speedup_orders": 10
+        }
+      },
+      "ideal": {
+        "n_trees": 1,
+        "n_orders_per_tree": 1,
+        "node_visits": {
+          "median": 11,
+          "q1": 11.0,
+          "q3": 11.0,
+          "mean": 11,
+          "std": 0.0,
+          "min": 11,
+          "max": 11
+        },
+        "leaf_evals": {
+          "median": 5,
+          "q1": 5.0,
+          "q3": 5.0,
+          "mean": 5,
+          "std": 0.0,
+          "min": 5,
+          "max": 5
+        },
+        "cutoff_events": {
+          "median": 2,
+          "q1": 2.0,
+          "q3": 2.0,
+          "mean": 2,
+          "std": 0.0,
+          "min": 2,
+          "max": 2
+        },
+        "pruned_branches": {
+          "median": 2,
+          "q1": 2.0,
+          "q3": 2.0,
+          "mean": 2,
+          "std": 0.0,
+          "min": 2,
+          "max": 2
+        },
+        "oracle_node_evals": {
+          "median": 15,
+          "q1": 15.0,
+          "q3": 15.0,
+          "mean": 15,
+          "std": 0.0,
+          "min": 15,
+          "max": 15
+        },
+        "copy_ms": {
+          "median": 0.015571875,
+          "q1": 0.015571875,
+          "q3": 0.015571875,
+          "mean": 0.015571875,
+          "std": 0.0,
+          "min": 0.015571875,
+          "max": 0.015571875
+        },
+        "oracle_ms": {
+          "median": 0.003628125,
+          "q1": 0.003628125,
+          "q3": 0.003628125,
+          "mean": 0.003628125,
+          "std": 0.0,
+          "min": 0.003628125,
+          "max": 0.003628125
+        },
+        "order_ms": {
+          "median": 0.0075671875,
+          "q1": 0.0075671875,
+          "q3": 0.0075671875,
+          "mean": 0.0075671875,
+          "std": 0.0,
+          "min": 0.0075671875,
+          "max": 0.0075671875
+        },
+        "prepare_ms": {
+          "median": 0.02853671875,
+          "q1": 0.02853671875,
+          "q3": 0.02853671875,
+          "mean": 0.02853671875,
+          "std": 0.0,
+          "min": 0.02853671875,
+          "max": 0.02853671875
+        },
+        "search_ms": {
+          "median": 0.005771874384663533,
+          "q1": 0.005771874384663533,
+          "q3": 0.005771874384663533,
+          "mean": 0.005771874384663533,
+          "std": 0.0,
+          "min": 0.005771874384663533,
+          "max": 0.005771874384663533
+        },
+        "query_ms": {
+          "median": 0.012084375,
+          "q1": 0.012084375,
+          "q3": 0.012084375,
+          "mean": 0.012084375,
+          "std": 0.0,
+          "min": 0.012084375,
+          "max": 0.012084375
+        },
+        "total_ms": {
+          "median": 0.0418265625,
+          "q1": 0.0418265625,
+          "q3": 0.0418265625,
+          "mean": 0.0418265625,
+          "std": 0.0,
+          "min": 0.0418265625,
+          "max": 0.0418265625
+        },
+        "node_visits_min": {
+          "median": 11,
+          "q1": 11.0,
+          "q3": 11.0,
+          "mean": 11,
+          "std": 0.0,
+          "min": 11,
+          "max": 11
+        },
+        "node_visits_max": {
+          "median": 11,
+          "q1": 11.0,
+          "q3": 11.0,
+          "mean": 11,
+          "std": 0.0,
+          "min": 11,
+          "max": 11
+        },
+        "node_reduction_min": {
+          "median": 0.2142857142857143,
+          "q1": 0.2142857142857143,
+          "q3": 0.2142857142857143,
+          "mean": 0.2142857142857143,
+          "std": 0.0,
+          "min": 0.2142857142857143,
+          "max": 0.2142857142857143
+        },
+        "node_reduction_max": {
+          "median": 0.2142857142857143,
+          "q1": 0.2142857142857143,
+          "q3": 0.2142857142857143,
+          "mean": 0.2142857142857143,
+          "std": 0.0,
+          "min": 0.2142857142857143,
+          "max": 0.2142857142857143
+        },
+        "paired": {
+          "node_reduction": {
+            "median": 0.2142857142857143,
+            "q1": 0.2142857142857143,
+            "q3": 0.2142857142857143,
+            "mean": 0.2142857142857143,
+            "std": 0.0,
+            "min": 0.2142857142857143,
+            "max": 0.2142857142857143
+          },
+          "leaf_reduction": {
+            "median": 0.2857142857142857,
+            "q1": 0.2857142857142857,
+            "q3": 0.2857142857142857,
+            "mean": 0.2857142857142857,
+            "std": 0.0,
+            "min": 0.2857142857142857,
+            "max": 0.2857142857142857
+          },
+          "search_speedup": {
+            "median": 1.0600974860244086,
+            "q1": 1.0600974860244086,
+            "q3": 1.0600974860244086,
+            "mean": 1.0600974860244086,
+            "std": 0.0,
+            "min": 1.0600974860244086,
+            "max": 1.0600974860244086
+          },
+          "query_speedup": {
+            "median": 0.9751745539177658,
+            "q1": 0.9751745539177658,
+            "q3": 0.9751745539177658,
+            "mean": 0.9751745539177658,
+            "std": 0.0,
+            "min": 0.9751745539177658,
+            "max": 0.9751745539177658
+          },
+          "total_speedup": {
+            "median": 0.3042511860734432,
+            "q1": 0.3042511860734432,
+            "q3": 0.3042511860734432,
+            "mean": 0.3042511860734432,
+            "std": 0.0,
+            "min": 0.3042511860734432,
+            "max": 0.3042511860734432
+          },
+          "search_time_reduction": {
+            "median": 0.05669052782097128,
+            "q1": 0.05669052782097128,
+            "q3": 0.05669052782097128,
+            "mean": 0.05669052782097128,
+            "std": 0.0,
+            "min": 0.05669052782097128,
+            "max": 0.05669052782097128
+          },
+          "query_time_reduction": {
+            "median": -0.025457438345266592,
+            "q1": -0.025457438345266592,
+            "q3": -0.025457438345266592,
+            "mean": -0.025457438345266592,
+            "std": 0.0,
+            "min": -0.025457438345266592,
+            "max": -0.025457438345266592
+          },
+          "total_time_reduction": {
+            "median": -2.2867579348026275,
+            "q1": -2.2867579348026275,
+            "q3": -2.2867579348026275,
+            "mean": -2.2867579348026275,
+            "std": 0.0,
+            "min": -2.2867579348026275,
+            "max": -2.2867579348026275
+          },
+          "faster_search_trees": 1,
+          "same_search_trees": 0,
+          "slower_search_trees": 0,
+          "faster_query_trees": 0,
+          "same_query_trees": 0,
+          "slower_query_trees": 1,
+          "faster_total_trees": 0,
+          "same_total_trees": 0,
+          "slower_total_trees": 1,
+          "fewer_node_trees": 1,
+          "same_node_trees": 0,
+          "more_node_trees": 0,
+          "n_order_comparisons": 1,
+          "order_comparisons_note": "Nested orders on the same trees; these are not independent tree samples.",
+          "better_node_reduction_orders": 1,
+          "same_node_reduction_orders": 0,
+          "worse_node_reduction_orders": 0,
+          "better_search_speedup_orders": 1,
+          "same_search_speedup_orders": 0,
+          "worse_search_speedup_orders": 0,
+          "better_query_speedup_orders": 0,
+          "same_query_speedup_orders": 0,
+          "worse_query_speedup_orders": 1,
+          "better_total_speedup_orders": 0,
+          "same_total_speedup_orders": 0,
+          "worse_total_speedup_orders": 1
+        }
+      }
+    },
+    {
+      "source": "random",
+      "depth": 4,
+      "n_trees": 30,
+      "original": {
+        "n_trees": 30,
+        "n_orders_per_tree": 1,
+        "node_visits": {
+          "median": 82.5,
+          "q1": 71.25,
+          "q3": 86.75,
+          "mean": 78.93333333333334,
+          "std": 13.289698715697922,
+          "min": 48,
+          "max": 102
+        },
+        "leaf_evals": {
+          "median": 48.0,
+          "q1": 42.5,
+          "q3": 53.5,
+          "mean": 47.13333333333333,
+          "std": 8.779809648919752,
+          "min": 26,
+          "max": 63
+        },
+        "cutoff_events": {
+          "median": 11.0,
+          "q1": 10.0,
+          "q3": 12.75,
+          "mean": 11.1,
+          "std": 2.1066397495734193,
+          "min": 7,
+          "max": 16
+        },
+        "pruned_branches": {
+          "median": 17.0,
+          "q1": 16.0,
+          "q3": 19.75,
+          "mean": 17.466666666666665,
+          "std": 3.319049857116188,
+          "min": 10,
+          "max": 24
+        },
+        "oracle_node_evals": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0,
+          "std": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "copy_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "oracle_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "order_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "prepare_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "search_ms": {
+          "median": 0.03643359264060564,
+          "q1": 0.028374022861044068,
+          "q3": 0.05242663778324401,
+          "mean": 0.04112246095379897,
+          "std": 0.01752851862217686,
+          "min": 0.017946875232155435,
+          "max": 0.09020468633025303
+        },
+        "query_ms": {
+          "median": 0.0816125,
+          "q1": 0.069063671875,
+          "q3": 0.127623828125,
+          "mean": 0.09912900113556954,
+          "std": 0.039386323774755705,
+          "min": 0.0580953125,
+          "max": 0.195740625
+        },
+        "total_ms": {
+          "median": 0.082801171875,
+          "q1": 0.0701431640625,
+          "q3": 0.1299326171875,
+          "mean": 0.10078752060559548,
+          "std": 0.04023452447926833,
+          "min": 0.05891484375,
+          "max": 0.198921875
+        },
+        "node_visits_min": {
+          "median": 82.5,
+          "q1": 71.25,
+          "q3": 86.75,
+          "mean": 78.93333333333334,
+          "std": 13.289698715697922,
+          "min": 48,
+          "max": 102
+        },
+        "node_visits_max": {
+          "median": 82.5,
+          "q1": 71.25,
+          "q3": 86.75,
+          "mean": 78.93333333333334,
+          "std": 13.289698715697922,
+          "min": 48,
+          "max": 102
+        },
+        "node_reduction_min": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "node_reduction_max": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "random": {
+        "n_trees": 30,
+        "n_orders_per_tree": 10,
+        "node_visits": {
+          "median": 75.5,
+          "q1": 68.5,
+          "q3": 78.875,
+          "mean": 75.1,
+          "std": 6.69585564051531,
+          "min": 65.0,
+          "max": 91.5
+        },
+        "leaf_evals": {
+          "median": 45.25,
+          "q1": 40.5,
+          "q3": 47.375,
+          "mean": 44.78333333333333,
+          "std": 4.436687435722608,
+          "min": 38.0,
+          "max": 56.0
+        },
+        "cutoff_events": {
+          "median": 10.75,
+          "q1": 10.5,
+          "q3": 11.375,
+          "mean": 10.85,
+          "std": 0.6966669416487385,
+          "min": 10.0,
+          "max": 12.0
+        },
+        "pruned_branches": {
+          "median": 17.5,
+          "q1": 16.5,
+          "q3": 18.375,
+          "mean": 17.3,
+          "std": 1.3038404810405297,
+          "min": 14.5,
+          "max": 19.5
+        },
+        "oracle_node_evals": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "copy_ms": {
+          "median": 0.11594921875,
+          "q1": 0.11006855468749999,
+          "q3": 0.18215250651041667,
+          "mean": 0.13742837506707348,
+          "std": 0.04339082554921313,
+          "min": 0.095103515625,
+          "max": 0.24203593750000002
+        },
+        "oracle_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "order_ms": {
+          "median": 0.0525869140625,
+          "q1": 0.0491693359375,
+          "q3": 0.07487276475694443,
+          "mean": 0.060359856384770885,
+          "std": 0.01696573039815377,
+          "min": 0.043834375,
+          "max": 0.105987890625
+        },
+        "prepare_ms": {
+          "median": 0.172851953125,
+          "q1": 0.1626490234375,
+          "q3": 0.26179796781994047,
+          "mean": 0.2019996995342293,
+          "std": 0.06128933828832613,
+          "min": 0.14225156249999998,
+          "max": 0.3551984375
+        },
+        "search_ms": {
+          "median": 0.036474023204391415,
+          "q1": 0.031247363722286536,
+          "q3": 0.05214154026363743,
+          "mean": 0.04142962655784653,
+          "std": 0.012352030455053458,
+          "min": 0.028691795478152926,
+          "max": 0.06623632839364291
+        },
+        "query_ms": {
+          "median": 0.07643749999999999,
+          "q1": 0.06820546875,
+          "q3": 0.11363443545386905,
+          "mean": 0.08824722785327443,
+          "std": 0.027322612402818285,
+          "min": 0.061604296875,
+          "max": 0.14359882812500002
+        },
+        "total_ms": {
+          "median": 0.2508748046875,
+          "q1": 0.2362630859375,
+          "q3": 0.39363241257440473,
+          "mean": 0.2974369159928122,
+          "std": 0.0923798194240399,
+          "min": 0.21030625,
+          "max": 0.526676953125
+        },
+        "node_visits_min": {
+          "median": 57.0,
+          "q1": 51.0,
+          "q3": 61.0,
+          "mean": 56.36666666666667,
+          "std": 7.836621955802189,
+          "min": 39,
+          "max": 72
+        },
+        "node_visits_max": {
+          "median": 95.0,
+          "q1": 92.0,
+          "q3": 99.75,
+          "mean": 94.93333333333334,
+          "std": 6.549194914108795,
+          "min": 82,
+          "max": 108
+        },
+        "node_reduction_min": {
+          "median": -0.17156419529837252,
+          "q1": -0.3060704355885079,
+          "q3": -0.09524617996604418,
+          "mean": -0.24171467029411084,
+          "std": 0.2584106418257962,
+          "min": -0.9791666666666667,
+          "max": 0.1568627450980392
+        },
+        "node_reduction_max": {
+          "median": 0.28674609084139985,
+          "q1": 0.21784401796651698,
+          "q3": 0.3673297842532922,
+          "mean": 0.26194105190959216,
+          "std": 0.17554125870238746,
+          "min": -0.15686274509803932,
+          "max": 0.6176470588235294
+        },
+        "paired": {
+          "node_reduction": {
+            "median": 0.04798976608187136,
+            "q1": -0.004687499999999997,
+            "q3": 0.1345165652467884,
+            "mean": 0.018962273752490696,
+            "std": 0.20033196012598012,
+            "min": -0.43137254901960786,
+            "max": 0.3480392156862745
+          },
+          "leaf_reduction": {
+            "median": 0.05012531328320807,
+            "q1": -0.027659574468085105,
+            "q3": 0.15418956043956045,
+            "mean": 0.01300433195357023,
+            "std": 0.22472230868888926,
+            "min": -0.5384615384615385,
+            "max": 0.373015873015873
+          },
+          "search_speedup": {
+            "median": 0.9437279984380665,
+            "q1": 0.849466332123086,
+            "q3": 1.0748937288530325,
+            "mean": 0.9768596663619875,
+            "std": 0.21800618285816867,
+            "min": 0.625644016795348,
+            "max": 1.5564844199941743
+          },
+          "query_speedup": {
+            "median": 1.0591151355441577,
+            "q1": 0.9893940704485868,
+            "q3": 1.1512691609216472,
+            "mean": 1.1080688518361959,
+            "std": 0.19121732238343606,
+            "min": 0.9132878501685158,
+            "max": 1.8463129887410532
+          },
+          "total_speedup": {
+            "median": 0.3217830712711846,
+            "q1": 0.30149079932317857,
+            "q3": 0.34247672833129084,
+            "mean": 0.33420474260698885,
+            "std": 0.06134143861057461,
+            "min": 0.2673504483217045,
+            "max": 0.5797772718914678
+          },
+          "search_time_reduction": {
+            "median": -0.060119810598674384,
+            "q1": -0.17762908710733474,
+            "q3": 0.06597222758344046,
+            "mean": -0.07022825562866263,
+            "std": 0.22027831305849846,
+            "min": -0.5987070232006633,
+            "max": 0.3559435286299083
+          },
+          "query_time_reduction": {
+            "median": 0.05578994530830711,
+            "q1": -0.010904383812484139,
+            "q3": 0.1309596920735568,
+            "mean": 0.0768367606190126,
+            "std": 0.12438589869851618,
+            "min": -0.09502271318620092,
+            "max": 0.4580862533692722
+          },
+          "total_time_reduction": {
+            "median": -2.107731266802511,
+            "q1": -2.3177607995455363,
+            "q3": -1.920012942660875,
+            "mean": -2.067488221196625,
+            "std": 0.4368938746654003,
+            "min": -2.74126087979299,
+            "max": -0.7250434027777778
+          },
+          "faster_search_trees": 11,
+          "same_search_trees": 0,
+          "slower_search_trees": 19,
+          "faster_query_trees": 22,
+          "same_query_trees": 0,
+          "slower_query_trees": 8,
+          "faster_total_trees": 0,
+          "same_total_trees": 0,
+          "slower_total_trees": 30,
+          "fewer_node_trees": 21,
+          "same_node_trees": 0,
+          "more_node_trees": 9,
+          "n_order_comparisons": 300,
+          "order_comparisons_note": "Nested orders on the same trees; these are not independent tree samples.",
+          "better_node_reduction_orders": 176,
+          "same_node_reduction_orders": 5,
+          "worse_node_reduction_orders": 119,
+          "better_search_speedup_orders": 120,
+          "same_search_speedup_orders": 0,
+          "worse_search_speedup_orders": 180,
+          "better_query_speedup_orders": 208,
+          "same_query_speedup_orders": 0,
+          "worse_query_speedup_orders": 92,
+          "better_total_speedup_orders": 0,
+          "same_total_speedup_orders": 0,
+          "worse_total_speedup_orders": 300
+        }
+      },
+      "ideal": {
+        "n_trees": 30,
+        "n_orders_per_tree": 1,
+        "node_visits": {
+          "median": 37.0,
+          "q1": 37.0,
+          "q3": 37.0,
+          "mean": 37,
+          "std": 0.0,
+          "min": 37,
+          "max": 37
+        },
+        "leaf_evals": {
+          "median": 17.0,
+          "q1": 17.0,
+          "q3": 17.0,
+          "mean": 17,
+          "std": 0.0,
+          "min": 17,
+          "max": 17
+        },
+        "cutoff_events": {
+          "median": 12.0,
+          "q1": 12.0,
+          "q3": 12.0,
+          "mean": 12,
+          "std": 0.0,
+          "min": 12,
+          "max": 12
+        },
+        "pruned_branches": {
+          "median": 24.0,
+          "q1": 24.0,
+          "q3": 24.0,
+          "mean": 24,
+          "std": 0.0,
+          "min": 24,
+          "max": 24
+        },
+        "oracle_node_evals": {
+          "median": 121.0,
+          "q1": 121.0,
+          "q3": 121.0,
+          "mean": 121,
+          "std": 0.0,
+          "min": 121,
+          "max": 121
+        },
+        "copy_ms": {
+          "median": 0.1158953125,
+          "q1": 0.1061759765625,
+          "q3": 0.16247937057783018,
+          "mean": 0.13219766200584007,
+          "std": 0.03778686508774107,
+          "min": 0.0938046875,
+          "max": 0.2169109375
+        },
+        "oracle_ms": {
+          "median": 0.02634140625,
+          "q1": 0.023510546875,
+          "q3": 0.0376125,
+          "mean": 0.02984078033748877,
+          "std": 0.00829742424540845,
+          "min": 0.02145234375,
+          "max": 0.04898671875
+        },
+        "order_ms": {
+          "median": 0.04582578125,
+          "q1": 0.0397857421875,
+          "q3": 0.05677556154537286,
+          "mean": 0.04994762075565289,
+          "std": 0.013429172680274217,
+          "min": 0.03586349206349206,
+          "max": 0.08256875
+        },
+        "prepare_ms": {
+          "median": 0.192585546875,
+          "q1": 0.1727197265625,
+          "q3": 0.26731092767295594,
+          "mean": 0.21797821256208197,
+          "std": 0.06297629910018455,
+          "min": 0.15480625,
+          "max": 0.36429375
+        },
+        "search_ms": {
+          "median": 0.01953164189671952,
+          "q1": 0.017952539735688333,
+          "q3": 0.028842721535785123,
+          "mean": 0.02266366552137295,
+          "std": 0.007305749305176749,
+          "min": 0.014962500017645652,
+          "max": 0.03896875000464206
+        },
+        "query_ms": {
+          "median": 0.059954296875,
+          "q1": 0.052756250000000005,
+          "q3": 0.08662828714622642,
+          "mean": 0.06827615835891485,
+          "std": 0.02132467773500087,
+          "min": 0.04738828125,
+          "max": 0.12181796875
+        },
+        "total_ms": {
+          "median": 0.25699101562500004,
+          "q1": 0.2292294921875,
+          "q3": 0.35929132149174525,
+          "mean": 0.29107328234969304,
+          "std": 0.08535781875770575,
+          "min": 0.20419140625,
+          "max": 0.4955875
+        },
+        "node_visits_min": {
+          "median": 37.0,
+          "q1": 37.0,
+          "q3": 37.0,
+          "mean": 37,
+          "std": 0.0,
+          "min": 37,
+          "max": 37
+        },
+        "node_visits_max": {
+          "median": 37.0,
+          "q1": 37.0,
+          "q3": 37.0,
+          "mean": 37,
+          "std": 0.0,
+          "min": 37,
+          "max": 37
+        },
+        "node_reduction_min": {
+          "median": 0.5514986776373788,
+          "q1": 0.4806827073552426,
+          "q3": 0.573476343223737,
+          "mean": 0.5157844033825827,
+          "std": 0.09731973838091679,
+          "min": 0.22916666666666663,
+          "max": 0.6372549019607843
+        },
+        "node_reduction_max": {
+          "median": 0.5514986776373788,
+          "q1": 0.4806827073552426,
+          "q3": 0.573476343223737,
+          "mean": 0.5157844033825827,
+          "std": 0.09731973838091679,
+          "min": 0.22916666666666663,
+          "max": 0.6372549019607843
+        },
+        "paired": {
+          "node_reduction": {
+            "median": 0.5514986776373788,
+            "q1": 0.4806827073552426,
+            "q3": 0.573476343223737,
+            "mean": 0.5157844033825827,
+            "std": 0.09731973838091679,
+            "min": 0.22916666666666663,
+            "max": 0.6372549019607843
+          },
+          "leaf_reduction": {
+            "median": 0.6458333333333333,
+            "q1": 0.5998376623376623,
+            "q3": 0.6821581196581197,
+            "mean": 0.6242929713406113,
+            "std": 0.08644229600453358,
+            "min": 0.34615384615384615,
+            "max": 0.7301587301587302
+          },
+          "search_speedup": {
+            "median": 1.7580063427020445,
+            "q1": 1.569312259064669,
+            "q3": 1.86439517828037,
+            "mean": 1.8033640557597883,
+            "std": 0.4775860723928425,
+            "min": 1.1826607087718086,
+            "max": 3.5697826468463023
+          },
+          "query_speedup": {
+            "median": 1.3894916439043508,
+            "q1": 1.252452166064741,
+            "q3": 1.4301772579298848,
+            "mean": 1.44055204174294,
+            "std": 0.32298905449626697,
+            "min": 1.095511802959701,
+            "max": 2.6955116561650527
+          },
+          "total_speedup": {
+            "median": 0.327165572136643,
+            "q1": 0.3030181392315474,
+            "q3": 0.34817497436820655,
+            "mean": 0.3419464500442473,
+            "std": 0.07680972624553027,
+            "min": 0.2608689119217697,
+            "max": 0.6127350805390546
+          },
+          "search_time_reduction": {
+            "median": 0.4311110180296753,
+            "q1": 0.36260507054418467,
+            "q3": 0.46363302577052734,
+            "mean": 0.41560660666885285,
+            "std": 0.12574534449149577,
+            "min": 0.15444895346316323,
+            "max": 0.7198709000158756
+          },
+          "query_time_reduction": {
+            "median": 0.2802938254983998,
+            "q1": 0.2014754205099324,
+            "q3": 0.3007834083149288,
+            "mean": 0.28184476230708705,
+            "std": 0.11529992419131786,
+            "min": 0.08718464073290721,
+            "max": 0.6290129194163027
+          },
+          "total_time_reduction": {
+            "median": -2.0565918811335315,
+            "q1": -2.300152716138107,
+            "q3": -1.8729721951218385,
+            "mean": -2.0303404392867868,
+            "std": 0.505939776441135,
+            "min": -2.833342933173592,
+            "max": -0.6320266812865496
+          },
+          "faster_search_trees": 30,
+          "same_search_trees": 0,
+          "slower_search_trees": 0,
+          "faster_query_trees": 30,
+          "same_query_trees": 0,
+          "slower_query_trees": 0,
+          "faster_total_trees": 0,
+          "same_total_trees": 0,
+          "slower_total_trees": 30,
+          "fewer_node_trees": 30,
+          "same_node_trees": 0,
+          "more_node_trees": 0,
+          "n_order_comparisons": 30,
+          "order_comparisons_note": "Nested orders on the same trees; these are not independent tree samples.",
+          "better_node_reduction_orders": 30,
+          "same_node_reduction_orders": 0,
+          "worse_node_reduction_orders": 0,
+          "better_search_speedup_orders": 30,
+          "same_search_speedup_orders": 0,
+          "worse_search_speedup_orders": 0,
+          "better_query_speedup_orders": 30,
+          "same_query_speedup_orders": 0,
+          "worse_query_speedup_orders": 0,
+          "better_total_speedup_orders": 0,
+          "same_total_speedup_orders": 0,
+          "worse_total_speedup_orders": 30
+        }
+      }
+    },
+    {
+      "source": "random",
+      "depth": 6,
+      "n_trees": 30,
+      "original": {
+        "n_trees": 30,
+        "n_orders_per_tree": 1,
+        "node_visits": {
+          "median": 413.5,
+          "q1": 350.75,
+          "q3": 485.25,
+          "mean": 406.6666666666667,
+          "std": 94.04706574217317,
+          "min": 249,
+          "max": 592
+        },
+        "leaf_evals": {
+          "median": 231.5,
+          "q1": 201.5,
+          "q3": 277.0,
+          "mean": 230.63333333333333,
+          "std": 54.6149425892126,
+          "min": 136,
+          "max": 343
+        },
+        "cutoff_events": {
+          "median": 77.0,
+          "q1": 62.25,
+          "q3": 87.75,
+          "mean": 75.4,
+          "std": 16.552112064419557,
+          "min": 43,
+          "max": 100
+        },
+        "pruned_branches": {
+          "median": 125.5,
+          "q1": 100.75,
+          "q3": 144.75,
+          "mean": 122.43333333333334,
+          "std": 26.53518592273329,
+          "min": 71,
+          "max": 164
+        },
+        "oracle_node_evals": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0,
+          "std": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "copy_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "oracle_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "order_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "prepare_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "search_ms": {
+          "median": 0.19485212176346756,
+          "q1": 0.147676455083923,
+          "q3": 0.2721436984001922,
+          "mean": 0.22145753637120874,
+          "std": 0.10547935371535638,
+          "min": 0.10013332851513317,
+          "max": 0.4973999960136346
+        },
+        "query_ms": {
+          "median": 0.6036808333333333,
+          "q1": 0.5355202122153209,
+          "q3": 0.8900748076923077,
+          "mean": 0.729322308416587,
+          "std": 0.26608978187205423,
+          "min": 0.47541836734693876,
+          "max": 1.4149454545454547
+        },
+        "total_ms": {
+          "median": 0.6057572916666667,
+          "q1": 0.5375600155279503,
+          "q3": 0.8932930769230769,
+          "mean": 0.7318784155033511,
+          "std": 0.26699301890464816,
+          "min": 0.47700000000000004,
+          "max": 1.4192636363636364
+        },
+        "node_visits_min": {
+          "median": 413.5,
+          "q1": 350.75,
+          "q3": 485.25,
+          "mean": 406.6666666666667,
+          "std": 94.04706574217317,
+          "min": 249,
+          "max": 592
+        },
+        "node_visits_max": {
+          "median": 413.5,
+          "q1": 350.75,
+          "q3": 485.25,
+          "mean": 406.6666666666667,
+          "std": 94.04706574217317,
+          "min": 249,
+          "max": 592
+        },
+        "node_reduction_min": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "node_reduction_max": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "random": {
+        "n_trees": 30,
+        "n_orders_per_tree": 10,
+        "node_visits": {
+          "median": 432.0,
+          "q1": 412.75,
+          "q3": 448.125,
+          "mean": 432.6,
+          "std": 34.32361205974083,
+          "min": 371.5,
+          "max": 498.5
+        },
+        "leaf_evals": {
+          "median": 246.75,
+          "q1": 234.75,
+          "q3": 256.25,
+          "mean": 246.58333333333334,
+          "std": 20.124219125280337,
+          "min": 211.5,
+          "max": 284.5
+        },
+        "cutoff_events": {
+          "median": 78.5,
+          "q1": 74.0,
+          "q3": 82.875,
+          "mean": 78.78333333333333,
+          "std": 7.056035974834661,
+          "min": 63.0,
+          "max": 92.5
+        },
+        "pruned_branches": {
+          "median": 127.0,
+          "q1": 121.125,
+          "q3": 135.5,
+          "mean": 127.28333333333333,
+          "std": 11.387896882317596,
+          "min": 101.5,
+          "max": 148.5
+        },
+        "oracle_node_evals": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "copy_ms": {
+          "median": 1.2016632653061226,
+          "q1": 1.1612083333333334,
+          "q3": 1.9304480603448275,
+          "mean": 1.4953119751178323,
+          "std": 0.47808934563517635,
+          "min": 0.968176923076923,
+          "max": 2.4363
+        },
+        "oracle_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "order_ms": {
+          "median": 0.3189276530612245,
+          "q1": 0.31085052083333337,
+          "q3": 0.47727906249999996,
+          "mean": 0.3897722476097893,
+          "std": 0.11160421569766478,
+          "min": 0.26662692307692304,
+          "max": 0.6222545454545454
+        },
+        "prepare_ms": {
+          "median": 1.5382158163265305,
+          "q1": 1.4930287878787878,
+          "q3": 2.4569453125000003,
+          "mean": 1.9066074678424205,
+          "std": 0.5980700782335633,
+          "min": 1.2422461538461538,
+          "max": 3.0689272727272723
+        },
+        "search_ms": {
+          "median": 0.203745778642108,
+          "q1": 0.1902926853224148,
+          "q3": 0.3183879172866,
+          "mean": 0.24663906505507138,
+          "std": 0.07708332245339293,
+          "min": 0.14614871664283174,
+          "max": 0.4082566641348725
+        },
+        "query_ms": {
+          "median": 0.5414257575757576,
+          "q1": 0.519841796875,
+          "q3": 0.8554685648148148,
+          "mean": 0.6679050572659173,
+          "std": 0.21069780893970302,
+          "min": 0.42595897435897434,
+          "max": 1.1240727272727273
+        },
+        "total_ms": {
+          "median": 2.123280476190476,
+          "q1": 2.0457395257296467,
+          "q3": 3.3786890625,
+          "mean": 2.617267170888174,
+          "std": 0.8198668641823521,
+          "min": 1.705948717948718,
+          "max": 4.312527272727273
+        },
+        "node_visits_min": {
+          "median": 300.0,
+          "q1": 266.5,
+          "q3": 337.75,
+          "mean": 303.5,
+          "std": 51.27596062416612,
+          "min": 216,
+          "max": 400
+        },
+        "node_visits_max": {
+          "median": 557.0,
+          "q1": 528.25,
+          "q3": 582.75,
+          "mean": 555.4666666666667,
+          "std": 38.382587048110075,
+          "min": 485,
+          "max": 632
+        },
+        "node_reduction_min": {
+          "median": -0.3113475177304964,
+          "q1": -0.6592126572816743,
+          "q3": -0.18815789473684202,
+          "mean": -0.45018023656066886,
+          "std": 0.4077058373568561,
+          "min": -1.538152610441767,
+          "max": 0.07094594594594594
+        },
+        "node_reduction_max": {
+          "median": 0.2492673754313846,
+          "q1": 0.1403982922179477,
+          "q3": 0.31958053605288783,
+          "mean": 0.2232347302157284,
+          "std": 0.18096787123235267,
+          "min": -0.26923076923076916,
+          "max": 0.5297872340425531
+        },
+        "paired": {
+          "node_reduction": {
+            "median": -0.05097270658837322,
+            "q1": -0.2186882411067194,
+            "q3": 0.054438321604036624,
+            "mean": -0.12240099023676447,
+            "std": 0.2885034674915531,
+            "min": -0.8961538461538462,
+            "max": 0.26942567567567566
+          },
+          "leaf_reduction": {
+            "median": -0.07718546593062536,
+            "q1": -0.22585227272727273,
+            "q3": 0.05836321529956669,
+            "mean": -0.13092608561809763,
+            "std": 0.2972680293774024,
+            "min": -0.928082191780822,
+            "max": 0.29300291545189505
+          },
+          "search_speedup": {
+            "median": 0.8813976348876912,
+            "q1": 0.7425401020620159,
+            "q3": 1.0103001594751302,
+            "mean": 0.8859718136799579,
+            "std": 0.23297518706866713,
+            "min": 0.4647933977686546,
+            "max": 1.4284150373709457
+          },
+          "query_speedup": {
+            "median": 1.089466965523127,
+            "q1": 1.0130800575449104,
+            "q3": 1.1556128029500286,
+            "mean": 1.0890542009364057,
+            "std": 0.1418616618495145,
+            "min": 0.7965915386673685,
+            "max": 1.4642071599622022
+          },
+          "total_speedup": {
+            "median": 0.2785206066808613,
+            "q1": 0.25853895887341016,
+            "q3": 0.29869822003876123,
+            "mean": 0.2789174853472741,
+            "std": 0.036601621544679726,
+            "min": 0.19745247038869945,
+            "max": 0.35851698105392715
+          },
+          "search_time_reduction": {
+            "median": -0.13529720407599855,
+            "q1": -0.34965189806753544,
+            "q3": 0.009539288698117238,
+            "mean": -0.2165309689108758,
+            "std": 0.359844530048378,
+            "min": -1.1530046474998823,
+            "max": 0.2995014792514128
+          },
+          "query_time_reduction": {
+            "median": 0.08189507350396152,
+            "q1": 0.01290770903908367,
+            "q3": 0.13457232496937593,
+            "mean": 0.06602617760997835,
+            "std": 0.12644620304160017,
+            "min": -0.2554188092940457,
+            "max": 0.3167644693014895
+          },
+          "total_time_reduction": {
+            "median": -2.5904037099916657,
+            "q1": -2.868074770069906,
+            "q3": -2.3485865715840117,
+            "mean": -2.6496458814724573,
+            "std": 0.5122982040129161,
+            "min": -4.069024896810999,
+            "max": -1.7893624572497904
+          },
+          "faster_search_trees": 8,
+          "same_search_trees": 0,
+          "slower_search_trees": 22,
+          "faster_query_trees": 25,
+          "same_query_trees": 0,
+          "slower_query_trees": 5,
+          "faster_total_trees": 0,
+          "same_total_trees": 0,
+          "slower_total_trees": 30,
+          "fewer_node_trees": 11,
+          "same_node_trees": 0,
+          "more_node_trees": 19,
+          "n_order_comparisons": 300,
+          "order_comparisons_note": "Nested orders on the same trees; these are not independent tree samples.",
+          "better_node_reduction_orders": 125,
+          "same_node_reduction_orders": 1,
+          "worse_node_reduction_orders": 174,
+          "better_search_speedup_orders": 107,
+          "same_search_speedup_orders": 0,
+          "worse_search_speedup_orders": 193,
+          "better_query_speedup_orders": 223,
+          "same_query_speedup_orders": 0,
+          "worse_query_speedup_orders": 77,
+          "better_total_speedup_orders": 0,
+          "same_total_speedup_orders": 0,
+          "worse_total_speedup_orders": 300
+        }
+      },
+      "ideal": {
+        "n_trees": 30,
+        "n_orders_per_tree": 1,
+        "node_visits": {
+          "median": 125.0,
+          "q1": 125.0,
+          "q3": 125.0,
+          "mean": 125,
+          "std": 0.0,
+          "min": 125,
+          "max": 125
+        },
+        "leaf_evals": {
+          "median": 53.0,
+          "q1": 53.0,
+          "q3": 53.0,
+          "mean": 53,
+          "std": 0.0,
+          "min": 53,
+          "max": 53
+        },
+        "cutoff_events": {
+          "median": 46.0,
+          "q1": 46.0,
+          "q3": 46.0,
+          "mean": 46,
+          "std": 0.0,
+          "min": 46,
+          "max": 46
+        },
+        "pruned_branches": {
+          "median": 92.0,
+          "q1": 92.0,
+          "q3": 92.0,
+          "mean": 92,
+          "std": 0.0,
+          "min": 92,
+          "max": 92
+        },
+        "oracle_node_evals": {
+          "median": 1093.0,
+          "q1": 1093.0,
+          "q3": 1093.0,
+          "mean": 1093,
+          "std": 0.0,
+          "min": 1093,
+          "max": 1093
+        },
+        "copy_ms": {
+          "median": 1.1920259821428572,
+          "q1": 1.1291160348360656,
+          "q3": 1.845283890086207,
+          "mean": 1.4950409370318376,
+          "std": 0.4811336102819437,
+          "min": 1.0592439024390243,
+          "max": 2.5039066666666665
+        },
+        "oracle_ms": {
+          "median": 0.2758876397515528,
+          "q1": 0.2607083333333333,
+          "q3": 0.4069453125,
+          "mean": 0.33412486287649074,
+          "std": 0.10119054461477836,
+          "min": 0.23848292682926828,
+          "max": 0.5695909090909091
+        },
+        "order_ms": {
+          "median": 0.31352941964285713,
+          "q1": 0.29323427254098366,
+          "q3": 0.47487875,
+          "mean": 0.3749983927893008,
+          "std": 0.10831282820370476,
+          "min": 0.27015641025641024,
+          "max": 0.59642
+        },
+        "prepare_ms": {
+          "median": 1.805264419642857,
+          "q1": 1.7080297899590164,
+          "q3": 2.7479034374999998,
+          "mean": 2.2337363058764215,
+          "std": 0.6924624327036392,
+          "min": 1.5829243902439025,
+          "max": 3.6757733333333333
+        },
+        "search_ms": {
+          "median": 0.0635665625070812,
+          "q1": 0.059607912865684454,
+          "q3": 0.09764341609574398,
+          "mean": 0.07878631391148576,
+          "std": 0.024859079795769234,
+          "min": 0.05585365650448494,
+          "max": 0.13434666325338185
+        },
+        "query_ms": {
+          "median": 0.40191437500000005,
+          "q1": 0.38091807432432434,
+          "q3": 0.6661417307692308,
+          "mean": 0.509040682978491,
+          "std": 0.1680428964042042,
+          "min": 0.35494634146341464,
+          "max": 0.8706733333333333
+        },
+        "total_ms": {
+          "median": 2.2559672767857144,
+          "q1": 2.121744108606557,
+          "q3": 3.4662743103448275,
+          "mean": 2.79245795364744,
+          "std": 0.8815433950579998,
+          "min": 1.9668999999999999,
+          "max": 4.7421
+        },
+        "node_visits_min": {
+          "median": 125.0,
+          "q1": 125.0,
+          "q3": 125.0,
+          "mean": 125,
+          "std": 0.0,
+          "min": 125,
+          "max": 125
+        },
+        "node_visits_max": {
+          "median": 125.0,
+          "q1": 125.0,
+          "q3": 125.0,
+          "mean": 125,
+          "std": 0.0,
+          "min": 125,
+          "max": 125
+        },
+        "node_reduction_min": {
+          "median": 0.6976985612352322,
+          "q1": 0.6435944592897846,
+          "q3": 0.7423757174279135,
+          "mean": 0.6741639741795362,
+          "std": 0.08516075926079028,
+          "min": 0.4979919678714859,
+          "max": 0.7888513513513513
+        },
+        "node_reduction_max": {
+          "median": 0.6976985612352322,
+          "q1": 0.6435944592897846,
+          "q3": 0.7423757174279135,
+          "mean": 0.6741639741795362,
+          "std": 0.08516075926079028,
+          "min": 0.4979919678714859,
+          "max": 0.7888513513513513
+        },
+        "paired": {
+          "node_reduction": {
+            "median": 0.6976985612352322,
+            "q1": 0.6435944592897846,
+            "q3": 0.7423757174279135,
+            "mean": 0.6741639741795362,
+            "std": 0.08516075926079028,
+            "min": 0.4979919678714859,
+            "max": 0.7888513513513513
+          },
+          "leaf_reduction": {
+            "median": 0.7710487031162531,
+            "q1": 0.7369296116504854,
+            "q3": 0.8085954157782516,
+            "mean": 0.7558448207421167,
+            "std": 0.06491100291876255,
+            "min": 0.6102941176470589,
+            "max": 0.8454810495626822
+          },
+          "search_speedup": {
+            "median": 2.775710476224261,
+            "q1": 2.3071128992431693,
+            "q3": 3.304864645932092,
+            "mean": 2.7856746971757627,
+            "std": 0.8197029814961972,
+            "min": 1.396264596094646,
+            "max": 5.236290456837661
+          },
+          "query_speedup": {
+            "median": 1.4316760394131705,
+            "q1": 1.3523462220515958,
+            "q3": 1.53704989431087,
+            "mean": 1.435846132663565,
+            "std": 0.19848315600073688,
+            "min": 0.995783753894578,
+            "max": 2.103098355560961
+          },
+          "total_speedup": {
+            "median": 0.262017924437588,
+            "q1": 0.24731246071285717,
+            "q3": 0.2791977047715051,
+            "mean": 0.26091613361952504,
+            "std": 0.02975174898251157,
+            "min": 0.1901239811500111,
+            "max": 0.33752394377159267
+          },
+          "search_time_reduction": {
+            "median": 0.6397273438333395,
+            "q1": 0.5665008131023369,
+            "q3": 0.6973691111520035,
+            "mean": 0.6092756441744264,
+            "std": 0.12096499824343912,
+            "min": 0.28380336879055634,
+            "max": 0.8090251088546514
+          },
+          "query_time_reduction": {
+            "median": 0.3015179164061881,
+            "q1": 0.2605311348276302,
+            "q3": 0.3493598763434689,
+            "mean": 0.2908177482277954,
+            "std": 0.0987551713952657,
+            "min": -0.004234098105067474,
+            "max": 0.524511063709491
+          },
+          "total_time_reduction": {
+            "median": -2.8166862948429063,
+            "q1": -3.043527753587255,
+            "q3": -2.5821026834968617,
+            "mean": -2.8844048769633606,
+            "std": 0.4786219215325612,
+            "min": -4.259725753433401,
+            "max": -1.9627527719239808
+          },
+          "faster_search_trees": 30,
+          "same_search_trees": 0,
+          "slower_search_trees": 0,
+          "faster_query_trees": 29,
+          "same_query_trees": 0,
+          "slower_query_trees": 1,
+          "faster_total_trees": 0,
+          "same_total_trees": 0,
+          "slower_total_trees": 30,
+          "fewer_node_trees": 30,
+          "same_node_trees": 0,
+          "more_node_trees": 0,
+          "n_order_comparisons": 30,
+          "order_comparisons_note": "Nested orders on the same trees; these are not independent tree samples.",
+          "better_node_reduction_orders": 30,
+          "same_node_reduction_orders": 0,
+          "worse_node_reduction_orders": 0,
+          "better_search_speedup_orders": 30,
+          "same_search_speedup_orders": 0,
+          "worse_search_speedup_orders": 0,
+          "better_query_speedup_orders": 29,
+          "same_query_speedup_orders": 0,
+          "worse_query_speedup_orders": 1,
+          "better_total_speedup_orders": 0,
+          "same_total_speedup_orders": 0,
+          "worse_total_speedup_orders": 30
+        }
+      }
+    },
+    {
+      "source": "random",
+      "depth": 8,
+      "n_trees": 30,
+      "original": {
+        "n_trees": 30,
+        "n_orders_per_tree": 1,
+        "node_visits": {
+          "median": 2142.0,
+          "q1": 1962.75,
+          "q3": 2470.5,
+          "mean": 2186.2,
+          "std": 437.09380355187864,
+          "min": 1252,
+          "max": 3024
+        },
+        "leaf_evals": {
+          "median": 1191.5,
+          "q1": 1083.0,
+          "q3": 1378.5,
+          "mean": 1213.8666666666666,
+          "std": 241.80909160246478,
+          "min": 679,
+          "max": 1677
+        },
+        "cutoff_events": {
+          "median": 440.5,
+          "q1": 391.5,
+          "q3": 519.25,
+          "mean": 455.3666666666667,
+          "std": 98.37489283465514,
+          "min": 259,
+          "max": 644
+        },
+        "pruned_branches": {
+          "median": 712.0,
+          "q1": 635.75,
+          "q3": 824.0,
+          "mean": 731.8,
+          "std": 152.84551587841213,
+          "min": 424,
+          "max": 1018
+        },
+        "oracle_node_evals": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0,
+          "std": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "copy_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "oracle_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "order_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "prepare_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "search_ms": {
+          "median": 1.1012500035576522,
+          "q1": 0.930562488065334,
+          "q3": 1.3689083401307773,
+          "mean": 1.1952239909673124,
+          "std": 0.4122709205351077,
+          "min": 0.5442999972729012,
+          "max": 2.1266999829094857
+        },
+        "query_ms": {
+          "median": 4.9452825,
+          "q1": 4.316975,
+          "q3": 6.950749999999999,
+          "mean": 5.9523960873015875,
+          "std": 2.088797571302822,
+          "min": 3.4391499999999997,
+          "max": 10.9103
+        },
+        "total_ms": {
+          "median": 4.94965,
+          "q1": 4.32155,
+          "q3": 6.964650000000001,
+          "mean": 5.992386801587301,
+          "std": 2.150462916227053,
+          "min": 3.4425,
+          "max": 10.9205
+        },
+        "node_visits_min": {
+          "median": 2142.0,
+          "q1": 1962.75,
+          "q3": 2470.5,
+          "mean": 2186.2,
+          "std": 437.09380355187864,
+          "min": 1252,
+          "max": 3024
+        },
+        "node_visits_max": {
+          "median": 2142.0,
+          "q1": 1962.75,
+          "q3": 2470.5,
+          "mean": 2186.2,
+          "std": 437.09380355187864,
+          "min": 1252,
+          "max": 3024
+        },
+        "node_reduction_min": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "node_reduction_max": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "random": {
+        "n_trees": 30,
+        "n_orders_per_tree": 10,
+        "node_visits": {
+          "median": 2172.5,
+          "q1": 2081.125,
+          "q3": 2324.5,
+          "mean": 2170.483333333333,
+          "std": 185.57308641691245,
+          "min": 1813.0,
+          "max": 2479.0
+        },
+        "leaf_evals": {
+          "median": 1211.75,
+          "q1": 1163.125,
+          "q3": 1294.75,
+          "mean": 1208.45,
+          "std": 105.18410378785937,
+          "min": 997.0,
+          "max": 1395.5
+        },
+        "cutoff_events": {
+          "median": 445.75,
+          "q1": 426.25,
+          "q3": 478.625,
+          "mean": 448.8666666666667,
+          "std": 38.82119340606706,
+          "min": 376.5,
+          "max": 511.5
+        },
+        "pruned_branches": {
+          "median": 709.25,
+          "q1": 683.5,
+          "q3": 766.625,
+          "mean": 720.1833333333333,
+          "std": 59.95321212143817,
+          "min": 613.5,
+          "max": 827.0
+        },
+        "oracle_node_evals": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "copy_ms": {
+          "median": 21.169725,
+          "q1": 11.5822875,
+          "q3": 23.3697375,
+          "mean": 18.83593473809524,
+          "std": 7.567122766343336,
+          "min": 9.716449999999998,
+          "max": 35.524591666666666
+        },
+        "oracle_ms": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "order_ms": {
+          "median": 2.77085625,
+          "q1": 2.5997224999999995,
+          "q3": 4.66513125,
+          "mean": 3.685833281746032,
+          "std": 1.332921267621757,
+          "min": 2.2727,
+          "max": 7.128550000000001
+        },
+        "prepare_ms": {
+          "median": 26.052349999999997,
+          "q1": 14.4711,
+          "q3": 29.2813125,
+          "mean": 22.947502087301586,
+          "std": 8.680716969015327,
+          "min": 12.101225,
+          "max": 37.98275833333334
+        },
+        "search_ms": {
+          "median": 1.063122503546765,
+          "q1": 0.9227174916304648,
+          "q3": 1.57142499301699,
+          "mean": 1.2823291110521133,
+          "std": 0.4265372552304584,
+          "min": 0.7970833369957593,
+          "max": 2.5133000017376617
+        },
+        "query_ms": {
+          "median": 4.782407500000001,
+          "q1": 4.425924999999999,
+          "q3": 8.422324999999999,
+          "mean": 6.455860626984127,
+          "std": 2.4437271109874716,
+          "min": 3.887475,
+          "max": 11.8932
+        },
+        "total_ms": {
+          "median": 38.111875,
+          "q1": 19.528925,
+          "q3": 42.01522708333333,
+          "mean": 33.48827301984127,
+          "std": 12.325100003466073,
+          "min": 16.261699999999998,
+          "max": 53.01755
+        },
+        "node_visits_min": {
+          "median": 1571.0,
+          "q1": 1446.5,
+          "q3": 1654.75,
+          "mean": 1555.4333333333334,
+          "std": 198.61028957845255,
+          "min": 1125,
+          "max": 2101
+        },
+        "node_visits_max": {
+          "median": 2846.0,
+          "q1": 2728.0,
+          "q3": 2981.75,
+          "mean": 2877.8,
+          "std": 252.46282075202473,
+          "min": 2418,
+          "max": 3488
+        },
+        "node_reduction_min": {
+          "median": -0.296321563991074,
+          "q1": -0.4680933029741384,
+          "q3": -0.15277915952074472,
+          "mean": -0.36195282068051876,
+          "std": 0.2587347801665912,
+          "min": -0.9589257503949447,
+          "max": -0.0029433406916850036
+        },
+        "node_reduction_max": {
+          "median": 0.3058967653214111,
+          "q1": 0.15447831515044663,
+          "q3": 0.3798734133174061,
+          "mean": 0.2597901021511008,
+          "std": 0.17792668604004214,
+          "min": -0.2219589257503949,
+          "max": 0.5203862660944206
+        },
+        "paired": {
+          "node_reduction": {
+            "median": -0.014267078281824969,
+            "q1": -0.10280536242564853,
+            "q3": 0.10379795839544897,
+            "mean": -0.03345681208382678,
+            "std": 0.23243209015105018,
+            "min": -0.6181518151815182,
+            "max": 0.3347033595425304
+          },
+          "leaf_reduction": {
+            "median": -0.015304623473016865,
+            "q1": -0.11181355315795849,
+            "q3": 0.10157778298665371,
+            "mean": -0.03623749487353972,
+            "std": 0.23453066722673718,
+            "min": -0.6126656848306332,
+            "max": 0.3327953518398967
+          },
+          "search_speedup": {
+            "median": 0.9675552918085505,
+            "q1": 0.8416885667577455,
+            "q3": 1.0821568033526798,
+            "mean": 0.9593293781883168,
+            "std": 0.2281168738225,
+            "min": 0.5011747386796728,
+            "max": 1.353053797524302
+          },
+          "query_speedup": {
+            "median": 0.9611042902255535,
+            "q1": 0.8684536788742837,
+            "q3": 1.0270592455363936,
+            "mean": 0.9416062071694017,
+            "std": 0.12717110869138856,
+            "min": 0.6758260967415328,
+            "max": 1.17277796957657
+          },
+          "total_speedup": {
+            "median": 0.2037606873951739,
+            "q1": 0.1613291869688466,
+            "q3": 0.22814921305092492,
+            "mean": 0.19037421974739388,
+            "std": 0.0521116697706403,
+            "min": 0.09989870802365672,
+            "max": 0.3046256908085517
+          },
+          "search_time_reduction": {
+            "median": -0.03543449985282093,
+            "q1": -0.18905836190609798,
+            "q3": 0.07588022186719263,
+            "mean": -0.11373823035728312,
+            "std": 0.3155675799770899,
+            "min": -0.9957545753935684,
+            "max": 0.2609206729366192
+          },
+          "query_time_reduction": {
+            "median": -0.040486840354973685,
+            "q1": -0.151683738346133,
+            "q3": 0.026280515856153014,
+            "mean": -0.08299138513638848,
+            "std": 0.1594025699416836,
+            "min": -0.4799261722444248,
+            "max": 0.14470173589380408
+          },
+          "total_time_reduction": {
+            "median": -3.9104531640154794,
+            "q1": -5.200710929486192,
+            "q3": -3.383645204768305,
+            "mean": -4.753659041933065,
+            "std": 1.9692146988716719,
+            "min": -9.015985465933273,
+            "max": -2.2827486766216323
+          },
+          "faster_search_trees": 14,
+          "same_search_trees": 0,
+          "slower_search_trees": 16,
+          "faster_query_trees": 10,
+          "same_query_trees": 0,
+          "slower_query_trees": 20,
+          "faster_total_trees": 0,
+          "same_total_trees": 0,
+          "slower_total_trees": 30,
+          "fewer_node_trees": 14,
+          "same_node_trees": 0,
+          "more_node_trees": 16,
+          "n_order_comparisons": 300,
+          "order_comparisons_note": "Nested orders on the same trees; these are not independent tree samples.",
+          "better_node_reduction_orders": 147,
+          "same_node_reduction_orders": 0,
+          "worse_node_reduction_orders": 153,
+          "better_search_speedup_orders": 143,
+          "same_search_speedup_orders": 0,
+          "worse_search_speedup_orders": 157,
+          "better_query_speedup_orders": 116,
+          "same_query_speedup_orders": 0,
+          "worse_query_speedup_orders": 184,
+          "better_total_speedup_orders": 0,
+          "same_total_speedup_orders": 0,
+          "worse_total_speedup_orders": 300
+        }
+      },
+      "ideal": {
+        "n_trees": 30,
+        "n_orders_per_tree": 1,
+        "node_visits": {
+          "median": 393.0,
+          "q1": 393.0,
+          "q3": 393.0,
+          "mean": 393,
+          "std": 0.0,
+          "min": 393,
+          "max": 393
+        },
+        "leaf_evals": {
+          "median": 161.0,
+          "q1": 161.0,
+          "q3": 161.0,
+          "mean": 161,
+          "std": 0.0,
+          "min": 161,
+          "max": 161
+        },
+        "cutoff_events": {
+          "median": 152.0,
+          "q1": 152.0,
+          "q3": 152.0,
+          "mean": 152,
+          "std": 0.0,
+          "min": 152,
+          "max": 152
+        },
+        "pruned_branches": {
+          "median": 304.0,
+          "q1": 304.0,
+          "q3": 304.0,
+          "mean": 304,
+          "std": 0.0,
+          "min": 304,
+          "max": 304
+        },
+        "oracle_node_evals": {
+          "median": 9841.0,
+          "q1": 9841.0,
+          "q3": 9841.0,
+          "mean": 9841,
+          "std": 0.0,
+          "min": 9841,
+          "max": 9841
+        },
+        "copy_ms": {
+          "median": 18.267249999999997,
+          "q1": 11.713051785714285,
+          "q3": 25.3288,
+          "mean": 22.485082468253967,
+          "std": 18.23314525673288,
+          "min": 9.7225,
+          "max": 102.43015
+        },
+        "oracle_ms": {
+          "median": 2.36545,
+          "q1": 2.1714,
+          "q3": 3.577875,
+          "mean": 3.0445330793650793,
+          "std": 1.1224691276669239,
+          "min": 1.8902,
+          "max": 5.812
+        },
+        "order_ms": {
+          "median": 2.831125,
+          "q1": 2.555972023809524,
+          "q3": 4.039575,
+          "mean": 3.586600626984127,
+          "std": 1.4465591352277714,
+          "min": 2.1744,
+          "max": 7.6604
+        },
+        "prepare_ms": {
+          "median": 26.038600000000002,
+          "q1": 16.891415714285714,
+          "q3": 37.345475,
+          "mean": 29.888610484126986,
+          "std": 19.730707605369247,
+          "min": 13.8883,
+          "max": 113.83135
+        },
+        "search_ms": {
+          "median": 0.20356001041363925,
+          "q1": 0.1836657151995626,
+          "q3": 0.25948125949071255,
+          "mean": 0.23835148602735162,
+          "std": 0.07724480101622845,
+          "min": 0.15539999003522098,
+          "max": 0.43520002509467304
+        },
+        "query_ms": {
+          "median": 5.3015,
+          "q1": 3.68973,
+          "q3": 6.42195,
+          "mean": 5.804893119047619,
+          "std": 4.137379081592043,
+          "min": 2.92,
+          "max": 25.835128571428573
+        },
+        "total_ms": {
+          "median": 34.6793,
+          "q1": 21.5195875,
+          "q3": 47.761008333333336,
+          "mean": 38.37062052380952,
+          "std": 20.575740375148403,
+          "min": 17.20535,
+          "max": 121.116375
+        },
+        "node_visits_min": {
+          "median": 393.0,
+          "q1": 393.0,
+          "q3": 393.0,
+          "mean": 393,
+          "std": 0.0,
+          "min": 393,
+          "max": 393
+        },
+        "node_visits_max": {
+          "median": 393.0,
+          "q1": 393.0,
+          "q3": 393.0,
+          "mean": 393,
+          "std": 0.0,
+          "min": 393,
+          "max": 393
+        },
+        "node_reduction_min": {
+          "median": 0.8164265851139552,
+          "q1": 0.7997614374792344,
+          "q3": 0.8409195689696493,
+          "mean": 0.8119075308510771,
+          "std": 0.04479459889459445,
+          "min": 0.6861022364217253,
+          "max": 0.8700396825396826
+        },
+        "node_reduction_max": {
+          "median": 0.8164265851139552,
+          "q1": 0.7997614374792344,
+          "q3": 0.8409195689696493,
+          "mean": 0.8119075308510771,
+          "std": 0.04479459889459445,
+          "min": 0.6861022364217253,
+          "max": 0.8700396825396826
+        },
+        "paired": {
+          "node_reduction": {
+            "median": 0.8164265851139552,
+            "q1": 0.7997614374792344,
+            "q3": 0.8409195689696493,
+            "mean": 0.8119075308510771,
+            "std": 0.04479459889459445,
+            "min": 0.6861022364217253,
+            "max": 0.8700396825396826
+          },
+          "leaf_reduction": {
+            "median": 0.8647988525999746,
+            "q1": 0.8513328339702328,
+            "q3": 0.8831985187664534,
+            "mean": 0.8611885719791165,
+            "std": 0.033407198946903555,
+            "min": 0.7628865979381443,
+            "max": 0.9039952295766249
+          },
+          "search_speedup": {
+            "median": 5.18823552676273,
+            "q1": 4.557814357725387,
+            "q3": 5.8931805576441985,
+            "mean": 5.125039282266578,
+            "std": 1.170348345095184,
+            "min": 1.7710405237136573,
+            "max": 7.699528104389136
+          },
+          "query_speedup": {
+            "median": 1.1776155357871863,
+            "q1": 1.0892571319405273,
+            "q3": 1.2396905273736065,
+            "mean": 1.1506058912132733,
+            "std": 0.2649000571266985,
+            "min": 0.1729588561311039,
+            "max": 1.6890195278452609
+          },
+          "total_speedup": {
+            "median": 0.19566694216988784,
+            "q1": 0.14349839828623795,
+            "q3": 0.20449231209598842,
+            "mean": 0.17458390786213912,
+            "std": 0.05415642650471598,
+            "min": 0.06700353275929866,
+            "max": 0.31216396191979484
+          },
+          "search_time_reduction": {
+            "median": 0.8070686897227424,
+            "q1": 0.7805961018870557,
+            "q3": 0.8302223726783428,
+            "mean": 0.7899781134118633,
+            "std": 0.0772063432299746,
+            "min": 0.43536018142423916,
+            "max": 0.8701219105324198
+          },
+          "query_time_reduction": {
+            "median": 0.15082246471859356,
+            "q1": 0.08194312164455675,
+            "q3": 0.19333568025988834,
+            "mean": -0.03134089130154102,
+            "std": 0.9097075674477856,
+            "min": -4.781721863620524,
+            "max": 0.40794053383400863
+          },
+          "total_time_reduction": {
+            "median": -4.111221166064385,
+            "q1": -6.010363925919724,
+            "q3": -3.890163836665966,
+            "mean": -5.516253316839399,
+            "std": 2.8178652390512036,
+            "min": -13.924586194467805,
+            "max": -2.2034447341392114
+          },
+          "faster_search_trees": 30,
+          "same_search_trees": 0,
+          "slower_search_trees": 0,
+          "faster_query_trees": 26,
+          "same_query_trees": 0,
+          "slower_query_trees": 4,
+          "faster_total_trees": 0,
+          "same_total_trees": 0,
+          "slower_total_trees": 30,
+          "fewer_node_trees": 30,
+          "same_node_trees": 0,
+          "more_node_trees": 0,
+          "n_order_comparisons": 30,
+          "order_comparisons_note": "Nested orders on the same trees; these are not independent tree samples.",
+          "better_node_reduction_orders": 30,
+          "same_node_reduction_orders": 0,
+          "worse_node_reduction_orders": 0,
+          "better_search_speedup_orders": 30,
+          "same_search_speedup_orders": 0,
+          "worse_search_speedup_orders": 0,
+          "better_query_speedup_orders": 26,
+          "same_query_speedup_orders": 0,
+          "worse_query_speedup_orders": 4,
+          "better_total_speedup_orders": 0,
+          "same_total_speedup_orders": 0,
+          "worse_total_speedup_orders": 30
+        }
+      }
+    }
+  ],
+  "run_id": "p3_order_20261022T075206_208005Z",
+  "variants": [
+    "original",
+    "random_00",
+    "random_01",
+    "random_02",
+    "random_03",
+    "random_04",
+    "random_05",
+    "random_06",
+    "random_07",
+    "random_08",
+    "random_09",
+    "ideal"
+  ],
+  "random_count": 10,
+  "dataset_dir": "dataset"
+}

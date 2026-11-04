@@ -1,0 +1,61 @@
+{
+  "generator_version": "weighted_dataset_v1",
+  "status": "complete",
+  "config": {
+    "size": 31,
+    "count": 30,
+    "weights": [
+      1,
+      3,
+      8
+    ],
+    "probabilities": [
+      0.7,
+      0.2,
+      0.1
+    ],
+    "master_seed": 20261022,
+    "seed_strategy": "Random(f'weighted:{master_seed}:{size}').getrandbits(64); each candidate uses Random(candidate_seed).choices(weights, probabilities)",
+    "start_rule": "[0,0]",
+    "end_rule": "[size-1,size-1]",
+    "obstacles": false,
+    "goal_free": true,
+    "start_reentry_cost": 1,
+    "sampling_rule": "independent draw per non-endpoint cell; no filtering or path carving",
+    "weight_proportion_denominator": "size*size-2",
+    "reference": "independent reverse Dijkstra with original entering edge weights"
+  },
+  "accepted_files": [
+    "maps/weighted_031_001_seed_14962461784598442545.json",
+    "maps/weighted_031_002_seed_1837299536340554778.json",
+    "maps/weighted_031_003_seed_1493586311365819138.json",
+    "maps/weighted_031_004_seed_17580482405262000048.json",
+    "maps/weighted_031_005_seed_10397406968549572944.json",
+    "maps/weighted_031_006_seed_8393278377680970086.json",
+    "maps/weighted_031_007_seed_16602685160538730888.json",
+    "maps/weighted_031_008_seed_4266546885544664462.json",
+    "maps/weighted_031_009_seed_10400099855594855014.json",
+    "maps/weighted_031_010_seed_3355330082619444361.json",
+    "maps/weighted_031_011_seed_2289252249790064487.json",
+    "maps/weighted_031_012_seed_13733123734718397518.json",
+    "maps/weighted_031_013_seed_12294893556537475830.json",
+    "maps/weighted_031_014_seed_8235763356034574830.json",
+    "maps/weighted_031_015_seed_9564921620592239495.json",
+    "maps/weighted_031_016_seed_8497344332472180805.json",
+    "maps/weighted_031_017_seed_917803050206976276.json",
+    "maps/weighted_031_018_seed_12964198891194219794.json",
+    "maps/weighted_031_019_seed_18011618134736783827.json",
+    "maps/weighted_031_020_seed_1120400562739952030.json",
+    "maps/weighted_031_021_seed_2792242598435963585.json",
+    "maps/weighted_031_022_seed_1695875508004361807.json",
+    "maps/weighted_031_023_seed_4052470357456608230.json",
+    "maps/weighted_031_024_seed_8653366549365172247.json",
+    "maps/weighted_031_025_seed_2693201718247496936.json",
+    "maps/weighted_031_026_seed_9732271878912123389.json",
+    "maps/weighted_031_027_seed_266271473919032304.json",
+    "maps/weighted_031_028_seed_17321171207631300695.json",
+    "maps/weighted_031_029_seed_3485850987731959797.json",
+    "maps/weighted_031_030_seed_4301620677134949965.json"
+  ],
+  "n_instances": 30
+}

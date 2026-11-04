@@ -1,0 +1,445 @@
+{
+  "tree_structure": {
+    "is_maximizing_player": true,
+    "children": [
+      {
+        "is_maximizing_player": false,
+        "children": [
+          {
+            "is_maximizing_player": true,
+            "children": [
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": 49
+                  },
+                  {
+                    "value": 18
+                  },
+                  {
+                    "value": 12
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": -43
+                  },
+                  {
+                    "value": 22
+                  },
+                  {
+                    "value": 6
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": -26
+                  },
+                  {
+                    "value": 47
+                  },
+                  {
+                    "value": -19
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "is_maximizing_player": true,
+            "children": [
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": 18
+                  },
+                  {
+                    "value": -48
+                  },
+                  {
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": -10
+                  },
+                  {
+                    "value": 28
+                  },
+                  {
+                    "value": -16
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": -24
+                  },
+                  {
+                    "value": 8
+                  },
+                  {
+                    "value": 43
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "is_maximizing_player": true,
+            "children": [
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": 8
+                  },
+                  {
+                    "value": -19
+                  },
+                  {
+                    "value": 43
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": 10
+                  },
+                  {
+                    "value": 12
+                  },
+                  {
+                    "value": -44
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": -50
+                  },
+                  {
+                    "value": 36
+                  },
+                  {
+                    "value": 48
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "is_maximizing_player": false,
+        "children": [
+          {
+            "is_maximizing_player": true,
+            "children": [
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": -8
+                  },
+                  {
+                    "value": 4
+                  },
+                  {
+                    "value": 19
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": 50
+                  },
+                  {
+                    "value": 2
+                  },
+                  {
+                    "value": -36
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": 3
+                  },
+                  {
+                    "value": -31
+                  },
+                  {
+                    "value": -3
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "is_maximizing_player": true,
+            "children": [
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": -4
+                  },
+                  {
+                    "value": -25
+                  },
+                  {
+                    "value": -45
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": 37
+                  },
+                  {
+                    "value": 26
+                  },
+                  {
+                    "value": -20
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": -24
+                  },
+                  {
+                    "value": 34
+                  },
+                  {
+                    "value": 7
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "is_maximizing_player": true,
+            "children": [
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": -26
+                  },
+                  {
+                    "value": -40
+                  },
+                  {
+                    "value": 33
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": -25
+                  },
+                  {
+                    "value": -33
+                  },
+                  {
+                    "value": 32
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": 24
+                  },
+                  {
+                    "value": 5
+                  },
+                  {
+                    "value": -44
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "is_maximizing_player": false,
+        "children": [
+          {
+            "is_maximizing_player": true,
+            "children": [
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": 2
+                  },
+                  {
+                    "value": 14
+                  },
+                  {
+                    "value": 28
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": -34
+                  },
+                  {
+                    "value": -4
+                  },
+                  {
+                    "value": -10
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": -22
+                  },
+                  {
+                    "value": 24
+                  },
+                  {
+                    "value": -13
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "is_maximizing_player": true,
+            "children": [
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": 14
+                  },
+                  {
+                    "value": 43
+                  },
+                  {
+                    "value": 25
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": -16
+                  },
+                  {
+                    "value": -48
+                  },
+                  {
+                    "value": 36
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": 38
+                  },
+                  {
+                    "value": -39
+                  },
+                  {
+                    "value": 33
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "is_maximizing_player": true,
+            "children": [
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": -11
+                  },
+                  {
+                    "value": 23
+                  },
+                  {
+                    "value": 43
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": 34
+                  },
+                  {
+                    "value": -28
+                  },
+                  {
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "is_maximizing_player": false,
+                "children": [
+                  {
+                    "value": 39
+                  },
+                  {
+                    "value": -19
+                  },
+                  {
+                    "value": 25
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
