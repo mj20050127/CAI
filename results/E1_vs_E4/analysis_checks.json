@@ -1,0 +1,61 @@
+{
+  "run_dir": "./runs/E4/seed42_retry1",
+  "completed_epochs": 100,
+  "shared_data_manifest_sha256": "ba2713d56315b4565ca3c1bee40bf3acb2e2785fe42de2ab03acf6897e26aab7",
+  "initial_state_sha256": "0d7d998dce998061a1710cdb2cf553a5fe77a7636a59d29e66d0acc38beba0ad",
+  "same_initial_state_and_lr_trajectory_as_e1_e3": true,
+  "checkpoints": {
+    "best.pt": {
+      "epoch": 97,
+      "finite_weights": true,
+      "matching_trace_rows": 34144
+    },
+    "last.pt": {
+      "epoch": 100,
+      "finite_weights": true,
+      "matching_trace_rows": 35200
+    }
+  },
+  "cutmix_rows": 35200,
+  "nonzero_box_count": 35166,
+  "mean_lambda_raw": 0.5024730104118799,
+  "mean_lambda_eff": 0.6901159113103693,
+  "area_and_epoch_trace_checks_passed": true,
+  "source_snapshot_files_verified": 20,
+  "current_source_differences": [],
+  "previous_frozen_artifact_differences": [],
+  "original_e4_sha256": {
+    "best.pt": "970f4b0f0a858fe52ef9127a024b0660afbd1d5a773f355a23d1ad8cb7f823b4",
+    "last.pt": "1e7ece17a3fbb88d54302c746ba59d5dda95bf61ae89fd8b2b75533e49ab72bb",
+    "initial.pt": "06f4cd24b6db1b497eeaaaf8507090fd8774f18b656746adf9afd1a70bcc4d85",
+    "config.json": "f67e79096dd199a2f5ad6dc57f31dbc9acf29b2e17d4eebd785dd5451c09826b",
+    "history.csv": "b2c20b3e47ae82f7e493ea746f546d114327a9686ad1e1a8ecd580fd61c0d36b",
+    "summary.json": "47d2d09145c3171fa1e64b266446109107b454b5935fd8de59157c08cc2aa922",
+    "cutmix_batches.csv": "99f70d49a089a27e3d16457495b4f5bcda64ee1a608e0c0009bc0be786026137",
+    "data_manifest.json": "814bc6f8ffab5627a66a6d8d0c90cf28f96410e3d94470974df395ee6f439536"
+  },
+  "validation_recheck": {
+    "split": "validation",
+    "sample_count": 5000,
+    "epoch": 97,
+    "accuracy": 0.963,
+    "cross_entropy": 0.13712484223842622,
+    "macro_f1": 0.9630027001046809,
+    "matches_training_summary": true
+  },
+  "paired_counts": {
+    "E1": {
+      "both_correct": 4681,
+      "left_wrong_right_correct": 134,
+      "left_correct_right_wrong": 84,
+      "both_wrong": 101
+    },
+    "E3": {
+      "both_correct": 4689,
+      "left_wrong_right_correct": 126,
+      "left_correct_right_wrong": 92,
+      "both_wrong": 93
+    }
+  },
+  "training_artifacts_unchanged": true
+}

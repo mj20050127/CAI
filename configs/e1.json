@@ -1,0 +1,19 @@
+{
+  "experiment": "E1",
+  "model": "cifar_resnet18",
+  "seed": 42,
+  "split_seed": 2026,
+  "monitor_seed": 2027,
+  "data_dir": "data",
+  "output_dir": "runs/E1",
+  "epochs": 100,
+  "batch_size": 128,
+  "num_workers": 0,
+  "learning_rate": 0.1,
+  "momentum": 0.9,
+  "weight_decay": 0.0005,
+  "min_learning_rate": 0.00001,
+  "dropout": 0.3,
+  "amp": true,
+  "log_interval": 50
+}

@@ -1,0 +1,56 @@
+{
+  "analysis_date": "2026-11-17",
+  "completed_epochs": 100,
+  "manifest_identical_to_e1": true,
+  "initial_state_identical_to_e1": true,
+  "initial_state_sha256": "0d7d998dce998061a1710cdb2cf553a5fe77a7636a59d29e66d0acc38beba0ad",
+  "checkpoints": {
+    "best.pt": {
+      "epoch": 96,
+      "initial_state_sha256": "0d7d998dce998061a1710cdb2cf553a5fe77a7636a59d29e66d0acc38beba0ad",
+      "weights_finite": true,
+      "mixup_trace_rows": 33792
+    },
+    "last.pt": {
+      "epoch": 100,
+      "initial_state_sha256": "0d7d998dce998061a1710cdb2cf553a5fe77a7636a59d29e66d0acc38beba0ad",
+      "weights_finite": true,
+      "mixup_trace_rows": 35200
+    }
+  },
+  "source_snapshot_and_current_source_match": true,
+  "source_files_checked": 19,
+  "previous_e0_e1_e2_artifacts_unchanged": true,
+  "independent_full_validation_recheck_matches": true,
+  "sample_count": 5000,
+  "accuracy": 0.9562,
+  "macro_f1": 0.9562029661375695,
+  "config_differences": [
+    "experiment",
+    "mixup_alpha",
+    "mixup_probability",
+    "initial_checkpoint",
+    "output_dir"
+  ],
+  "input_artifact_sha256": {
+    "best.pt": "e32d10ab3bc63e570d1adf1fdc17f5e9fd038d9db8e3c53e5a644f5c68acb284",
+    "last.pt": "a04fb0b3ba31911119178f6f286ed0e8d287254ad7a6300e054352644c01c9c7",
+    "initial.pt": "ff6aa70bc7f7b88e6aa47f69a347057c97d87d5cc95b0968f352eacde2d4c622",
+    "config.json": "ad3f676e5a649447c1da6a0b34f7f6f22552be842c6b56627df12f7d8c8b7273",
+    "history.csv": "97ff07491e63ac696c6c8ff13cdeeabb1eb2477af3b44b52cb77aaad3cdad046",
+    "summary.json": "a5b771413aaa1bd840f1152f5f5f816020014f3e771108d31db05e7286d04590",
+    "data_manifest.json": "814bc6f8ffab5627a66a6d8d0c90cf28f96410e3d94470974df395ee6f439536",
+    "mixup_batches.csv": "2a0fc91d0872311f23aa7939c8ec4acc85e3bb377813568894b0042b137ae7fc"
+  },
+  "test_set_evaluated": false,
+  "training_started_by_analysis": false,
+  "training_code_modified": false,
+  "mixup_lambda_replay_matches_csv_and_final_rng": true,
+  "mixup_batches_verified": 35200,
+  "final10_loss_decomposition": {
+    "cross_entropy": 0.3995583819894493,
+    "target_entropy": 0.20382434262051885,
+    "excess_kl": 0.19573403936893044
+  },
+  "input_artifacts_unchanged_after_analysis": true
+}

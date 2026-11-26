@@ -1,0 +1,63 @@
+{
+  "run_dir": "./runs/E5/seed42",
+  "completed_epochs": 100,
+  "same_data_manifest_sha256": "ba2713d56315b4565ca3c1bee40bf3acb2e2785fe42de2ab03acf6897e26aab7",
+  "initial_shared_state_sha256": "0d7d998dce998061a1710cdb2cf553a5fe77a7636a59d29e66d0acc38beba0ad",
+  "initial_full_state_sha256": "8a7d1c819a8e7667b5720f010e9ef6df7fd87de4de7c9f9b33f1c9b64ec1ee59",
+  "shared_initial_tensors_equal": true,
+  "same_cpu_and_loader_initial_rng": true,
+  "same_learning_rate_trajectory": true,
+  "non_shared_initial_cbam_tensors": 24,
+  "difference_fields": [
+    "cbam_reduction",
+    "cbam_spatial_kernel_size",
+    "experiment",
+    "initial_checkpoint",
+    "model",
+    "output_dir"
+  ],
+  "checkpoints": {
+    "best.pt": {
+      "epoch": 97,
+      "finite_weights": true,
+      "changed_cbam_tensors_since_initialization": 24
+    },
+    "last.pt": {
+      "epoch": 100,
+      "finite_weights": true,
+      "changed_cbam_tensors_since_initialization": 24
+    }
+  },
+  "verified_source_snapshot_files": 21,
+  "current_source_differences": [],
+  "previous_reference_artifact_differences": [],
+  "input_e5_sha256": {
+    "best.pt": "6f1f37a754ddda9d1e25d0541cd9e7a60c4fd2011bd8ef90baad9a6c29ba56a6",
+    "last.pt": "9008a8616f75a543be5511e24a89d712d7e43551f6e7d62b6a6a565167fde288",
+    "initial.pt": "185bb290503eb05ae636ddf4788a2a755a0f6c8ed0da3d9750ff92fd8c0c7620",
+    "history.csv": "ed46017e2bdc4223d83d2126194643ee8189132591ae16050355ac7ee0d12cf8",
+    "config.json": "0008bef6f00033197b1f5a93125781957a5a639fbe6bc4bc9e88b6e51bcd51a9",
+    "summary.json": "fa1cc69ececbda4c4799574b54c95520bc353f7153ef0a3c41fa91b95c22fcae",
+    "data_manifest.json": "814bc6f8ffab5627a66a6d8d0c90cf28f96410e3d94470974df395ee6f439536"
+  },
+  "validation_recheck": {
+    "split": "validation",
+    "n": 5000,
+    "epoch": 97,
+    "accuracy": 0.9538,
+    "loss": 0.1744569897055626,
+    "matches_training_summary": true
+  },
+  "paired_counts": {
+    "both_correct": 4665,
+    "left_wrong_right_correct": 104,
+    "left_correct_right_wrong": 100,
+    "both_wrong": 131
+  },
+  "training_artifacts_unchanged": true,
+  "inference_benchmark": "inference_benchmark.json",
+  "recorded_seconds_per_epoch": {
+    "1_to_62": 33.20058677096747,
+    "64_to_100": 101.64834344864829
+  }
+}

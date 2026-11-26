@@ -1,0 +1,82 @@
+{
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch": "2.8.0+cu126",
+  "precision": "float32",
+  "input_shape": "N,3,224,224",
+  "preprocessing": "imagenet224",
+  "includes_preprocessing_or_host_transfer": false,
+  "cudnn_allow_tf32": true,
+  "cuda_matmul_allow_tf32": false,
+  "warmup": 10,
+  "iterations": 50,
+  "repeats": 3,
+  "manifest_hash": "ba2713d56315b4565ca3c1bee40bf3acb2e2785fe42de2ab03acf6897e26aab7",
+  "models": [
+    {
+      "name": "1_E9_standard_resnet18",
+      "checkpoint": "./runs/E9/seed42/best.pt",
+      "epoch": 28
+    },
+    {
+      "name": "2_E10_standard_resnet18",
+      "checkpoint": "./runs/E10/seed42/best.pt",
+      "epoch": 28
+    }
+  ],
+  "results": [
+    {
+      "name": "1_E9_standard_resnet18",
+      "batch_size": 1,
+      "parameters": 11181642,
+      "batch_latency_ms_median": 1.8043379997834563,
+      "amortized_ms_per_image": 1.8043379997834563,
+      "images_per_second": 554.2198856976979,
+      "repeat_batch_latency_ms": [
+        1.7591540003195405,
+        1.826979999896139,
+        1.8043379997834563
+      ]
+    },
+    {
+      "name": "2_E10_standard_resnet18",
+      "batch_size": 1,
+      "parameters": 11181642,
+      "batch_latency_ms_median": 2.1012020006310195,
+      "amortized_ms_per_image": 2.1012020006310195,
+      "images_per_second": 475.9180696095313,
+      "repeat_batch_latency_ms": [
+        1.9239739992190152,
+        2.1012020006310195,
+        2.1813379996456206
+      ]
+    },
+    {
+      "name": "1_E9_standard_resnet18",
+      "batch_size": 32,
+      "parameters": 11181642,
+      "batch_latency_ms_median": 20.470655999379233,
+      "amortized_ms_per_image": 0.639707999980601,
+      "images_per_second": 1563.2132160772176,
+      "repeat_batch_latency_ms": [
+        20.42115999967791,
+        20.57984200073406,
+        20.470655999379233
+      ]
+    },
+    {
+      "name": "2_E10_standard_resnet18",
+      "batch_size": 32,
+      "parameters": 11181642,
+      "batch_latency_ms_median": 20.5533080000896,
+      "amortized_ms_per_image": 0.6422908750028,
+      "images_per_second": 1556.9269919888563,
+      "repeat_batch_latency_ms": [
+        20.5533080000896,
+        20.560818000230938,
+        20.548890000209212
+      ]
+    }
+  ],
+  "note": "合成输入的模型推理计时，不代表端到端数据加载耗时；摊销时间不等于 batch=1 延迟。"
+}

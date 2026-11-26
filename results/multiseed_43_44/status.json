@@ -1,0 +1,25 @@
+{
+  "phase": "paused",
+  "pid": 43436,
+  "updated_at": "2026-11-25T10:07:50.253980+08:00",
+  "total_runs": 10,
+  "completed": [],
+  "active": {
+    "experiment": "E1",
+    "seed": 43,
+    "planned_epochs": 100,
+    "run_dir": "runs/E1/seed43",
+    "config_path": "results/multiseed_43_44/configs/e1_seed43.json",
+    "source": null,
+    "config_sha256": "dc256a8a749fc6cb56df89b37d93c399b96c56ca182df5d7836f69b0e3a63601"
+  },
+  "log": "results/multiseed_43_44/logs/E1_seed43.log",
+  "paused_by_user": true,
+  "stopped_processes": [
+    43436,
+    30988,
+    42304
+  ],
+  "saved_history_epochs": 6,
+  "resume_checkpoint": "runs/E1/seed43/last.pt"
+}

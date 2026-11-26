@@ -1,0 +1,18 @@
+{
+  "reference": "runs/E3/seed42/source_snapshot/src/engine.py",
+  "device": "cpu",
+  "synthetic_only": true,
+  "checks": {
+    "hard_label": {
+      "loss_and_accuracy_identical": true,
+      "parameters_identical": true,
+      "numpy_rng_identical": true
+    },
+    "mixup": {
+      "loss_and_accuracy_identical": true,
+      "parameters_identical": true,
+      "numpy_rng_identical": true,
+      "mixup_trace_identical": true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "verified_at": "2026-11-16T11:40:26.304499+08:00",
+  "model": "cifar_resnet18",
+  "parameter_count": 11173962,
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "batch_size": 128,
+  "amp": true,
+  "deterministic_algorithms": true,
+  "synthetic_only": true,
+  "finite_loss_and_gradients": true,
+  "optimizer_updated_weights": true,
+  "evaluation_passed": true,
+  "peak_cuda_allocated_mib": 437.17,
+  "peak_cuda_reserved_mib": 614.0,
+  "real_e1_run_exists": false
+}

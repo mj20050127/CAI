@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-17",
+  "experiment": "E3",
+  "comparison_reference": "E1",
+  "mixup_alpha": 0.2,
+  "mixup_probability": 1.0,
+  "basic_augmentation_preserved": true,
+  "config_differences_from_e1": [
+    "experiment",
+    "output_dir",
+    "initial_checkpoint",
+    "mixup_alpha",
+    "mixup_probability"
+  ],
+  "initial_state_matches_e1": true,
+  "initial_state_sha256": "0d7d998dce998061a1710cdb2cf553a5fe77a7636a59d29e66d0acc38beba0ad",
+  "test_validation": {
+    "command": ".\\.venv\\Scripts\\python.exe -X utf8 -m unittest discover -s tests -v",
+    "passed": 75,
+    "failed": 0,
+    "seconds": 80.07
+  },
+  "cpu_synthetic_continuous_and_resumed_parameters_and_mixup_traces_match": true,
+  "weighted_ce_and_gradients_match_soft_label_ce": true,
+  "weighted_training_accuracy_checked": true,
+  "gpu_synthetic_batch128_amp_finite_and_updated": true,
+  "preview_train_only_pairs_verified": 4,
+  "completed_e0_e1_e2_artifacts_unchanged": true,
+  "completed_artifact_sha256": {
+    "E1": {
+      "config.json": "461a72c2a79c0cf246e17918104d3d76c5cdf4c2db52fb2b9319614d825b1a8f",
+      "data_manifest.json": "814bc6f8ffab5627a66a6d8d0c90cf28f96410e3d94470974df395ee6f439536",
+      "environment.json": "c68489736958af848b88da12acf8a4724e875c14a1e0733f23b380aa5c727bc7",
+      "history.csv": "348b7e7aeb2899c03c1499f577d676b124f72d2a77d95dd1f6b3e72cf2189bc3",
+      "summary.json": "d77366c6ef4c61ebec84667112e3b392428733c22d319cb55a7199f4323b1053",
+      "initial.pt": "19bc11e94b7f6d1f119687f62ae97097f5a086c26bf67b45530c5095364df297",
+      "best.pt": "3b5ade1cf2555efa22be6384af37ae4af99241d1e271a6b38e68a510902821fb",
+      "last.pt": "b2d04c7955ee58cf38a72179a26e19835b8ab57b8606ff2fd802fe42ecc7cab9"
+    },
+    "E2": {
+      "config.json": "8fe8ee961e49d758e19715dde2aee31743eceff26c6cecff4c4f72f260ddbd0f",
+      "data_manifest.json": "814bc6f8ffab5627a66a6d8d0c90cf28f96410e3d94470974df395ee6f439536",
+      "environment.json": "42e459c9d258935e4b33ff6744fab86e2f16aeeb625bbe72af77b9a3d1ea5393",
+      "history.csv": "93a43b7a9747b1cf630f7a50b72e094d8ed9c97b801b54e144f32e1703d43dc3",
+      "summary.json": "8e0e3dc7f96804a74b335ac57e042012446bfe43f8c6fc4aebceb39dce1ebe47",
+      "initial.pt": "53c27ee29fa897afdb2f3e9821bd71c3b056e89a624da34346b3545f9cef07bc",
+      "best.pt": "38455e10b66629daf62a9b0607dd0b0d6cad7f053b6fb6266a981dc4c50b99f1",
+      "last.pt": "f528d7ca0dea0597dedd612075fdd7bbed5e2857dff987c57faa6e0b82654cf4"
+    },
+    "E0": {
+      "best.pt": "268e1895e772674af1a5af6b950bac201aa996ba31918b0a0c13540a36ee3522",
+      "last.pt": "268e1895e772674af1a5af6b950bac201aa996ba31918b0a0c13540a36ee3522",
+      "history.csv": "cb01597998e8b57c2a4b2319d1316f68215e8c976f272f24e2039520e6d9ded3",
+      "summary.json": "52320a9bc73050a093a5f554be46fdba2d7486c83eeb8a45f4e0cbff0fd6ee00",
+      "config.json": "56716064363963a5e51acdbf3e03ef429da21ddb2ae792c10d03b01582c3dcf4",
+      "data_manifest.json": "814bc6f8ffab5627a66a6d8d0c90cf28f96410e3d94470974df395ee6f439536",
+      "environment.json": "297edfb01505b5dd678616fd19acc1bf781cb2e33de3d811af3cc181db52a6a9"
+    }
+  },
+  "implemented_file_sha256": {
+    "configs/e3.json": "9166dc0bf676db6d43cba6edecd975165dbbfb980b5f8d67c985e7f58ef075c1",
+    "src/common.py": "ee21b97b87ceb7ff8c28417a7a72ba1a3939ca889c474a44f5ae5aa327a6ab21",
+    "src/augmentations.py": "1a61cb8b0c776295bdaf42dd708d1dd47ae8a468fe0d4d122f5b07b175b3aa7d",
+    "src/engine.py": "f02f876834ae5237f06479d8e0157d92614e3ff7e9b6d9411dc32d3824d37c29",
+    "train.py": "4c42f62a0880a65d7e0aaaa00bb8110c2e3b4e66193911c373d97462e1689507",
+    "compare_runs.py": "16a5193dbcb518ffef1ce4fd7c58351b79c7ed00a2ba6c6e1fed6ad0068153e9",
+    "preview_mixup.py": "b2275b114255ba0608ce95a78934022e725c4425f4efc9964bdd7697627588d7",
+    "tests/test_e3.py": "6cd9a34bc58c05c57958b589d2815b52f220a6d5a84af75f0f60da733b5dc1fe",
+    "tests/test_compare_runs.py": "310bc6aab6946c82dd00697a434ce82533e2c3c51572a335bec4dc4fc35bc3b7"
+  },
+  "formal_training_started": false,
+  "test_set_used": false
+}

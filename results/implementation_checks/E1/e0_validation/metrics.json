@@ -1,0 +1,226 @@
+{
+  "sample_count": 5000,
+  "overall_accuracy": 0.9346,
+  "macro_f1": 0.9347351083791497,
+  "per_class": [
+    {
+      "name": "airplane",
+      "support": 500,
+      "correct": 470,
+      "accuracy": 0.94,
+      "precision": 0.9288537549407114,
+      "recall": 0.94,
+      "f1": 0.9343936381709742
+    },
+    {
+      "name": "automobile",
+      "support": 500,
+      "correct": 481,
+      "accuracy": 0.962,
+      "precision": 0.9796334012219959,
+      "recall": 0.962,
+      "f1": 0.9707366296670029
+    },
+    {
+      "name": "bird",
+      "support": 500,
+      "correct": 459,
+      "accuracy": 0.918,
+      "precision": 0.9216867469879518,
+      "recall": 0.918,
+      "f1": 0.9198396793587175
+    },
+    {
+      "name": "cat",
+      "support": 500,
+      "correct": 443,
+      "accuracy": 0.886,
+      "precision": 0.8618677042801557,
+      "recall": 0.886,
+      "f1": 0.873767258382643
+    },
+    {
+      "name": "deer",
+      "support": 500,
+      "correct": 463,
+      "accuracy": 0.926,
+      "precision": 0.9468302658486708,
+      "recall": 0.926,
+      "f1": 0.936299292214358
+    },
+    {
+      "name": "dog",
+      "support": 500,
+      "correct": 445,
+      "accuracy": 0.89,
+      "precision": 0.8864541832669323,
+      "recall": 0.89,
+      "f1": 0.8882235528942116
+    },
+    {
+      "name": "frog",
+      "support": 500,
+      "correct": 479,
+      "accuracy": 0.958,
+      "precision": 0.9392156862745098,
+      "recall": 0.958,
+      "f1": 0.9485148514851485
+    },
+    {
+      "name": "horse",
+      "support": 500,
+      "correct": 473,
+      "accuracy": 0.946,
+      "precision": 0.9555555555555556,
+      "recall": 0.946,
+      "f1": 0.9507537688442211
+    },
+    {
+      "name": "ship",
+      "support": 500,
+      "correct": 481,
+      "accuracy": 0.962,
+      "precision": 0.969758064516129,
+      "recall": 0.962,
+      "f1": 0.965863453815261
+    },
+    {
+      "name": "truck",
+      "support": 500,
+      "correct": 479,
+      "accuracy": 0.958,
+      "precision": 0.9599198396793587,
+      "recall": 0.958,
+      "f1": 0.9589589589589589
+    }
+  ],
+  "confusion_matrix": [
+    [
+      470,
+      1,
+      11,
+      3,
+      1,
+      1,
+      1,
+      4,
+      4,
+      4
+    ],
+    [
+      3,
+      481,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      5,
+      8
+    ],
+    [
+      7,
+      0,
+      459,
+      15,
+      4,
+      5,
+      5,
+      4,
+      0,
+      1
+    ],
+    [
+      2,
+      0,
+      3,
+      443,
+      5,
+      32,
+      10,
+      1,
+      1,
+      3
+    ],
+    [
+      1,
+      0,
+      4,
+      15,
+      463,
+      5,
+      9,
+      1,
+      0,
+      2
+    ],
+    [
+      3,
+      1,
+      4,
+      28,
+      6,
+      445,
+      3,
+      10,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      8,
+      1,
+      3,
+      2,
+      479,
+      1,
+      2,
+      0
+    ],
+    [
+      1,
+      0,
+      4,
+      5,
+      5,
+      11,
+      0,
+      473,
+      0,
+      1
+    ],
+    [
+      10,
+      1,
+      3,
+      1,
+      1,
+      0,
+      1,
+      1,
+      481,
+      1
+    ],
+    [
+      5,
+      7,
+      1,
+      2,
+      1,
+      0,
+      2,
+      0,
+      3,
+      479
+    ]
+  ],
+  "loss": 0.24878524032831192,
+  "epoch": 100,
+  "split": "validation",
+  "model_name": "simple_cnn",
+  "manifest_hash": "ba2713d56315b4565ca3c1bee40bf3acb2e2785fe42de2ab03acf6897e26aab7",
+  "smoke": false,
+  "checkpoint": "./runs/E0/seed42/best.pt"
+}

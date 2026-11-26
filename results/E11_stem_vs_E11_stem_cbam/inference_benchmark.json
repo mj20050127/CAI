@@ -1,0 +1,82 @@
+{
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch": "2.8.0+cu126",
+  "precision": "float32",
+  "input_shape": "N,3,32,32",
+  "preprocessing": "cifar32",
+  "includes_preprocessing_or_host_transfer": false,
+  "cudnn_allow_tf32": true,
+  "cuda_matmul_allow_tf32": false,
+  "warmup": 10,
+  "iterations": 50,
+  "repeats": 3,
+  "manifest_hash": "ba2713d56315b4565ca3c1bee40bf3acb2e2785fe42de2ab03acf6897e26aab7",
+  "models": [
+    {
+      "name": "1_E11_stem_cifar_resnet18",
+      "checkpoint": "./runs/E11_stem_lr0.01/seed42/best.pt",
+      "epoch": 90
+    },
+    {
+      "name": "2_E11_stem_cbam_cifar_resnet18_cbam",
+      "checkpoint": "./runs/E11_stem_cbam_lr0.01/seed42/best.pt",
+      "epoch": 87
+    }
+  ],
+  "results": [
+    {
+      "name": "1_E11_stem_cifar_resnet18",
+      "batch_size": 1,
+      "parameters": 11173962,
+      "batch_latency_ms_median": 2.1464840000408003,
+      "amortized_ms_per_image": 2.1464840000408003,
+      "images_per_second": 465.87815235566256,
+      "repeat_batch_latency_ms": [
+        2.1464840000408003,
+        2.0634000000427477,
+        2.345832000064547
+      ]
+    },
+    {
+      "name": "2_E11_stem_cbam_cifar_resnet18_cbam",
+      "batch_size": 1,
+      "parameters": 11261786,
+      "batch_latency_ms_median": 4.464896000063163,
+      "amortized_ms_per_image": 4.464896000063163,
+      "images_per_second": 223.96938248636775,
+      "repeat_batch_latency_ms": [
+        4.464896000063163,
+        4.324057999983779,
+        4.527622000023257
+      ]
+    },
+    {
+      "name": "1_E11_stem_cifar_resnet18",
+      "batch_size": 128,
+      "parameters": 11173962,
+      "batch_latency_ms_median": 22.22946399997454,
+      "amortized_ms_per_image": 0.1736676874998011,
+      "images_per_second": 5758.123542706499,
+      "repeat_batch_latency_ms": [
+        21.788438000003225,
+        22.23753199999919,
+        22.22946399997454
+      ]
+    },
+    {
+      "name": "2_E11_stem_cbam_cifar_resnet18_cbam",
+      "batch_size": 128,
+      "parameters": 11261786,
+      "batch_latency_ms_median": 26.501742000036757,
+      "amortized_ms_per_image": 0.20704485937528716,
+      "images_per_second": 4829.871183555499,
+      "repeat_batch_latency_ms": [
+        26.501742000036757,
+        26.588709999996354,
+        26.40938399999868
+      ]
+    }
+  ],
+  "note": "合成输入的模型推理计时，不代表端到端数据加载耗时；摊销时间不等于 batch=1 延迟。"
+}

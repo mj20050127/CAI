@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-17",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "check_type": "one_synthetic_batch_only",
+  "batch_size": 128,
+  "amp": true,
+  "deterministic_algorithms": true,
+  "parameter_count": 11173962,
+  "initial_state_matches_e1": true,
+  "initial_state_sha256": "0d7d998dce998061a1710cdb2cf553a5fe77a7636a59d29e66d0acc38beba0ad",
+  "train_transforms": [
+    "RandomCrop",
+    "RandomHorizontalFlip",
+    "ToTensor",
+    "Normalize"
+  ],
+  "validation_transforms": [
+    "ToTensor",
+    "Normalize"
+  ],
+  "loss_finite": true,
+  "gradients_finite": true,
+  "weights_updated": true,
+  "mixup_lambda": 0.0094002582283771,
+  "mixup_weighted_accuracy": 0.1171875,
+  "peak_cuda_allocated_mib": 436.7783203125,
+  "formal_training_started": false,
+  "test_set_used": false
+}

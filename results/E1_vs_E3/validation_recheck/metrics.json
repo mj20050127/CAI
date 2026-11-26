@@ -1,0 +1,226 @@
+{
+  "sample_count": 5000,
+  "overall_accuracy": 0.9562,
+  "macro_f1": 0.9562029661375695,
+  "per_class": [
+    {
+      "name": "airplane",
+      "support": 500,
+      "correct": 478,
+      "accuracy": 0.956,
+      "precision": 0.9465346534653465,
+      "recall": 0.956,
+      "f1": 0.9512437810945273
+    },
+    {
+      "name": "automobile",
+      "support": 500,
+      "correct": 490,
+      "accuracy": 0.98,
+      "precision": 0.9780439121756487,
+      "recall": 0.98,
+      "f1": 0.979020979020979
+    },
+    {
+      "name": "bird",
+      "support": 500,
+      "correct": 479,
+      "accuracy": 0.958,
+      "precision": 0.9229287090558767,
+      "recall": 0.958,
+      "f1": 0.9401373895976447
+    },
+    {
+      "name": "cat",
+      "support": 500,
+      "correct": 452,
+      "accuracy": 0.904,
+      "precision": 0.9186991869918699,
+      "recall": 0.904,
+      "f1": 0.9112903225806451
+    },
+    {
+      "name": "deer",
+      "support": 500,
+      "correct": 477,
+      "accuracy": 0.954,
+      "precision": 0.9714867617107943,
+      "recall": 0.954,
+      "f1": 0.9626639757820383
+    },
+    {
+      "name": "dog",
+      "support": 500,
+      "correct": 464,
+      "accuracy": 0.928,
+      "precision": 0.9336016096579477,
+      "recall": 0.928,
+      "f1": 0.9307923771313942
+    },
+    {
+      "name": "frog",
+      "support": 500,
+      "correct": 489,
+      "accuracy": 0.978,
+      "precision": 0.9760479041916168,
+      "recall": 0.978,
+      "f1": 0.977022977022977
+    },
+    {
+      "name": "horse",
+      "support": 500,
+      "correct": 482,
+      "accuracy": 0.964,
+      "precision": 0.9796747967479674,
+      "recall": 0.964,
+      "f1": 0.9717741935483871
+    },
+    {
+      "name": "ship",
+      "support": 500,
+      "correct": 487,
+      "accuracy": 0.974,
+      "precision": 0.960552268244576,
+      "recall": 0.974,
+      "f1": 0.9672293942403178
+    },
+    {
+      "name": "truck",
+      "support": 500,
+      "correct": 483,
+      "accuracy": 0.966,
+      "precision": 0.9757575757575757,
+      "recall": 0.966,
+      "f1": 0.9708542713567838
+    }
+  ],
+  "confusion_matrix": [
+    [
+      478,
+      2,
+      9,
+      1,
+      0,
+      0,
+      0,
+      0,
+      7,
+      3
+    ],
+    [
+      3,
+      490,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      2,
+      4
+    ],
+    [
+      4,
+      0,
+      479,
+      7,
+      3,
+      2,
+      1,
+      0,
+      4,
+      0
+    ],
+    [
+      3,
+      0,
+      11,
+      452,
+      3,
+      21,
+      6,
+      1,
+      1,
+      2
+    ],
+    [
+      1,
+      0,
+      9,
+      6,
+      477,
+      2,
+      2,
+      3,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      4,
+      18,
+      3,
+      464,
+      2,
+      6,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      4,
+      2,
+      3,
+      1,
+      489,
+      0,
+      1,
+      0
+    ],
+    [
+      2,
+      0,
+      3,
+      4,
+      2,
+      6,
+      1,
+      482,
+      0,
+      0
+    ],
+    [
+      8,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      487,
+      3
+    ],
+    [
+      4,
+      8,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      4,
+      483
+    ]
+  ],
+  "loss": 0.18638654978275299,
+  "epoch": 96,
+  "split": "validation",
+  "model_name": "cifar_resnet18",
+  "manifest_hash": "ba2713d56315b4565ca3c1bee40bf3acb2e2785fe42de2ab03acf6897e26aab7",
+  "smoke": false,
+  "checkpoint": "./runs/E3/seed42/best.pt"
+}

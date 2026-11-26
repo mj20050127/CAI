@@ -1,0 +1,33 @@
+{
+  "verified_at": "2026-11-13T22:43:06.115193+08:00",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "executable": "./.venv/Scripts/python.exe",
+  "torch": "2.8.0+cu126",
+  "torchvision": "0.23.0+cu126",
+  "numpy": "2.2.6",
+  "pillow": "11.2.1",
+  "cuda_runtime": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "gpu_memory_mib": 8187,
+  "checks": {
+    "cuda_available": true,
+    "torchvision_preprocessing": true,
+    "deterministic_cuda_amp_forward_backward_update": true,
+    "finite_gradients": true,
+    "gpu_evaluation": true,
+    "pip_dependency_check": true
+  },
+  "synthetic_training_loss": 2.45654296875,
+  "synthetic_evaluation_loss": 2.2809358835220337,
+  "real_cifar_downloaded": false,
+  "real_training_started": false,
+  "matplotlib": "3.10.3",
+  "pip": "24.0",
+  "unit_tests": {
+    "passed": 20,
+    "failed": 0,
+    "skipped": 0,
+    "command": ".venv/Scripts/python.exe -X utf8 -m unittest discover -s tests -v"
+  },
+  "dependency_lock": "requirements-lock.txt"
+}

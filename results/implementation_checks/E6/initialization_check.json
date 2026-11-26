@@ -1,0 +1,16 @@
+{
+  "experiment": "E6",
+  "config_difference_fields": [
+    "experiment",
+    "initial_checkpoint",
+    "output_dir",
+    "scheduler"
+  ],
+  "strategy": "fixed",
+  "learning_rate": 0.1,
+  "planned_epochs": 100,
+  "reference_initial_state_sha256": "0d7d998dce998061a1710cdb2cf553a5fe77a7636a59d29e66d0acc38beba0ad",
+  "shared_data_manifest_sha256": "ba2713d56315b4565ca3c1bee40bf3acb2e2785fe42de2ab03acf6897e26aab7",
+  "old_training_artifacts_verified": 46,
+  "formal_training_started": false
+}

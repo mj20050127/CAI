@@ -1,0 +1,1884 @@
+{
+  "split": "validation",
+  "seed": 42,
+  "checkpoints": {
+    "E11_stem": {
+      "path": "runs/E11_stem_lr0.01/seed42/best.pt",
+      "epoch": 90,
+      "sha256": "04689be4fba483b1e5e3a052ea73b9c45bbf3bf0a5ade026901a8cd28f28688e",
+      "manifest_sha256": "ba2713d56315b4565ca3c1bee40bf3acb2e2785fe42de2ab03acf6897e26aab7"
+    },
+    "E1": {
+      "path": "runs/E1/seed42/best.pt",
+      "epoch": 96,
+      "sha256": "3b5ade1cf2555efa22be6384af37ae4af99241d1e271a6b38e68a510902821fb",
+      "manifest_sha256": "ba2713d56315b4565ca3c1bee40bf3acb2e2785fe42de2ab03acf6897e26aab7"
+    },
+    "E5": {
+      "path": "runs/E5/seed42/best.pt",
+      "epoch": 97,
+      "sha256": "6f1f37a754ddda9d1e25d0541cd9e7a60c4fd2011bd8ef90baad9a6c29ba56a6",
+      "manifest_sha256": "ba2713d56315b4565ca3c1bee40bf3acb2e2785fe42de2ab03acf6897e26aab7"
+    },
+    "E11": {
+      "path": "runs/E11/seed42_retry1/best.pt",
+      "epoch": 100,
+      "sha256": "7006e8afbc99c744b6d10331ac250aaca7c4e71d143880ac184cc0c23cfe2820",
+      "manifest_sha256": "ba2713d56315b4565ca3c1bee40bf3acb2e2785fe42de2ab03acf6897e26aab7"
+    },
+    "E11_stem + CBAM": {
+      "path": "runs/E11_stem_cbam_lr0.01/seed42/best.pt",
+      "epoch": 87,
+      "sha256": "f6a3f2348e2d23c58a1459b6f0e17a9a120dcd6a1f88f574cf0a819038f41952",
+      "manifest_sha256": "ba2713d56315b4565ca3c1bee40bf3acb2e2785fe42de2ab03acf6897e26aab7"
+    }
+  },
+  "cat_cases": {
+    "36543": "Both correct",
+    "20531": "Both predict dog",
+    "48402": "CBAM introduces error",
+    "17337": "CBAM corrects error"
+  },
+  "per_class_indices": {
+    "airplane": {
+      "correct": 35700,
+      "incorrect": 9004
+    },
+    "automobile": {
+      "correct": 1242,
+      "incorrect": 26877
+    },
+    "bird": {
+      "correct": 12651,
+      "incorrect": 14819
+    },
+    "cat": {
+      "correct": 6422,
+      "incorrect": 46493
+    },
+    "deer": {
+      "correct": 5706,
+      "incorrect": 42072
+    },
+    "dog": {
+      "correct": 42088,
+      "incorrect": 7227
+    },
+    "frog": {
+      "correct": 31928,
+      "incorrect": 37714
+    },
+    "horse": {
+      "correct": 1858,
+      "incorrect": 1118
+    },
+    "ship": {
+      "correct": 4779,
+      "incorrect": 10095
+    },
+    "truck": {
+      "correct": 12664,
+      "incorrect": 32466
+    }
+  },
+  "feature_reference_index": 36543,
+  "feature_layers": {
+    "layer1": {
+      "shape": [
+        64,
+        32,
+        32
+      ],
+      "channels": [
+        8,
+        61,
+        50,
+        46
+      ],
+      "shared_scale": [
+        0.0,
+        1.5686737298965454
+      ],
+      "means": {
+        "E11_stem": [
+          0.3810271620750427,
+          0.3495659828186035,
+          0.34846556186676025,
+          0.3405393064022064
+        ],
+        "E11_stem + CBAM": [
+          0.37524744868278503,
+          0.2471945881843567,
+          0.24186579883098602,
+          0.26687461137771606
+        ]
+      }
+    },
+    "layer3": {
+      "shape": [
+        256,
+        8,
+        8
+      ],
+      "channels": [
+        9,
+        181,
+        231,
+        163
+      ],
+      "shared_scale": [
+        0.0,
+        0.9609388709068298
+      ],
+      "means": {
+        "E11_stem": [
+          0.2843426465988159,
+          0.2737566828727722,
+          0.2584012746810913,
+          0.2139364778995514
+        ],
+        "E11_stem + CBAM": [
+          0.15613973140716553,
+          0.16501310467720032,
+          0.03340601921081543,
+          0.10995969921350479
+        ]
+      }
+    },
+    "layer4": {
+      "shape": [
+        512,
+        4,
+        4
+      ],
+      "channels": [
+        244,
+        273,
+        200,
+        442
+      ],
+      "shared_scale": [
+        0.0,
+        2.2616615295410156
+      ],
+      "means": {
+        "E11_stem": [
+          1.3068828582763672,
+          1.2839009761810303,
+          1.2808024883270264,
+          1.2417620420455933
+        ],
+        "E11_stem + CBAM": [
+          0.2542993426322937,
+          0.052749551832675934,
+          0.03869916871190071,
+          0.500734806060791
+        ]
+      }
+    }
+  },
+  "channel_selection": "E11_stem spatial mean activation descending; ascending index breaks ties",
+  "cam": "Positive gradient-weighted channel sum from the target logit, bilinear resize, normalized per map",
+  "predictions": {
+    "E1": [
+      {
+        "index": 17337,
+        "true": "cat",
+        "predicted": "dog",
+        "confidence": 0.9977769255638123,
+        "logged_validation_confidence": 0.9977781176567078,
+        "targets": {
+          "cat": {
+            "logit": 2.617892026901245,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.10769910365343094
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.21578674018383026
+              }
+            }
+          },
+          "dog": {
+            "logit": 8.872236251831055,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.08583793044090271
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.7407557964324951
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 20531,
+        "true": "cat",
+        "predicted": "dog",
+        "confidence": 0.999300479888916,
+        "logged_validation_confidence": 0.9992998838424683,
+        "targets": {
+          "cat": {
+            "logit": 2.42673397064209,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.12877638638019562
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.2181829959154129
+              }
+            }
+          },
+          "dog": {
+            "logit": 9.890759468078613,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.175888791680336
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.8820326328277588
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 36543,
+        "true": "cat",
+        "predicted": "cat",
+        "confidence": 0.9987366795539856,
+        "logged_validation_confidence": 0.9987358450889587,
+        "targets": {
+          "cat": {
+            "logit": 8.041730880737305,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.038099255412817
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.6516637206077576
+              }
+            }
+          },
+          "dog": {
+            "logit": -0.4927738606929779,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.033855993300676346
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.027089538052678108
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 48402,
+        "true": "cat",
+        "predicted": "cat",
+        "confidence": 0.9968262910842896,
+        "logged_validation_confidence": 0.9968180656433105,
+        "targets": {
+          "cat": {
+            "logit": 9.112924575805664,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.29445773363113403
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.839084267616272
+              }
+            }
+          },
+          "dog": {
+            "logit": 3.2685706615448,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.17674896121025085
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.3625926077365875
+              }
+            }
+          }
+        }
+      }
+    ],
+    "E5": [
+      {
+        "index": 17337,
+        "true": "cat",
+        "predicted": "dog",
+        "confidence": 0.6524344682693481,
+        "logged_validation_confidence": 0.6512443423271179,
+        "targets": {
+          "cat": {
+            "logit": 6.7026591300964355,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.1533714383840561
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.580317497253418
+              }
+            }
+          },
+          "dog": {
+            "logit": 7.335383415222168,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.24721665680408478
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.7375887632369995
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 20531,
+        "true": "cat",
+        "predicted": "dog",
+        "confidence": 0.9420284628868103,
+        "logged_validation_confidence": 0.9418836832046509,
+        "targets": {
+          "cat": {
+            "logit": 3.800264596939087,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.1018534004688263
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.3672032952308655
+              }
+            }
+          },
+          "dog": {
+            "logit": 6.673251152038574,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.2406550496816635
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.661363422870636
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 36543,
+        "true": "cat",
+        "predicted": "cat",
+        "confidence": 0.9998887777328491,
+        "logged_validation_confidence": 0.9998887777328491,
+        "targets": {
+          "cat": {
+            "logit": 10.660957336425781,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.16805988550186157
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.8327974081039429
+              }
+            }
+          },
+          "dog": {
+            "logit": 0.7161611318588257,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.06623142957687378
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.12520790100097656
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 48402,
+        "true": "cat",
+        "predicted": "cat",
+        "confidence": 0.640999972820282,
+        "logged_validation_confidence": 0.6436106562614441,
+        "targets": {
+          "cat": {
+            "logit": 6.351879596710205,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.16688022017478943
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.680147647857666
+              }
+            }
+          },
+          "dog": {
+            "logit": 5.764975547790527,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.23251037299633026
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.5303878784179688
+              }
+            }
+          }
+        }
+      }
+    ],
+    "E11": [
+      {
+        "index": 17337,
+        "true": "cat",
+        "predicted": "cat",
+        "confidence": 0.969293475151062,
+        "logged_validation_confidence": 0.9692553877830505,
+        "targets": {
+          "cat": {
+            "logit": 5.597243785858154,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.1224866732954979
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.5553500652313232
+              }
+            }
+          },
+          "dog": {
+            "logit": 1.567240595817566,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.15216486155986786
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.16794851422309875
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 20531,
+        "true": "cat",
+        "predicted": "dog",
+        "confidence": 0.9243903756141663,
+        "logged_validation_confidence": 0.9244757890701294,
+        "targets": {
+          "cat": {
+            "logit": 3.269314765930176,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.17305949330329895
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.3163919448852539
+              }
+            }
+          },
+          "dog": {
+            "logit": 6.168310642242432,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.09802551567554474
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.5567474961280823
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 36543,
+        "true": "cat",
+        "predicted": "cat",
+        "confidence": 0.987841784954071,
+        "logged_validation_confidence": 0.9878437519073486,
+        "targets": {
+          "cat": {
+            "logit": 6.447445869445801,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.06642740219831467
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.5200215578079224
+              }
+            }
+          },
+          "dog": {
+            "logit": 1.2726274728775024,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.08143816888332367
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.12727704644203186
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 48402,
+        "true": "cat",
+        "predicted": "cat",
+        "confidence": 0.8004044890403748,
+        "logged_validation_confidence": 0.7998932600021362,
+        "targets": {
+          "cat": {
+            "logit": 5.458786487579346,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.12305528670549393
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.5403609275817871
+              }
+            }
+          },
+          "dog": {
+            "logit": 3.988187789916992,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.1266605705022812
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.41825711727142334
+              }
+            }
+          }
+        }
+      }
+    ],
+    "E11_stem": [
+      {
+        "index": 1118,
+        "true": "horse",
+        "predicted": "deer",
+        "confidence": 0.9431536793708801,
+        "logged_validation_confidence": 0.9431219696998596,
+        "targets": {
+          "deer": {
+            "logit": 5.570342063903809,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.0901128426194191
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.5270810127258301
+              }
+            }
+          },
+          "horse": {
+            "logit": 0.6212473511695862,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.03982941806316376
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.14799946546554565
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 1242,
+        "true": "automobile",
+        "predicted": "automobile",
+        "confidence": 0.9750760793685913,
+        "logged_validation_confidence": 0.9750872254371643,
+        "targets": {
+          "automobile": {
+            "logit": 5.4774017333984375,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.17190459370613098
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.5143887996673584
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 1858,
+        "true": "horse",
+        "predicted": "horse",
+        "confidence": 0.9551375508308411,
+        "logged_validation_confidence": 0.9551477432250977,
+        "targets": {
+          "horse": {
+            "logit": 5.004186153411865,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.11760319769382477
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.5171771049499512
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 4779,
+        "true": "ship",
+        "predicted": "ship",
+        "confidence": 0.9892605543136597,
+        "logged_validation_confidence": 0.9892550706863403,
+        "targets": {
+          "ship": {
+            "logit": 6.218285083770752,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.12759409844875336
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.6691358089447021
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 5706,
+        "true": "deer",
+        "predicted": "deer",
+        "confidence": 0.9804880023002625,
+        "logged_validation_confidence": 0.9805018305778503,
+        "targets": {
+          "deer": {
+            "logit": 5.803028583526611,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.18097686767578125
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.5600702166557312
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 6422,
+        "true": "cat",
+        "predicted": "cat",
+        "confidence": 0.9965108036994934,
+        "logged_validation_confidence": 0.9965103268623352,
+        "targets": {
+          "cat": {
+            "logit": 7.28715181350708,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.19685707986354828
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.6705867052078247
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 7227,
+        "true": "dog",
+        "predicted": "deer",
+        "confidence": 0.6737154722213745,
+        "logged_validation_confidence": 0.674170196056366,
+        "targets": {
+          "deer": {
+            "logit": 3.90513277053833,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.12253843992948532
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.43032306432724
+              }
+            }
+          },
+          "dog": {
+            "logit": 2.163628578186035,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.15624360740184784
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.2725259065628052
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 9004,
+        "true": "airplane",
+        "predicted": "bird",
+        "confidence": 0.6045601963996887,
+        "logged_validation_confidence": 0.6053714752197266,
+        "targets": {
+          "airplane": {
+            "logit": 4.106575012207031,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.2870123088359833
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.48374563455581665
+              }
+            }
+          },
+          "bird": {
+            "logit": 4.598574161529541,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.10732106864452362
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.5273134112358093
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 10095,
+        "true": "ship",
+        "predicted": "airplane",
+        "confidence": 0.5407578349113464,
+        "logged_validation_confidence": 0.5406057834625244,
+        "targets": {
+          "airplane": {
+            "logit": 3.8627843856811523,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.17410217225551605
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.45376870036125183
+              }
+            }
+          },
+          "ship": {
+            "logit": 3.1203434467315674,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.25446581840515137
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.3776850700378418
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 12651,
+        "true": "bird",
+        "predicted": "bird",
+        "confidence": 0.9757389426231384,
+        "logged_validation_confidence": 0.9757376909255981,
+        "targets": {
+          "bird": {
+            "logit": 6.033063888549805,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.09028470516204834
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.6190124154090881
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 12664,
+        "true": "truck",
+        "predicted": "truck",
+        "confidence": 0.9030598402023315,
+        "logged_validation_confidence": 0.9030938148498535,
+        "targets": {
+          "truck": {
+            "logit": 4.883462429046631,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.15296077728271484
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.4370952248573303
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 14819,
+        "true": "bird",
+        "predicted": "dog",
+        "confidence": 0.48759421706199646,
+        "logged_validation_confidence": 0.48565003275871277,
+        "targets": {
+          "bird": {
+            "logit": 0.36918163299560547,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.1307368129491806
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.08229435235261917
+              }
+            }
+          },
+          "dog": {
+            "logit": 2.4815962314605713,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.08451973646879196
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.33075228333473206
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 17337,
+        "true": "cat",
+        "predicted": "dog",
+        "confidence": 0.5662239789962769,
+        "logged_validation_confidence": 0.5650585889816284,
+        "targets": {
+          "cat": {
+            "logit": 2.9831583499908447,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.20800164341926575
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.34895262122154236
+              }
+            }
+          },
+          "dog": {
+            "logit": 3.5061755180358887,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.1689191311597824
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.387346088886261
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 20531,
+        "true": "cat",
+        "predicted": "dog",
+        "confidence": 0.9769484400749207,
+        "logged_validation_confidence": 0.9769284129142761,
+        "targets": {
+          "cat": {
+            "logit": 1.2125136852264404,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.1185561865568161
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.1633998304605484
+              }
+            }
+          },
+          "dog": {
+            "logit": 6.1419901847839355,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.1519516110420227
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.5648729205131531
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 26877,
+        "true": "automobile",
+        "predicted": "truck",
+        "confidence": 0.919830322265625,
+        "logged_validation_confidence": 0.9197767972946167,
+        "targets": {
+          "automobile": {
+            "logit": 3.9674150943756104,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.10633791983127594
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.44754430651664734
+              }
+            }
+          },
+          "truck": {
+            "logit": 6.5353240966796875,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.13445617258548737
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.6347934007644653
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 31928,
+        "true": "frog",
+        "predicted": "frog",
+        "confidence": 0.9934017062187195,
+        "logged_validation_confidence": 0.9934020638465881,
+        "targets": {
+          "frog": {
+            "logit": 6.547982215881348,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.15780776739120483
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.6277135610580444
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 32466,
+        "true": "truck",
+        "predicted": "airplane",
+        "confidence": 0.8407726287841797,
+        "logged_validation_confidence": 0.8408631682395935,
+        "targets": {
+          "airplane": {
+            "logit": 5.465196132659912,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.16639144718647003
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.5163514614105225
+              }
+            }
+          },
+          "truck": {
+            "logit": 3.6576333045959473,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.10954827070236206
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.4298190176486969
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 35700,
+        "true": "airplane",
+        "predicted": "airplane",
+        "confidence": 0.9718554019927979,
+        "logged_validation_confidence": 0.971832811832428,
+        "targets": {
+          "airplane": {
+            "logit": 5.453730583190918,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.16744650900363922
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.5534707307815552
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 36543,
+        "true": "cat",
+        "predicted": "cat",
+        "confidence": 0.9946409463882446,
+        "logged_validation_confidence": 0.9946416616439819,
+        "targets": {
+          "cat": {
+            "logit": 6.852473258972168,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.23710927367210388
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.6253706216812134
+              }
+            }
+          },
+          "dog": {
+            "logit": 0.5575788021087646,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.024340331554412842
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.08138410747051239
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 37714,
+        "true": "frog",
+        "predicted": "cat",
+        "confidence": 0.9095079302787781,
+        "logged_validation_confidence": 0.909648060798645,
+        "targets": {
+          "cat": {
+            "logit": 4.971331596374512,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.24957750737667084
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.5081256628036499
+              }
+            }
+          },
+          "frog": {
+            "logit": 2.385685682296753,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.185053288936615
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.2980099320411682
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 42072,
+        "true": "deer",
+        "predicted": "horse",
+        "confidence": 0.5947125554084778,
+        "logged_validation_confidence": 0.595192551612854,
+        "targets": {
+          "deer": {
+            "logit": 3.3061435222625732,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.07040642946958542
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.3952831029891968
+              }
+            }
+          },
+          "horse": {
+            "logit": 3.80926775932312,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.10813910514116287
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.4796397387981415
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 42088,
+        "true": "dog",
+        "predicted": "dog",
+        "confidence": 0.9635148644447327,
+        "logged_validation_confidence": 0.963504433631897,
+        "targets": {
+          "dog": {
+            "logit": 5.66571044921875,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.15757448971271515
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.5782148241996765
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 46493,
+        "true": "cat",
+        "predicted": "dog",
+        "confidence": 0.6061298847198486,
+        "logged_validation_confidence": 0.6068395376205444,
+        "targets": {
+          "cat": {
+            "logit": 4.120910167694092,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.11993569880723953
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.4532822370529175
+              }
+            }
+          },
+          "dog": {
+            "logit": 4.644008159637451,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.22132959961891174
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.6029196977615356
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 48402,
+        "true": "cat",
+        "predicted": "cat",
+        "confidence": 0.9746180772781372,
+        "logged_validation_confidence": 0.9745987057685852,
+        "targets": {
+          "cat": {
+            "logit": 5.795243740081787,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.16159512102603912
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.6039028167724609
+              }
+            }
+          },
+          "dog": {
+            "logit": 1.6169438362121582,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.17151618003845215
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.17106002569198608
+              }
+            }
+          }
+        }
+      }
+    ],
+    "E11_stem + CBAM": [
+      {
+        "index": 17337,
+        "true": "cat",
+        "predicted": "cat",
+        "confidence": 0.9164975881576538,
+        "logged_validation_confidence": 0.9165199398994446,
+        "targets": {
+          "cat": {
+            "logit": 4.240559101104736,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.04209177568554878
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.4575158357620239
+              }
+            }
+          },
+          "dog": {
+            "logit": 0.08609943091869354,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.07907366007566452
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.10054311156272888
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 20531,
+        "true": "cat",
+        "predicted": "dog",
+        "confidence": 0.8730903267860413,
+        "logged_validation_confidence": 0.8729888796806335,
+        "targets": {
+          "cat": {
+            "logit": 2.493736505508423,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.032164670526981354
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.3044852018356323
+              }
+            }
+          },
+          "dog": {
+            "logit": 5.2011308670043945,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.03601100295782089
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.4697395861148834
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 36543,
+        "true": "cat",
+        "predicted": "cat",
+        "confidence": 0.982042133808136,
+        "logged_validation_confidence": 0.9820392727851868,
+        "targets": {
+          "cat": {
+            "logit": 5.648628234863281,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.08355233818292618
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.4406735599040985
+              }
+            }
+          },
+          "dog": {
+            "logit": 0.25110843777656555,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.0
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.0628899484872818
+              }
+            }
+          }
+        }
+      },
+      {
+        "index": 48402,
+        "true": "cat",
+        "predicted": "dog",
+        "confidence": 0.7421954274177551,
+        "logged_validation_confidence": 0.7414045929908752,
+        "targets": {
+          "cat": {
+            "logit": 3.1116111278533936,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.07757173478603363
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.2754426896572113
+              }
+            }
+          },
+          "dog": {
+            "logit": 4.332834243774414,
+            "layers": {
+              "layer3": {
+                "shape": [
+                  8,
+                  8
+                ],
+                "positive_peak": 0.09581954032182693
+              },
+              "layer4": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "positive_peak": 0.4259772002696991
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

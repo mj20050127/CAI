@@ -1,0 +1,57 @@
+{
+  "window_means": {
+    "1-10": {
+      "train_objective": 1.2425099846574996,
+      "mean_target_entropy_nats": 0.19596440084525063,
+      "mean_excess_kl_nats": 1.0465455838122488,
+      "val_ce": 0.9928306352233888,
+      "val_accuracy": 0.6565399999999999
+    },
+    "61-70": {
+      "train_objective": 0.5335359588273365,
+      "mean_target_entropy_nats": 0.20044901345340155,
+      "mean_excess_kl_nats": 0.3330869453739351,
+      "val_ce": 0.3179073221993446,
+      "val_accuracy": 0.9098200000000001
+    },
+    "71-80": {
+      "train_objective": 0.46259748491697844,
+      "mean_target_entropy_nats": 0.2004135730807861,
+      "mean_excess_kl_nats": 0.2621839118361923,
+      "val_ce": 0.268882819404602,
+      "val_accuracy": 0.92926
+    },
+    "81-90": {
+      "train_objective": 0.4211149464998643,
+      "mean_target_entropy_nats": 0.20418972776588523,
+      "mean_excess_kl_nats": 0.21692521873397902,
+      "val_ce": 0.21738596569925545,
+      "val_accuracy": 0.9472400000000001
+    },
+    "91-100": {
+      "train_objective": 0.3995583819894493,
+      "mean_target_entropy_nats": 0.20382434262051885,
+      "mean_excess_kl_nats": 0.19573403936893044,
+      "val_ce": 0.1911643849313259,
+      "val_accuracy": 0.95468
+    },
+    "81-100": {
+      "train_objective": 0.41033666424465676,
+      "mean_target_entropy_nats": 0.20400703519320204,
+      "mean_excess_kl_nats": 0.20632962905145474,
+      "val_ce": 0.2042751753152907,
+      "val_accuracy": 0.95096
+    },
+    "51-100": {
+      "train_objective": 0.4838938466181722,
+      "mean_target_entropy_nats": 0.20285971390449423,
+      "mean_excess_kl_nats": 0.28103413271367794,
+      "val_ce": 0.2732248072734475,
+      "val_accuracy": 0.9266159999999998
+    }
+  },
+  "last10_objective_entropy_correlation": 0.994308939640449,
+  "interpretation": "Late validation performance is near a plateau but still slowly improving; nonzero MixUp CE alone is not proof of failure to converge.",
+  "derived_from": "mixup_entropy_diagnostics.json, E3 history.csv, E1 history.csv",
+  "not_a_claim_of_full_optimization_convergence": true
+}

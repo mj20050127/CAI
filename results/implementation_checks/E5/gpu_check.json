@@ -1,0 +1,21 @@
+{
+  "experiment": "E5",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "check_type": "one_synthetic_training_batch_and_eval",
+  "batch_size": 128,
+  "amp_training": true,
+  "deterministic_algorithms": true,
+  "parameter_count": 11261786,
+  "parameter_delta_vs_e1": 87824,
+  "shared_state_sha256": "0d7d998dce998061a1710cdb2cf553a5fe77a7636a59d29e66d0acc38beba0ad",
+  "full_initial_sha256": "8a7d1c819a8e7667b5720f010e9ef6df7fd87de4de7c9f9b33f1c9b64ec1ee59",
+  "shared_state_matches_real_e1_initial": true,
+  "cpu_rng_matches_e1_post_construction": true,
+  "all_24_cbam_tensors_have_finite_gradients": true,
+  "updated_cbam_tensors": 24,
+  "synthetic_training_loss": 2.313385009765625,
+  "synthetic_eval_loss": 2.3025059700012207,
+  "peak_cuda_allocated_mib": 560.626953125,
+  "formal_training_started": false,
+  "test_set_used": false
+}

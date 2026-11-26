@@ -1,0 +1,75 @@
+{
+  "analysis_date": "2026-11-17",
+  "split": "validation",
+  "manifest_match": true,
+  "manifest_sha256": "ba2713d56315b4565ca3c1bee40bf3acb2e2785fe42de2ab03acf6897e26aab7",
+  "initial_state_match": true,
+  "initial_state_sha256": "0d7d998dce998061a1710cdb2cf553a5fe77a7636a59d29e66d0acc38beba0ad",
+  "initial_source_file_unchanged": true,
+  "histories_contiguous_and_finite": true,
+  "learning_rate_trajectories_identical": true,
+  "source_snapshot_and_current_code_match": true,
+  "source_files_checked": 17,
+  "checkpoints": {
+    "best.pt": {
+      "epoch": 84,
+      "model_name": "cifar_resnet18",
+      "finite_weights": true,
+      "initial_state_sha256": "0d7d998dce998061a1710cdb2cf553a5fe77a7636a59d29e66d0acc38beba0ad"
+    },
+    "last.pt": {
+      "epoch": 100,
+      "model_name": "cifar_resnet18",
+      "finite_weights": true,
+      "initial_state_sha256": "0d7d998dce998061a1710cdb2cf553a5fe77a7636a59d29e66d0acc38beba0ad"
+    }
+  },
+  "e0_e1_frozen_artifacts_unchanged": true,
+  "config_differences": [
+    "experiment",
+    "output_dir",
+    "train_augmentation",
+    "initial_checkpoint"
+  ],
+  "input_artifact_sha256": {
+    "E1": {
+      "config.json": "461a72c2a79c0cf246e17918104d3d76c5cdf4c2db52fb2b9319614d825b1a8f",
+      "data_manifest.json": "814bc6f8ffab5627a66a6d8d0c90cf28f96410e3d94470974df395ee6f439536",
+      "environment.json": "c68489736958af848b88da12acf8a4724e875c14a1e0733f23b380aa5c727bc7",
+      "history.csv": "348b7e7aeb2899c03c1499f577d676b124f72d2a77d95dd1f6b3e72cf2189bc3",
+      "summary.json": "d77366c6ef4c61ebec84667112e3b392428733c22d319cb55a7199f4323b1053",
+      "initial.pt": "19bc11e94b7f6d1f119687f62ae97097f5a086c26bf67b45530c5095364df297",
+      "best.pt": "3b5ade1cf2555efa22be6384af37ae4af99241d1e271a6b38e68a510902821fb",
+      "last.pt": "b2d04c7955ee58cf38a72179a26e19835b8ab57b8606ff2fd802fe42ecc7cab9"
+    },
+    "E2": {
+      "config.json": "8fe8ee961e49d758e19715dde2aee31743eceff26c6cecff4c4f72f260ddbd0f",
+      "data_manifest.json": "814bc6f8ffab5627a66a6d8d0c90cf28f96410e3d94470974df395ee6f439536",
+      "environment.json": "42e459c9d258935e4b33ff6744fab86e2f16aeeb625bbe72af77b9a3d1ea5393",
+      "history.csv": "93a43b7a9747b1cf630f7a50b72e094d8ed9c97b801b54e144f32e1703d43dc3",
+      "summary.json": "8e0e3dc7f96804a74b335ac57e042012446bfe43f8c6fc4aebceb39dce1ebe47",
+      "initial.pt": "53c27ee29fa897afdb2f3e9821bd71c3b056e89a624da34346b3545f9cef07bc",
+      "best.pt": "38455e10b66629daf62a9b0607dd0b0d6cad7f053b6fb6266a981dc4c50b99f1",
+      "last.pt": "f528d7ca0dea0597dedd612075fdd7bbed5e2857dff987c57faa6e0b82654cf4"
+    }
+  },
+  "test_set_evaluated": false,
+  "training_started_by_analysis": false,
+  "validation_reevaluation": {
+    "checkpoint": "runs/E2/seed42/best.pt",
+    "epoch": 84,
+    "sample_count": 5000,
+    "accuracy": 0.8952,
+    "loss": 0.36807625598907473,
+    "macro_f1": 0.8953749999224225,
+    "matches_training_summary": true
+  },
+  "paired_counts": {
+    "both_correct": 4408,
+    "left_wrong_right_correct": 68,
+    "left_correct_right_wrong": 357,
+    "both_wrong": 167
+  },
+  "input_artifacts_unchanged_after_analysis": true,
+  "training_code_modified_by_analysis": false
+}

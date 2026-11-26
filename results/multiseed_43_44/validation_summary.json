@@ -1,0 +1,122 @@
+{
+  "split": "validation",
+  "validation_count": 5000,
+  "manifest_hash": "ba2713d56315b4565ca3c1bee40bf3acb2e2785fe42de2ab03acf6897e26aab7",
+  "all_repeats_complete": false,
+  "runs": [
+    {
+      "experiment": "E1",
+      "seed": 42,
+      "run_dir": "runs/E1/seed42",
+      "best_epoch": 96,
+      "best_validation_accuracy_pct": 95.3,
+      "validation_cross_entropy": 0.18661485753059387,
+      "macro_f1_pct": 95.29459513306901
+    },
+    {
+      "experiment": "E4",
+      "seed": 42,
+      "run_dir": "runs/E4/seed42_retry1",
+      "best_epoch": 97,
+      "best_validation_accuracy_pct": 96.3,
+      "validation_cross_entropy": 0.13712484223842622,
+      "macro_f1_pct": 96.3002700104681
+    },
+    {
+      "experiment": "E11_stem",
+      "seed": 42,
+      "run_dir": "runs/E11_stem_lr0.01/seed42",
+      "best_epoch": 90,
+      "best_validation_accuracy_pct": 96.7,
+      "validation_cross_entropy": 0.13657796502113342,
+      "macro_f1_pct": 96.70590368907001
+    },
+    {
+      "experiment": "E9",
+      "seed": 42,
+      "run_dir": "runs/E9/seed42",
+      "best_epoch": 28,
+      "best_validation_accuracy_pct": 92.0,
+      "validation_cross_entropy": 0.3082920944556594,
+      "macro_f1_pct": 92.0365821439431
+    },
+    {
+      "experiment": "E10",
+      "seed": 42,
+      "run_dir": "runs/E10/seed42",
+      "best_epoch": 28,
+      "best_validation_accuracy_pct": 96.12,
+      "validation_cross_entropy": 0.1931383562193252,
+      "macro_f1_pct": 96.12550974057721
+    }
+  ],
+  "accuracy_percent": {
+    "E1": {
+      "by_seed": {
+        "42": 95.3
+      },
+      "n": 1,
+      "mean": 95.3,
+      "sample_sd": null
+    },
+    "E4": {
+      "by_seed": {
+        "42": 96.3
+      },
+      "n": 1,
+      "mean": 96.3,
+      "sample_sd": null
+    },
+    "E11_stem": {
+      "by_seed": {
+        "42": 96.7
+      },
+      "n": 1,
+      "mean": 96.7,
+      "sample_sd": null
+    },
+    "E9": {
+      "by_seed": {
+        "42": 92.0
+      },
+      "n": 1,
+      "mean": 92.0,
+      "sample_sd": null
+    },
+    "E10": {
+      "by_seed": {
+        "42": 96.12
+      },
+      "n": 1,
+      "mean": 96.12,
+      "sample_sd": null
+    }
+  },
+  "paired_accuracy_delta_pp": {
+    "E4 minus E1": {
+      "by_seed": {
+        "42": 1.0
+      },
+      "n": 1,
+      "mean": 1.0,
+      "sample_sd": null
+    },
+    "E11_stem minus E4": {
+      "by_seed": {
+        "42": 0.4000000000000057
+      },
+      "n": 1,
+      "mean": 0.4000000000000057,
+      "sample_sd": null
+    },
+    "E10 minus E9": {
+      "by_seed": {
+        "42": 4.1200000000000045
+      },
+      "n": 1,
+      "mean": 4.1200000000000045,
+      "sample_sd": null
+    }
+  },
+  "note": "E11_stem and E4 differ in both initialization and learning rate."
+}

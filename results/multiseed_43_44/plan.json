@@ -1,0 +1,119 @@
+{
+  "runs": [
+    {
+      "experiment": "E1",
+      "seed": 43,
+      "planned_epochs": 100,
+      "run_dir": "runs/E1/seed43",
+      "config_path": "results/multiseed_43_44/configs/e1_seed43.json",
+      "source": null,
+      "config_sha256": "dc256a8a749fc6cb56df89b37d93c399b96c56ca182df5d7836f69b0e3a63601"
+    },
+    {
+      "experiment": "E4",
+      "seed": 43,
+      "planned_epochs": 100,
+      "run_dir": "runs/E4/seed43",
+      "config_path": "results/multiseed_43_44/configs/e4_seed43.json",
+      "source": "runs/E1/seed43/initial.pt",
+      "config_sha256": "dbd0b10d98d537466171283b154c4f6178a786321c3387e7470ea3ab618d465a"
+    },
+    {
+      "experiment": "E11_stem",
+      "seed": 43,
+      "planned_epochs": 100,
+      "run_dir": "runs/E11_stem_lr0.01/seed43",
+      "config_path": "results/multiseed_43_44/configs/e11_stem_seed43.json",
+      "source": "runs/E4/seed43/initial.pt",
+      "config_sha256": "088dcf79c1081ef5c3e63d9e905def77bb25645a14ef585dafe7b3b4216cc6da"
+    },
+    {
+      "experiment": "E1",
+      "seed": 44,
+      "planned_epochs": 100,
+      "run_dir": "runs/E1/seed44",
+      "config_path": "results/multiseed_43_44/configs/e1_seed44.json",
+      "source": null,
+      "config_sha256": "9e0c6b9b642b91f8da9d71ef3c1f9e85ecb75673a4bb87798b27562164ddee73"
+    },
+    {
+      "experiment": "E4",
+      "seed": 44,
+      "planned_epochs": 100,
+      "run_dir": "runs/E4/seed44",
+      "config_path": "results/multiseed_43_44/configs/e4_seed44.json",
+      "source": "runs/E1/seed44/initial.pt",
+      "config_sha256": "8a66a85698e3719438649244e3adae2d633e18441d23d8d70cf4bcd7e9abf308"
+    },
+    {
+      "experiment": "E11_stem",
+      "seed": 44,
+      "planned_epochs": 100,
+      "run_dir": "runs/E11_stem_lr0.01/seed44",
+      "config_path": "results/multiseed_43_44/configs/e11_stem_seed44.json",
+      "source": "runs/E4/seed44/initial.pt",
+      "config_sha256": "a38dc22d24969469c755a9938b174b131e140fa0b47343c4175e1d48ab4790a8"
+    },
+    {
+      "experiment": "E9",
+      "seed": 43,
+      "planned_epochs": 30,
+      "run_dir": "runs/E9/seed43",
+      "config_path": "results/multiseed_43_44/configs/e9_seed43.json",
+      "source": null,
+      "config_sha256": "b81b042bcd127e6c4feaacf2d974d9601cc3f075ac4aa0bd9016e282a0ad4edf"
+    },
+    {
+      "experiment": "E10",
+      "seed": 43,
+      "planned_epochs": 30,
+      "run_dir": "runs/E10/seed43",
+      "config_path": "results/multiseed_43_44/configs/e10_seed43.json",
+      "source": "runs/E9/seed43/initial.pt",
+      "config_sha256": "93b63a1219d638686adc60bd0776f60ed4370f3aad6ad9d85c281a66fb81dd8f"
+    },
+    {
+      "experiment": "E9",
+      "seed": 44,
+      "planned_epochs": 30,
+      "run_dir": "runs/E9/seed44",
+      "config_path": "results/multiseed_43_44/configs/e9_seed44.json",
+      "source": null,
+      "config_sha256": "ca08f6206e455a4602e1071eb247b035c14b8d98edc9712dba6637414e08f69d"
+    },
+    {
+      "experiment": "E10",
+      "seed": 44,
+      "planned_epochs": 30,
+      "run_dir": "runs/E10/seed44",
+      "config_path": "results/multiseed_43_44/configs/e10_seed44.json",
+      "source": "runs/E9/seed44/initial.pt",
+      "config_sha256": "e0b86c9d07e43c29d328c1678c57c13e2f46a7a3016206cc0344392dd0a01e1e"
+    }
+  ],
+  "seed42": {
+    "E1": "runs/E1/seed42",
+    "E4": "runs/E4/seed42_retry1",
+    "E11_stem": "runs/E11_stem_lr0.01/seed42",
+    "E9": "runs/E9/seed42",
+    "E10": "runs/E10/seed42"
+  },
+  "split": "validation",
+  "split_seed": 2026,
+  "monitor_seed": 2027,
+  "selection_rule": "Highest validation accuracy; break ties by lower validation cross-entropy",
+  "comparisons": [
+    [
+      "E4",
+      "E1"
+    ],
+    [
+      "E11_stem",
+      "E4"
+    ],
+    [
+      "E10",
+      "E9"
+    ]
+  ]
+}
